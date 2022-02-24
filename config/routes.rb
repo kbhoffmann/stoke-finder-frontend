@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   post '/login', to: 'users#login_user'
   get '/register', to: 'users#new'
   post '/register', to: 'users#create'
+
+  get 'adventures/search', to: 'adventures#search'
 end
