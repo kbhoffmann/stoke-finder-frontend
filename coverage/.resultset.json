@@ -7,6 +7,30 @@
           null
         ]
       },
+      "/Users/robindittrich/turing/3module/projects/stoke-finder-frontend/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/robindittrich/turing/3module/projects/stoke-finder-frontend/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/robindittrich/turing/3module/projects/stoke-finder-frontend/app/controllers/welcome_controller.rb": {
         "lines": [
           1,
@@ -26,18 +50,61 @@
           null
         ]
       },
+      "/Users/robindittrich/turing/3module/projects/stoke-finder-frontend/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
       "/Users/robindittrich/turing/3module/projects/stoke-finder-frontend/app/mailers/application_mailer.rb": {
         "lines": [
           0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/robindittrich/turing/3module/projects/stoke-finder-frontend/app/models/application_record.rb": {
-        "lines": [
           0,
           0,
           0
@@ -74,6 +141,6 @@
         }
       }
     },
-    "timestamp": 1645718117
+    "timestamp": 1645718901
   }
 }
