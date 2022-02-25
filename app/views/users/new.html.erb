@@ -1,0 +1,37 @@
+<h1>Create a New User</h1>
+
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <p><%= pluralize(@user.errors.count, "error") %> prohibited this post from being saved: </p>
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<%= form_with url: "/auth/google_oauth2/callback", method: :post, local:true do |form| %>
+  <%= form.label :user_name %>
+  <p><%= form.text_field :user_name %></p>
+
+  <%= form.label :email %>
+  <p><%= form.text_field :email %></p>
+
+  <%= form.label :access %>
+  <p><%= form.text_field :access %></p>
+
+  <%= form.label :street_address %>
+  <p><%= form.text_field :street_address %></p>
+
+  <%= form.label :city %>
+  <p><%= form.text_field :city %></p>
+
+  <%= form.label :state %>
+  <p><%= form.text_field :state %></p>
+
+  <%= form.label :zipcode %>
+  <p><%= form.text_field :zipcode %></p>
+
+  <%= form.submit "Submit" %>
+<% end %>

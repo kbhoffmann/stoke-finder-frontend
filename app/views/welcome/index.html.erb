@@ -1,0 +1,10 @@
+<% if current_user.nil? %>
+  <%= link_to "Log In", "/login", method: :get %>
+  <%= link_to "Register", "/register", method: :get %>
+  <h1>Welcome to StokeFinder!</h1>
+  <%= link_to "Search for Adventures", "adventures/search", method: :get %>
+<% else %>
+  <h1>Welcome to StokeFinder!</h1>
+  <%= link_to "Logout", "/logout", method: :delete %>
+  <%= link_to "Search for Adventures", "/adventures/search", method: :get %>
+<% end %>

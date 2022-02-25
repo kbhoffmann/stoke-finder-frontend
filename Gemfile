@@ -40,6 +40,7 @@ gem 'faraday'
 gem 'bootstrap', '~> 5.1.3'
 gem 'figaro'
 gem 'omniauth-google-oauth2'
+gem 'json', '>= 2.0.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -50,6 +51,7 @@ group :development, :test do
   gem 'capybara'
   gem 'orderly'
   gem 'shoulda-matchers'
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -64,6 +66,7 @@ end
 group :test do
   gem 'webmock'
   gem 'simplecov'
+  gem 'faker'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
