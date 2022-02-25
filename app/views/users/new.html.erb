@@ -12,23 +12,26 @@
   <% end %>
 
 <%= form_with url: "/auth/google_oauth2/callback", method: :post, local:true do |form| %>
-  <%= form.label :name %>
-  <p><%= form.text_field :name %></p>
+  <%= form.label :user_name %>
+  <p><%= form.text_field :user_name %></p>
 
   <%= form.label :email %>
   <p><%= form.text_field :email %></p>
 
-  <%= form.label :password %>
-  <p><%= form.password_field :password %></p>
+  <%= form.label :access %>
+  <p><%= form.text_field :access %></p>
 
-  <%= form.label :password_confirmation %>
-  <p><%= form.text_field :password_confirmation %></p>
+  <%= form.label :street_address %>
+  <p><%= form.text_field :street_address %></p>
 
-  <%= form.label :description %>
-  <p><%= form.text_field :description %></p>
+  <%= form.label :city %>
+  <p><%= form.text_field :city %></p>
 
-  <%= form.label :age %>
-  <p><%= form.text_field :age %></p>
+  <%= form.label :state %>
+  <p><%= form.text_field :state %></p>
+
+  <%= form.label :zipcode %>
+  <p><%= form.text_field :zipcode %></p>
 
   <%= form.submit "Submit" %>
 <% end %>

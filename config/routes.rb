@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get '/login', to: 'users#login_form'
   post '/login', to: 'users#login_user'
   get '/register', to: 'users#new'
-  post '/auth/google_oauth2/callback', to: 'users#create'
+  get '/register', to: 'users#create'
 
   get 'adventures/search', to: 'adventures#search'
 end
