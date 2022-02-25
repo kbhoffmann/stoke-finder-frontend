@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
-  #from google authorization. This could go to whatever controller
-  #we want.  User or Session maybe?  Just did routed this to 'user#create'
-  #for now.
-  get '/auth/google_oauth2/callback' to: 'users#create'
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'welcome#index'
+
+  get '/dashboard', to: 'users#show'
+  delete '/logout', to: 'users#logout'
+
+  get '/login', to: 'users#login_form'
+  post '/login', to: 'users#login_user'
+  get '/register', to: 'users#new'
+  post '/auth/google_oauth2/callback', to: 'users#create'
+
+  get 'adventures/search', to: 'adventures#search'
 end
