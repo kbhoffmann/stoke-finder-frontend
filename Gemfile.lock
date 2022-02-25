@@ -282,6 +282,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-20
+  x86_64-darwin-20
   x86_64-darwin-21
 
 DEPENDENCIES
@@ -320,4 +321,4 @@ RUBY VERSION
    ruby 2.7.2p137
 
 BUNDLED WITH
-   2.2.30
+   2.3.4
