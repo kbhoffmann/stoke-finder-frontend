@@ -16,7 +16,7 @@ RSpec.describe 'Welcom Index Page' do
     it 'has a title' do
       visit root_path
 
-      expect(page).to have_content("Welcome to StokeFinder!")
+      expect(page).to have_content("Welcome to Stoke Finder!")
     end
 
     # it 'allows the user to log in' do
@@ -33,22 +33,28 @@ RSpec.describe 'Welcom Index Page' do
     #   click_button 'Log In'
     # end
     #
-    # it 'includes a link to register a new user' do
-    #   visit root_path
-    #   # click_link 'Logout'
-    #
-    #   click_link 'Register'
-    #   expect(current_path).to eq("/register")
-    #
-    #   fill_in :name, with: 'Robin'
-    #   fill_in :email, with: 'robin@email.com'
-    #   fill_in :password, with: 'password12345'
-    #   fill_in :password_confirmation, with: 'password12345'
-    #   click_button 'Submit'
-    #
-    #   expect(page).to have_content("Robin's Dashboard")
-    #   expect(current_path).to eq(dashboard_path(User.last))
-    # end
+    it 'includes a link to register a new user' do
+      visit root_path
+
+      click_link "Register"
+      expect(current_path).to eq("/register")
+
+      fill_in :user_name, with: 'Robin'
+      #need to keep email or take from oauth??
+      fill_in :email, with: 'robin@email.com'
+      fill_in :password, with: 'password12345'
+      fill_in :password_confirmation, with: 'password12345'
+      fill_in :street_address, with: '1234 Main St'
+      fill_in :city, with: 'Denver'
+      fill_in :state, with: 'CO'
+      fill_in :zipcode, with: '80220'
+      #need to add activity preferences
+      #to form and check boxes
+      click_button 'Submit'
+
+      expect(page).to have_content("Robin's Dashboard")
+      expect(current_path).to eq(dashboard_path(User.last))
+    end
     #
     # it 'allows the user to Search for Adventures' do
     #   visit root_path
