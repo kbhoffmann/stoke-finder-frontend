@@ -5,9 +5,13 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'users#show'
   delete '/logout', to: 'users#logout'
 
+  get '/auth/google_oauth2/callback', to: 'users#auth'
+
   get '/login', to: 'users#login_form'
   post '/login', to: 'users#login_user'
-  get '/auth/google_oauth2/callback', to: 'users#create'
+  get '/register', to: 'users#new'
+  get '/register', to: 'users#create'
+
 
   get 'adventures/search', to: 'adventures#search'
 end

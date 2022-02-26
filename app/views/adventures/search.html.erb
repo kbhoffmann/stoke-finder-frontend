@@ -1,1 +1,46 @@
-<h1>StokeFinder: Lets Find Your Stoke</h1>
+<!DOCTYPE html>
+<html>
+<style> body {
+  background-color: lightblue;
+}
+</style>
+<body>
+  <div class="bg-image d-flex justify-content-center">
+    <h1>StokeFinder: Lets Find Your Stoke</h1>
+  </div>
+  <br><br><br><br>
+  <div class="bg-image d-flex justify-content-center">
+    <%= form_with url: "/search/by_activity", local: true, method: :get do |form| %>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="hiking">Hiking</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="fishing">Fishing</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="boating">Boating</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="climbing">Climbing</label>
+        </div>
+        <%= submit_tag "Search by Activity", class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  <br><br>
+  <div class="bg-image d-flex justify-content-center">
+    <h3>OR</h3>
+  </div>
+  <br><br>
+  <div class="bg-image d-flex justify-content-center">
+    <%= form_with url: "/search/by_activity", local: true do |form| %>
+      <%= form.label :search, 'Search by Location:' %>
+      <%= form.text_field :search %>
+      <%= form.submit 'Search' %>
+    <% end %>
+  </div>
+</body>
+</html>
