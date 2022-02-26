@@ -2,7 +2,7 @@
 <html>
   <head>
     <% if current_user.nil? %>
-      <button class="btn btn-info" class="font-weight-bold"><%= link_to "Log In", "/login", method: :get %></button>
+      <button class="btn btn-info" class="font-weight-bold"><%= link_to "Log In", '/auth/google_oauth2', method: :get %></button>
       <button class="btn btn-info"><%= link_to "Register", "/register", method: :get %></button>
       <button class="btn btn-info"><%= link_to "Search for Adventures", "adventures/search", method: :get %></button>
     <% else %>
