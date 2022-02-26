@@ -14,6 +14,7 @@ RSpec.describe 'Welcom Index Page' do
     # end
 
     it 'has a title' do
+
       visit root_path
 
       expect(page).to have_content("Welcome to Stoke Finder!")

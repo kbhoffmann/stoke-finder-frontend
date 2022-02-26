@@ -51,6 +51,7 @@ group :development, :test do
   gem 'capybara'
   gem 'orderly'
   gem 'shoulda-matchers'
+  gem 'rspec_junit_formatter'
   gem 'factory_bot_rails'
 end
 
