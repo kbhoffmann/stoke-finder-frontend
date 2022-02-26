@@ -14,8 +14,9 @@ RSpec.describe 'Welcom Index Page' do
     # end
 
     it 'has a title' do
+
       visit root_path
-UserFacade.all_users
+
       expect(page).to have_content("Welcome to Stoke Finder!")
     end
 
