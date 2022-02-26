@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Welcom Index Page' do
   describe 'view' do
     # before(:each) do
-    #   @user_1 = build(:user, name: "David", email: "david@email.com", password: 'password123', password_confirmation: 'password123')
+    #   @user_1 = create(:user, name: "David", email: "david@email.com", password: 'password123', password_confirmation: 'password123')
     #
     #   visit login_path
     #
@@ -13,22 +13,22 @@ RSpec.describe 'Welcom Index Page' do
     #   click_button 'Log In'
     # end
 
-    # it 'has a title' do
-    #   visit root_path
-    #
-    #   expect(page).to have_content("Welcome to StokeFinder!")
-    # end
-    #
+    it 'has a title' do
+      visit root_path
+
+      expect(page).to have_content("Welcome to StokeFinder!")
+    end
+
     # it 'allows the user to log in' do
     #   # click_link 'Logout'
-    #   # user_2 = build(:user, name: "Robin", email: "robin@email.com", password: 'password123', password_confirmation: 'password123')
+    #   user_2 = FactoryBot.create(:user)
     #   visit root_path
     #
     #   click_link 'Log In'
     #   expect(current_path).to eq(login_path)
     #
-    #   fill_in(:email, with: 'robin@email.com')
-    #   fill_in(:password, with: 'password123')
+    #   fill_in(:email, with: "#{user_2.email}")
+    #   fill_in(:password, with: "#{user_2.password}" )
     #
     #   click_button 'Log In'
     # end
@@ -49,14 +49,14 @@ RSpec.describe 'Welcom Index Page' do
     #   expect(page).to have_content("Robin's Dashboard")
     #   expect(current_path).to eq(dashboard_path(User.last))
     # end
-
-    it 'allows the user to Search for Adventures' do
-      visit root_path
-
-      click_link 'Search for Adventures'
-
-      expect(current_path).to eq("/adventures/search")
-      expect(page).to have_content("StokeFinder: Lets Find Your Stoke")
-    end
+    #
+    # it 'allows the user to Search for Adventures' do
+    #   visit root_path
+    #
+    #   click_link 'Search for Adventures'
+    #
+    #   expect(current_path).to eq("/adventures/search")
+    #   expect(page).to have_content("StokeFinder: Lets Find Your Stoke")
+    # end
   end
 end
