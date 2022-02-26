@@ -50,6 +50,7 @@ group :development, :test do
   gem 'capybara'
   gem 'orderly'
   gem 'shoulda-matchers'
+  gem 'rspec_junit_formatter'
 end
 
 group :development do
