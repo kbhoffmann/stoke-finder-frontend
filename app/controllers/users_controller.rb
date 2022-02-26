@@ -10,23 +10,33 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
   end
 
-  def create
-    binding.pry
+  def auth
     auth_hash = request.env['omniauth.auth']
     email = auth_hash['info']['email']
-    user = User.find_or_create_by(email: email)
-
-    session[:access_token] = auth_hash['credentials']['token']
-    redirect_to dashboard_path
+    user = User.find_by(email: email)
+    if user.nil?
+      redirect_to '/register'
+    else
+      redirect_to '/dashboard'
+    end
   end
-    # @user = User.new(user_params)
-    # if @user.save
-    #   session[:user_id] = @user.id
-    #   redirect_to dashboard_path(@user.id)
-    # else
-    #   render :new
-    # end
-  # end
+
+  #the line below was in the create method...didn't know where it came from or is
+  #supposed to go somewhere 😊
+  # session[:access_token] = auth_hash['credentials']['token']
+
+  def create
+    #need to add the activity preferences check boxes to form
+    #and test before it will save
+    @user = User.new(user_params)
+    if @user.save
+      session[:user_id] = @user.id
+      redirect_to dashboard_path(@user.id)
+    else
+      #need an error message test
+      render :new
+    end
+  end
 
   def login_user
     user = User.find_by(email: params[:email])
@@ -51,6 +61,6 @@ class UsersController < ApplicationController
 private
 
   def user_params
-    params.permit(:name, :email, :password, :password_confirmation, :role, :description, :age)
+    params.permit(:user_name, :email, :password, :password_confirmation, :role, :description, :street_address, :city, :state, :zipcode, :age)
   end
 end
