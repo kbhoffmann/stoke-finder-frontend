@@ -10,8 +10,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
   end
 
-  def create
-    binding.pry
+  def auth
     auth_hash = request.env['omniauth.auth']
     email = auth_hash['info']['email']
     user = User.find_or_create_by(email: email)
@@ -19,14 +18,16 @@ class UsersController < ApplicationController
     session[:access_token] = auth_hash['credentials']['token']
     redirect_to dashboard_path
   end
-    # @user = User.new(user_params)
-    # if @user.save
-    #   session[:user_id] = @user.id
-    #   redirect_to dashboard_path(@user.id)
-    # else
-    #   render :new
-    # end
-  # end
+
+  def create
+    @user = User.new(user_params)
+    if @user.save
+      session[:user_id] = @user.id
+      redirect_to dashboard_path(@user.id)
+    else
+      render :new
+    end
+  end
 
   def login_user
     user = User.find_by(email: params[:email])
