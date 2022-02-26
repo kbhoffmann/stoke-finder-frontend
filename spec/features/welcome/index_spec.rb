@@ -19,20 +19,6 @@ RSpec.describe 'Welcom Index Page' do
       expect(page).to have_content("Welcome to Stoke Finder!")
     end
 
-    # it 'allows the user to log in' do
-    #   # click_link 'Logout'
-    #   user_2 = FactoryBot.create(:user)
-    #   visit root_path
-    #
-    #   click_link 'Log In'
-    #   expect(current_path).to eq(login_path)
-    #
-    #   fill_in(:email, with: "#{user_2.email}")
-    #   fill_in(:password, with: "#{user_2.password}" )
-    #
-    #   click_button 'Log In'
-    # end
-    #
     it 'includes a link to register a new user' do
       visit root_path
 
@@ -55,14 +41,29 @@ RSpec.describe 'Welcom Index Page' do
       expect(page).to have_content("Robin's Dashboard")
       expect(current_path).to eq(dashboard_path(User.last))
     end
-    #
-    # it 'allows the user to Search for Adventures' do
-    #   visit root_path
-    #
-    #   click_link 'Search for Adventures'
-    #
-    #   expect(current_path).to eq("/adventures/search")
-    #   expect(page).to have_content("StokeFinder: Lets Find Your Stoke")
-    # end
   end
 end
+
+# it 'allows the user to log in' do
+#   # click_link 'Logout'
+#   user_2 = FactoryBot.create(:user)
+#   visit root_path
+#
+#   click_link 'Log In'
+#   expect(current_path).to eq(login_path)
+#
+#   fill_in(:email, with: "#{user_2.email}")
+#   fill_in(:password, with: "#{user_2.password}" )
+#
+#   click_button 'Log In'
+# end
+#
+#
+# it 'allows the user to Search for Adventures' do
+#   visit root_path
+#
+#   click_link 'Search for Adventures'
+#
+#   expect(current_path).to eq("/adventures/search")
+#   expect(page).to have_content("StokeFinder: Lets Find Your Stoke")
+# end
