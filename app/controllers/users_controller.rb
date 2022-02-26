@@ -13,10 +13,12 @@ class UsersController < ApplicationController
   def auth
     auth_hash = request.env['omniauth.auth']
     email = auth_hash['info']['email']
-    user = User.find_or_create_by(email: email)
-
-    session[:access_token] = auth_hash['credentials']['token']
-    redirect_to dashboard_path
+    user = User.find_by(email: email)
+    if user.nil?
+      redirect_to '/register'
+    else
+      redirect_to '/dashboard'
+    end
   end
 
   def create
@@ -52,6 +54,6 @@ class UsersController < ApplicationController
 private
 
   def user_params
-    params.permit(:name, :email, :password, :password_confirmation, :role, :description, :age)
+    params.permit(:user_name, :email, :password, :password_confirmation, :role, :description, :street_address, :city, :state, :zipcode, :age)
   end
 end
