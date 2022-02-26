@@ -7,7 +7,10 @@ Rails.application.routes.draw do
 
   get '/login', to: 'users#login_form'
   post '/login', to: 'users#login_user'
-  get '/auth/google_oauth2/callback', to: 'users#create'
+  get '/auth/google_oauth2/callback', to: 'users#auth'
+
+  get '/register', to: 'users#new'
+  post '/register', to: 'users#create'
 
   get 'adventures/search', to: 'adventures#search'
 end
