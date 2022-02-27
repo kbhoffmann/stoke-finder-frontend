@@ -37,8 +37,12 @@ RSpec.describe 'Welcome Index Page' do
       fill_in :state, with: 'CO'
       fill_in :zipcode, with: '80220'
 
-      within("#activities") do
-        first("input[type='checkbox']")
+      within '#activity-100049' do #ACCESSIBLE SWIMMING
+        check
+      end
+
+      within '#activity-100050' do #SOFTBALL
+        check
       end
 
       click_button 'Submit'
