@@ -8,6 +8,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new(user_params)
+    @activities = RidbFacade.all_activities
   end
 
   def auth
