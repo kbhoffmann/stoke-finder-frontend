@@ -14,7 +14,8 @@ RSpec.describe 'Welcom Index Page' do
     # end
 
     it 'has a title' do
-
+      WebMock.enable_net_connect!
+      
       visit root_path
 
       expect(page).to have_content("Welcome to Stoke Finder!")

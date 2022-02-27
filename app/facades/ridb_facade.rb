@@ -1,7 +1,9 @@
 class RidbFacade
   def self.all_activities
-    RidbService.get_activities[:RECDATA].map do |data|
-      Activity.new(data)
+    json = RidbService.get_activities
+
+    json[:RECDATA].map do |activity|
+      Activity.new(activity)
     end
   end
 end

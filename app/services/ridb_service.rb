@@ -6,7 +6,7 @@ class RidbService
 
   def self.conn
     get_url(url: 'https://ridb.recreation.gov',
-    headers: {'apiKey' => '994ee799-c63c-48f6-8ddb-a988d4485140'})
+    headers: {'apiKey' => ENV['api_key']})
   end
 
   def self.get_activities

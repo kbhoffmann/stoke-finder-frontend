@@ -9,7 +9,7 @@ class UserFacade
 
   def self.user_info(user_id)
     json = UserService.user_info(user_id)
-  binding.pry
+  
     User.new(json[:data])
   end
 
