@@ -22,11 +22,11 @@ RSpec.describe 'Welcome Index Page' do
     end
 
     it 'includes a link to register a new user' do
+      WebMock.enable_net_connect!
       visit root_path
 
       click_link "Register"
       expect(current_path).to eq("/register")
-
       fill_in :user_name, with: 'Robin'
       #need to keep email or take from oauth??
       fill_in :email, with: 'robin@email.com'
@@ -36,8 +36,11 @@ RSpec.describe 'Welcome Index Page' do
       fill_in :city, with: 'Denver'
       fill_in :state, with: 'CO'
       fill_in :zipcode, with: '80220'
-      #need to add activity preferences
-      #to form and check boxes
+
+      within("#activities") do
+        first("input[type='checkbox']")
+      end
+
       click_button 'Submit'
 
       expect(page).to have_content("Robin's Dashboard")
