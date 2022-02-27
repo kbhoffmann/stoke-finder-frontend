@@ -27,6 +27,14 @@
   <p><%= form.text_field :zipcode %></p>
 
   <%= form.submit "Submit" %>
+
+  <div id="activities">
+  <% @activities.sort_by(&:name).each do |activity| %>
+          <p><%= check_box_tag "activities[]", activity.name %>
+          <%= label_tag(:activity, "#{activity.name}") %></p>
+    <% end %>
+  </div>
+
 <% end %>
 
 
