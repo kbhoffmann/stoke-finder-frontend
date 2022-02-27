@@ -26,17 +26,17 @@
   <%= form.label :zipcode %>
   <p><%= form.text_field :zipcode %></p>
 
+  <%= form.hidden_field :access, value: 0 %>
+
+<div class="form-check form-check-inline">
+  <% @activities.sort_by(&:name).each do |activity| %>
+    <div id="activity-<%= activity.id %>">
+        <p><%= check_box_tag "activity[]", activity.name %>
+        <%= label_tag(:activity, "#{activity.name}") %></p>
+      </div>
+  <% end %>
+</div>
+
   <%= form.submit "Submit" %>
-<% end %>
 
-
-<% if @user.errors.any? %>
-  <div id="error_explanation">
-    <p><%= pluralize(@user.errors.count, "error") %> prohibited this post from being saved: </p>
-      <ul>
-        <% @user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
 <% end %>
