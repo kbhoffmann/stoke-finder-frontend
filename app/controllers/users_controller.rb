@@ -7,7 +7,6 @@ class UsersController < ApplicationController
   end
 
   def new
-    @user = User.new(user_params)
     @activities = RidbFacade.all_activities
   end
 
@@ -55,6 +54,6 @@ class UsersController < ApplicationController
 private
 
   def user_params
-    params.permit(:user_name, :email, :password, :password_confirmation, :role, :description, :street_address, :city, :state, :zipcode, :age)
+    params.permit(:user_name, :email, :password, :password_confirmation, :access, :street_address, :city, :state, :zipcode, :age)
   end
 end
