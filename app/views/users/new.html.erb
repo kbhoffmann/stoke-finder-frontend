@@ -1,7 +1,7 @@
 <h1>Create a New Account</h1>
 
 
-<%= form_with url: "/register", method: :post, local: true do |form| %>
+<%= form_with url: "/users", method: :post, local: true do |form| %>
   <%= form.label :user_name %>
   <p><%= form.text_field :user_name %></p>
 
