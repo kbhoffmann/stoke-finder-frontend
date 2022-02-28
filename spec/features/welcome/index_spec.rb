@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe 'Welcome Index Page' do
   describe 'view' do
-    it 'has links to home, login, register and search' do
+
+    it 'has links to home, login, register and search', :vcr do
       visit root_path
       click_link "Home"
       expect(current_path).to eq("/")

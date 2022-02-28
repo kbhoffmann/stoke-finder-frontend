@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 28 Feb 2022 22:06:35 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8936e44e43f172716f3255dfcdf7445c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b20b8148-9f1f-427e-b47a-ba1af202fd8d
+      X-Runtime:
+      - '1.434892'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"id","attributes":{"user_name":"Borton Preekers","email":"borton@gmail.com","street_address":"123
+        Lane","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"Biking","latitude":39.71854302040816,"longitude":-104.95596330612246}}}'
+  recorded_at: Mon, 28 Feb 2022 22:06:35 GMT
+recorded_with: VCR 6.0.0

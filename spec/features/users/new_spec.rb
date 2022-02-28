@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'New User Page' do
-  describe 'view' do
+  describe 'view', :vcr do
     it 'has links to home, login, register and search' do
       visit "/register"
       click_link "Home"

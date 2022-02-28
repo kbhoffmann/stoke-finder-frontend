@@ -1,11 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe UserService do
-  WebMock.enable_net_connect!
   describe 'Methods' do
-    it "#user_info" do
-      #this will need VCR
-      WebMock.enable_net_connect!
+    it "#user_info", :vcr do
+      
       response = UserService.user_info(1)
 
       expect(response).to be_a(Hash)
