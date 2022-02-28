@@ -12,7 +12,6 @@ class UserService
   def self.user_create(attributes)
     request = conn.post("/api/v1/users/create", attributes.to_json)
     binding.pry
-
   end
 
   # def self.user_adventures(user_id)
