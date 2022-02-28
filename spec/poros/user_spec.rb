@@ -1,7 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe User do
-  WebMock.enable_net_connect!
+RSpec.describe User, :vcr do
   let(:user) { UserFacade.user_info(1) }
   it 'exists' do
     expect(user.id).to eq(user.id)

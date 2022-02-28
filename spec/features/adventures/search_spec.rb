@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Search Page' do
   describe 'view' do
-    it 'has links to home, login, register and search' do
+    it 'has links to home, login, register and search', :vcr do
       visit "adventures/search"
       click_link "Home"
       expect(current_path).to eq("/")
@@ -16,7 +16,7 @@ RSpec.describe 'Search Page' do
       expect(current_path).to eq("/adventures/search")
     end
 
-    it 'has a title and multiple ways to search for activities' do
+    it 'has a title and multiple ways to search for activities', :vcr do
       visit "adventures/search"
 
       expect(page).to have_content("StokeFinder: Lets Find Your Stoke")
