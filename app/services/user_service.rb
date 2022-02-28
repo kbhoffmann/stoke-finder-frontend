@@ -9,9 +9,10 @@ class UserService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.user_create
-    response = conn.get("/api/v1/users/create")
-    JSON.parse(response.body, symbolize_names: true)
+  def self.user_create(attributes)
+    request = conn.post("/api/v1/users/create", attributes.to_json)
+    binding.pry
+
   end
 
   # def self.user_adventures(user_id)
