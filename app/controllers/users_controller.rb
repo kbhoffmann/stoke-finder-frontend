@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(session[:user_id])
+    # @user = User.find(session[:user_id])
   end
 
   def new
@@ -31,6 +31,20 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+    @user = User.find(session[:user_id])
+  end
+
+  def update
+    @user = User.find(session[:user_id])
+    if @duser.update_attributes(user_params)
+      flash[:success] = "Your Information Was Updated"
+      redirect_to dashboard_path
+    else
+      render action: :edit
+    end
+  end
+
   def login_user
     user = User.find_by(email: params[:email])
     if user == nil
@@ -44,6 +58,9 @@ class UsersController < ApplicationController
       flash[:error] = "Email or password is incorrect. Please try again."
       redirect_to "/login"
     end
+  end
+
+  def login_form
   end
 
   def logout

@@ -98,56 +98,37 @@ input[type=submit]:hover {
 </style>
 </head>
 <body>
-  <br><br>
-  <div class="container">
-    <div class="bg-image d-flex justify-content-center">
-      <h1>StokeFinder: Lets Find Your Stoke</h1>
-    <br><br>
-  </div>
-  <br><br>
-    <%= form_with url: "/search/by_location", local: true do |form| %>
-      <div class="row">
-        <div class="col-25">
-          <%= form.label :search, 'Search by Location:' %>
-          </div>
-        <div class="col-75">
-          <%= form.text_field :search %>
-        </div>
-      </div>
-      <br><br>
 
-      <div class="row">
-        <%= form.submit 'Search by Location' %>
-      <% end %>
-    </div>
-    <br><br>
-
-  <div class="bg-image d-flex justify-content-center">
-    <h3>OR</h3>
-    <br><br><br>
-  </div>
-
+<br><br><br>
+<div class="container">
 <div class="bg-image d-flex justify-content-center">
-  <h3>Search by Activities</h3>
-  <br><br>
+  <h2>Existing User Login</h2>
+  <br><br><br>
 </div>
 
-  <%= form_with url: "/search/by_activity", local: true, method: :get do |form| %>
-
-  <div class="dropdown" data-control="checkbox-dropdown">
-    <div class="dropdown-list">
-      <% @activities.sort_by(&:name).each do |activity| %>
-        <label class="dropdown-option" id="activity-<%= activity.id %>">
-          <p><%= check_box_tag "activity[]", activity.name %><%= label_tag(:activity, "#{activity.name}") %></p>
-      </label>
-      <% end %>
+<%= form_with url: "/users", method: :post, local: true do |form| %>
+  <div class="row">
+    <div class="col-25">
+      <%= form.label :user_name %>
+    </div>
+    <div class="col-75">
+      <p><%= form.text_field :user_name %></p>
     </div>
   </div>
 
   <div class="row">
-    <%= form.submit "Search by Activity" %>
-  <% end %>
+    <div class="col-25">
+      <%= form.label :password %>
+    </div>
+    <div class="col-75">
+      <p><%= form.text_field :password %></p>
+    </div>
   </div>
+<br><br>
+<div class="row">
+  <%= form.submit "Sign In" %>
+<% end %>
+</div>
 
 </body>
 </html>

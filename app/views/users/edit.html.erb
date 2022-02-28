@@ -101,17 +101,17 @@ input[type=submit]:hover {
 <br><br>
 <div class="container">
 <div class="bg-image d-flex justify-content-center">
-  <h1>Create a New Account</h1>
+  <h1>Edit User Account Info</h1>
   <br><br><br><br>
 </div>
 
-<%= form_with url: "/users", method: :post, local: true do |form| %>
+<%= form_with url: edit_user_path(@user), method: :patch, local: true do |form| %>
   <div class="row">
     <div class="col-25">
       <%= form.label :user_name %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :user_name, value: "Your user_name..." %></p>
+      <p><%= form.text_field :user_name, value: "Edit your user_name..." %></p>
     </div>
   </div>
 
@@ -120,7 +120,7 @@ input[type=submit]:hover {
       <%= form.label :email %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :email, value: "Your email..." %></p>
+      <p><%= form.text_field :email, value: "Edit your email..." %></p>
     </div>
   </div>
 
@@ -129,7 +129,7 @@ input[type=submit]:hover {
       <%= form.label :password %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :password, value: "Your password..." %></p>
+      <p><%= form.text_field :password, value: "Edit your password..." %></p>
     </div>
   </div>
 
@@ -147,7 +147,7 @@ input[type=submit]:hover {
       <%= form.label :street_address %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :street_address, value: "Your street address..." %></p>
+      <p><%= form.text_field :street_address, value: "Edit your street address..." %></p>
     </div>
   </div>
 
@@ -156,7 +156,7 @@ input[type=submit]:hover {
       <%= form.label :city %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :city, value: "Your city..." %></p>
+      <p><%= form.text_field :city, value: "Edit your city..." %></p>
     </div>
   </div>
 
@@ -165,7 +165,7 @@ input[type=submit]:hover {
       <%= form.label :state %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :state, value: "Your state..." %></p>
+      <p><%= form.text_field :state, value: "Edit your state..." %></p>
     </div>
   </div>
 
@@ -174,7 +174,7 @@ input[type=submit]:hover {
       <%= form.label :zipcode %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :zipcode, value: "Your zip code..." %></p>
+      <p><%= form.text_field :zipcode, value: "Edit your zip code..." %></p>
     </div>
   </div>
 
@@ -183,7 +183,7 @@ input[type=submit]:hover {
 <div class="row">
   <div class="bg-image d-flex justify-content-center">
     <br>
-      Select Your Favorite Activities
+      Add/Remove your Favorite Activities
       <br><br>
     </div>
   </div>
@@ -198,7 +198,7 @@ input[type=submit]:hover {
 </div>
 
 <div class="row">
-  <%= form.submit "Submit" %>
+  <%= form.submit "Confirm Changes" %>
 <% end %>
 </div>
 
