@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> body {
+  background-color: lightblue;
+}
+
+.floatRight{float:right;margin-left:20px}
+
+img {margin-right: 200px;}
+h2 {margin-left: 25px}
+
+</style>
+<body>
+  <div class= "bg-image d-flex justify-content-center">
+    <h1 style="font-family: Copperplate, Papyrus, fantasy;">Recreation Areas Nearby</h1>
+  </div>
+  <br><br><br>
+
+  <div class="bg-image d-flex justify-content-left">
+    <%# <% @areas.each do |area| %> 
+    <h2 style="font-family: Copperplate, Papyrus, fantasy;"><li><%= link_to "area", "/areas/:id" %></li></h3>
+    <%# <% end %> 
+  </div>  
+  <%# <img src='https://www.previewsworld.com/SiteImage/MainImage/STL197464' alt='HeavyMetal' style="width:500px;height:650px;" class="floatRight"> %>
+</body>
+</html>
+</head>

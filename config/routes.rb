@@ -13,5 +13,8 @@ Rails.application.routes.draw do
   get '/register', to: 'users#new'
   post '/users', to: 'users#create'
 
-  get '/adventures/search', to: 'adventures#search'
+  get 'adventures/search', to: 'adventures#search'
+
+  get '/areas', to: 'areas#index'
+
 end
