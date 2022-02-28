@@ -1,42 +1,206 @@
-<h1>Create a New Account</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {box-sizing: border-box;}
+body {background-color: lightblue;}
+body {margin: 40px;}
+.dropdown {
+  position: relative;
+  font-size: 14px;
+  color: #333;
 
+  .dropdown-list {
+    padding: 12px;
+    background: #fff;
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    right: 2px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
+    transform-origin: 50% 0;
+    transform: scale(1, 0);
+    transition: transform .15s ease-in-out .15s;
+    max-height: 66vh;
+    overflow-y: scroll;
+  }
+
+  .dropdown-option {
+    display: block;
+    padding: 8px 12px;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+  }
+
+  .dropdown-label {
+    display: block;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  &.on {
+   .dropdown-list {
+      transform: scale(1, 1);
+      transition-delay: 0s;
+    }
+  }
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 0px 0px 0px 4px;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+</style>
+</head>
+<body>
+<br><br>
+<div class="container">
+<div class="bg-image d-flex justify-content-center">
+  <h1>Create a New Account</h1>
+  <br><br><br><br>
+</div>
 
 <%= form_with url: "/users", method: :post, local: true do |form| %>
-  <%= form.label :user_name %>
-  <p><%= form.text_field :user_name %></p>
+  <div class="row">
+    <div class="col-25">
+      <%= form.label :user_name %>
+    </div>
+    <div class="col-75">
+      <p><%= form.text_field :user_name, value: "Your user_name..." %></p>
+    </div>
+  </div>
 
-  <%= form.label :email %>
-  <p><%= form.text_field :email %></p>
+  <div class="row">
+    <div class="col-25">
+      <%= form.label :email %>
+    </div>
+    <div class="col-75">
+      <p><%= form.text_field :email, value: "Your email..." %></p>
+    </div>
+  </div>
 
-  <%= form.label :password %>
-  <p><%= form.text_field :password %></p>
+  <div class="row">
+    <div class="col-25">
+      <%= form.label :password %>
+    </div>
+    <div class="col-75">
+      <p><%= form.text_field :password, value: "Your password..." %></p>
+    </div>
+  </div>
 
-  <%= form.label :password_confirmation %>
-  <p><%= form.text_field :password_confirmation %></p>
+  <div class="row">
+    <div class="col-25">
+      <%= form.label :password_confirmation %>
+    </div>
+    <div class="col-75">
+      <p><%= form.text_field :password_confirmation, value: "Confirm your password..." %></p>
+    </div>
+  </div>
 
-  <%= form.label :street_address %>
-  <p><%= form.text_field :street_address %></p>
+  <div class="row">
+    <div class="col-25">
+      <%= form.label :street_address %>
+    </div>
+    <div class="col-75">
+      <p><%= form.text_field :street_address, value: "Your street address..." %></p>
+    </div>
+  </div>
 
-  <%= form.label :city %>
-  <p><%= form.text_field :city %></p>
+  <div class="row">
+    <div class="col-25">
+      <%= form.label :city %>
+    </div>
+    <div class="col-75">
+      <p><%= form.text_field :city, value: "Your city..." %></p>
+    </div>
+  </div>
 
-  <%= form.label :state %>
-  <p><%= form.text_field :state %></p>
+  <div class="row">
+    <div class="col-25">
+      <%= form.label :state %>
+    </div>
+    <div class="col-75">
+      <p><%= form.text_field :state, value: "Your state..." %></p>
+    </div>
+  </div>
 
-  <%= form.label :zipcode %>
-  <p><%= form.text_field :zipcode %></p>
+  <div class="row">
+    <div class="col-25">
+      <%= form.label :zipcode %>
+    </div>
+    <div class="col-75">
+      <p><%= form.text_field :zipcode, value: "Your zip code..." %></p>
+    </div>
+  </div>
 
   <%= form.hidden_field :access, value: 0 %>
 
-<div class="form-check form-check-inline">
-  <% @activities.sort_by(&:name).each do |activity| %>
-    <div id="activity-<%= activity.id %>">
-        <p><%= check_box_tag "activity[]", activity.name %>
-        <%= label_tag(:activity, "#{activity.name}") %></p>
-      </div>
-  <% end %>
+<div class="row">
+  <div class="bg-image d-flex justify-content-center">
+    <br>
+      Select Your Favorite Activities
+      <br><br>
+    </div>
+  </div>
+<div class="dropdown" data-control="checkbox-dropdown">
+  <div class="dropdown-list">
+    <% @activities.sort_by(&:name).each do |activity| %>
+      <label class="dropdown-option" id="activity-<%= activity.id %>">
+        <p><%= check_box_tag "activity[]", activity.name %><%= label_tag(:activity, "#{activity.name}") %></p>
+    </label>
+    <% end %>
+  </div>
 </div>
 
+<div class="row">
   <%= form.submit "Submit" %>
-
 <% end %>
+</div>
+
+</body>
+</html>
