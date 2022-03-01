@@ -3,7 +3,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    # @user = User.find(session[:user_id])
+    session_id = 1
+    @user = UserFacade.user_info(session_id)
   end
 
   def new
@@ -22,12 +23,22 @@ class UsersController < ApplicationController
   end
 
   def create
+<<<<<<< HEAD
     user = User.create(user_params)
     if user.save
       render(json: UserSerializer.new(User.update(params[:id], user_params)))
     else
       render :status => 404
     end
+=======
+    UserService.user_create(params)
+   # if @user.save
+   #    session[:user_id] = @user.id
+   #    redirect_to dashboard_path(@user.id)
+   #  else
+   #    render :new
+   #  end
+>>>>>>> 60d04ff5768736c03b37ee2ba5a476bf72519a23
   end
 
   def edit
@@ -67,9 +78,11 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
-private
 
+<<<<<<< HEAD
   def user_params
     params.require(:user).permit(:id, :user_name, :email, :street_address, :city, :state, :zipcode, :activity_preferences)
   end
+=======
+>>>>>>> 60d04ff5768736c03b37ee2ba5a476bf72519a23
 end

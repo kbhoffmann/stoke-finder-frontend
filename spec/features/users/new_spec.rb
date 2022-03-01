@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'New User Page' do
-  describe 'view', :vcr do
-    it 'has links to home, login, register and search' do
+  describe 'view' do
+    it 'has links to home, login, register and search', :vcr do
       visit "/register"
       click_link "Home"
       expect(current_path).to eq("/")
@@ -16,11 +16,14 @@ RSpec.describe 'New User Page' do
       expect(current_path).to eq("/adventures/search")
     end
 
-    xit 'has a title and fields to fill out for new users' do
+    it 'has a title and fields to fill out for new users' do
+      VCR.turn_off!
+      WebMock.enable_net_connect!
       visit "/register"
 
+
       expect(page).to have_content("Create a New Account")
-      fill_in :user_name, with: 'Robin'
+       fill_in :user_name, with: 'Robin'
          #need to keep email or take from oauth??
        fill_in :email, with: 'robin@email.com'
        fill_in :password, with: 'password12345'
