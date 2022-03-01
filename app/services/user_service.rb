@@ -14,15 +14,15 @@ class UserService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.user_update(attributes)
-    response = conn.patch("/api/v1/users", attributes.to_json, "CONTENT_TYPE" => "application/json")
+  def self.user_update(attributes, session_user_id)
+    response = conn.patch("/api/v1/users/#{session_user_id}", attributes.to_json, "CONTENT_TYPE" => "application/json")
     JSON.parse(response.body, symbolize_names: true)
   end
+
   # def self.user_adventures(user_id)
   #   response = conn.get("/api/v1/users/#{user_id}/adventures")
   #   JSON.parse(response.body, symbolize_names: true)
   # end
-
 
   def self.conn
     Faraday.new("https://arcane-sands-07034.herokuapp.com")

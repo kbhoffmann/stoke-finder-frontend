@@ -43,12 +43,15 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = UserFacade.user_update(user_params)
-    if @user.update_attributes(user_params)
-      flash[:success] = "Your Information Was Updated"
+    @user = UserFacade.user_update(user_params, session[:user_id])
+    if @user[:data][:id]
+      flash[:success] = "Your Profile Has Been Updated!"
       redirect_to dashboard_path
+    elsif @user[:status] == "ERROR"
+      flash[:error] = new_user[:message]
+      redirect_to "/edit"
     else
-      render action: :edit
+      redirect_to "/edit"
     end
   end
 
@@ -77,8 +80,11 @@ class UsersController < ApplicationController
 
 private
   def user_params
+    params["id"] = session[:user_id]
     params["access"] = params["access"].to_i
-    params["activity_preferences"] = params["activity_preferences"].join(" ")
-    params.permit(:user_name, :email, :password, :password_confirmation, :access, :street_address, :city, :state, :zipcode, :activity_preferences)
+    if params["activity_preferences"].class == Array
+      params["activity_preferences"] = params["activity_preferences"].join(" ")
+    end
+    params.permit(:id, :user_name, :email, :password, :password_confirmation, :access, :street_address, :city, :state, :zipcode, :activity_preferences)
   end
 end

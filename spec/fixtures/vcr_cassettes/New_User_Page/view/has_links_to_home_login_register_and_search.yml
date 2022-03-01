@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Tue, 01 Mar 2022 18:56:11 GMT
+      - Tue, 01 Mar 2022 23:00:26 GMT
       X-Amz-Apigw-Id:
-      - OUXbuFmxPHcFY2w=
+      - OU7NoF3rvHcFj0g=
       X-Amzn-Trace-Id:
-      - Root=1-621e6c4a-a6ded59f6c9cac79bdf05fab;Sampled=0
+      - Root=1-621ea58a-8d22f78334582152b6a2987a;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 1ee8c8c1-36b2-4f09-bb11-7648ae4dc279
+      - fbfb2230-a9d0-4e84-b35f-392c38cc09cd
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 30ea845097208edbc19305c535a5be98.cloudfront.net (CloudFront)
+      - 1.1 5539e869b7b6ea60eddee5f69c9a0d9c.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - ms-O8bpAqQe75EJzp8ZceZa0z_1tHyoqm6cSXhjiwCrVVmZJd6YCWQ==
+      - clE1X3va4qIzrrLBurEYYT_24Ya1UBb9wNtVmhb9mJlLr2bvUlv6Hg==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -167,7 +167,7 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Tue, 01 Mar 2022 18:56:11 GMT
+  recorded_at: Tue, 01 Mar 2022 23:00:26 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/activities?limit=128&offset=0
@@ -197,11 +197,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Tue, 01 Mar 2022 18:56:11 GMT
+      - Tue, 01 Mar 2022 23:00:26 GMT
       X-Amz-Apigw-Id:
-      - OUXbzGjpPHcFjtA=
+      - OU7NtHl3vHcFS4Q=
       X-Amzn-Trace-Id:
-      - Root=1-621e6c4b-d5647070009b32e5ca99dd34;Sampled=0
+      - Root=1-621ea58a-7293395693696766c0b58966;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -237,175 +237,7 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 4391e0e7-d594-48f5-99c7-fff7a0fd7483
-      Vary:
-      - Accept-Encoding
-      X-Cache:
-      - Miss from cloudfront
-      Via:
-      - 1.1 187855e01bff01816fb7f2e5860898b6.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - DEN52-C1
-      X-Amz-Cf-Id:
-      - z2Rqy256BWUNslHVJY0B0mwQV9NyXXegLEQJLilElzOGRta-Fsd-GQ==
-    body:
-      encoding: ASCII-8BIT
-      string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
-        TOURING","ActivityLevel":0},{"ActivityID":5,"ActivityParentID":0,"ActivityName":"BIKING","ActivityLevel":0},{"ActivityID":6,"ActivityParentID":0,"ActivityName":"BOATING","ActivityLevel":0},{"ActivityID":7,"ActivityParentID":0,"ActivityName":"CLIMBING","ActivityLevel":0},{"ActivityID":8,"ActivityParentID":0,"ActivityName":"HISTORIC
-        \u0026 CULTURAL SITE","ActivityLevel":0},{"ActivityID":9,"ActivityParentID":0,"ActivityName":"CAMPING","ActivityLevel":0},{"ActivityID":10,"ActivityParentID":0,"ActivityName":"INTERPRETIVE
-        PROGRAMS","ActivityLevel":0},{"ActivityID":11,"ActivityParentID":0,"ActivityName":"FISHING","ActivityLevel":0},{"ActivityID":14,"ActivityParentID":0,"ActivityName":"HIKING","ActivityLevel":0},{"ActivityID":15,"ActivityParentID":0,"ActivityName":"HORSEBACK
-        RIDING","ActivityLevel":0},{"ActivityID":16,"ActivityParentID":0,"ActivityName":"HUNTING","ActivityLevel":0},{"ActivityID":18,"ActivityParentID":0,"ActivityName":"OFF
-        HIGHWAY VEHICLE","ActivityLevel":0},{"ActivityID":20,"ActivityParentID":0,"ActivityName":"PICNICKING","ActivityLevel":0},{"ActivityID":22,"ActivityParentID":0,"ActivityName":"WINTER
-        SPORTS","ActivityLevel":0},{"ActivityID":23,"ActivityParentID":0,"ActivityName":"RECREATIONAL
-        VEHICLES","ActivityLevel":0},{"ActivityID":24,"ActivityParentID":0,"ActivityName":"VISITOR
-        CENTER","ActivityLevel":0},{"ActivityID":25,"ActivityParentID":0,"ActivityName":"WATER
-        SPORTS","ActivityLevel":0},{"ActivityID":26,"ActivityParentID":0,"ActivityName":"WILDLIFE
-        VIEWING","ActivityLevel":0},{"ActivityID":27,"ActivityParentID":0,"ActivityName":"FISH
-        HATCHERY","ActivityLevel":0},{"ActivityID":28,"ActivityParentID":0,"ActivityName":"WILDERNESS","ActivityLevel":0},{"ActivityID":30,"ActivityParentID":0,"ActivityName":"FIRE
-        LOOKOUTS/CABINS OVERNIGHT","ActivityLevel":0},{"ActivityID":31,"ActivityParentID":0,"ActivityName":"FISH
-        VIEWING SITE","ActivityLevel":0},{"ActivityID":32,"ActivityParentID":0,"ActivityName":"DAY
-        USE AREA","ActivityLevel":0},{"ActivityID":33,"ActivityParentID":0,"ActivityName":"DOCUMENTARY
-        SITE","ActivityLevel":0},{"ActivityID":34,"ActivityParentID":0,"ActivityName":"SWIMMING
-        SITE","ActivityLevel":0},{"ActivityID":35,"ActivityParentID":0,"ActivityName":"ORGANIZATION
-        SITE PRIVATELY OWNED","ActivityLevel":0},{"ActivityID":36,"ActivityParentID":0,"ActivityName":"ORGANIZATION
-        SITE FS OWNED","ActivityLevel":0},{"ActivityID":37,"ActivityParentID":0,"ActivityName":"PLAYGROUND
-        PARK SPECIALIZED SPORT SITE","ActivityLevel":0},{"ActivityID":38,"ActivityParentID":0,"ActivityName":"OTHER
-        RECREATION CONCESSION SITE","ActivityLevel":0},{"ActivityID":39,"ActivityParentID":0,"ActivityName":"OBSERVATION
-        SITE","ActivityLevel":0},{"ActivityID":40,"ActivityParentID":0,"ActivityName":"HOTEL/LODGE/RESORT
-        FS OWNED","ActivityLevel":0},{"ActivityID":41,"ActivityParentID":0,"ActivityName":"INFORMATION
-        SITE","ActivityLevel":0},{"ActivityID":42,"ActivityParentID":0,"ActivityName":"RECREATION
-        RESIDENCE","ActivityLevel":0},{"ActivityID":43,"ActivityParentID":0,"ActivityName":"SNOWPARK","ActivityLevel":0},{"ActivityID":44,"ActivityParentID":0,"ActivityName":"HOTEL/LODGE/RESORT
-        PRIVATELY OWNED","ActivityLevel":0},{"ActivityID":103,"ActivityParentID":0,"ActivityName":"ENVIRONMENTAL
-        EDUCATION","ActivityLevel":0},{"ActivityID":104,"ActivityParentID":0,"ActivityName":"PHOTOGRAPHY","ActivityLevel":0},{"ActivityID":105,"ActivityParentID":0,"ActivityName":"PADDLING","ActivityLevel":0},{"ActivityID":106,"ActivityParentID":0,"ActivityName":"SWIMMING","ActivityLevel":0},{"ActivityID":107,"ActivityParentID":0,"ActivityName":"DIVING","ActivityLevel":0},{"ActivityID":108,"ActivityParentID":0,"ActivityName":"SNORKELING","ActivityLevel":0},{"ActivityID":109,"ActivityParentID":0,"ActivityName":"HORSE
-        CAMPING","ActivityLevel":0},{"ActivityID":110,"ActivityParentID":0,"ActivityName":"RECREATIONAL
-        SHOOTING","ActivityLevel":0},{"ActivityID":100000,"ActivityParentID":0,"ActivityName":"MOTOR
-        BOAT","ActivityLevel":0},{"ActivityID":100001,"ActivityParentID":0,"ActivityName":"SNOWMOBILE","ActivityLevel":0},{"ActivityID":100002,"ActivityParentID":0,"ActivityName":"MOUNTAIN
-        BIKING","ActivityLevel":0},{"ActivityID":100003,"ActivityParentID":0,"ActivityName":"OFF
-        ROAD VEHICLE TRAILS","ActivityLevel":0},{"ActivityID":100004,"ActivityParentID":0,"ActivityName":"RANGER
-        STATION","ActivityLevel":0},{"ActivityID":100005,"ActivityParentID":0,"ActivityName":"PADDLE
-        BOATING","ActivityLevel":0},{"ActivityID":100006,"ActivityParentID":0,"ActivityName":"WATER
-        ACTIVITIES","ActivityLevel":0},{"ActivityID":100007,"ActivityParentID":0,"ActivityName":"KAYAKING","ActivityLevel":0},{"ActivityID":100008,"ActivityParentID":0,"ActivityName":"CANOEING","ActivityLevel":0},{"ActivityID":100009,"ActivityParentID":0,"ActivityName":"BERRY
-        PICKING","ActivityLevel":0},{"ActivityID":100010,"ActivityParentID":0,"ActivityName":"BEACH
-        CAMPING","ActivityLevel":0},{"ActivityID":100011,"ActivityParentID":0,"ActivityName":"BEACHCOMBING","ActivityLevel":0},{"ActivityID":100012,"ActivityParentID":0,"ActivityName":"CLAM
-        DIGGING","ActivityLevel":0},{"ActivityID":100013,"ActivityParentID":0,"ActivityName":"CRABBING","ActivityLevel":0},{"ActivityID":100014,"ActivityParentID":0,"ActivityName":"SEA
-        KAYAKING","ActivityLevel":0},{"ActivityID":100015,"ActivityParentID":0,"ActivityName":"STAR
-        GAZING","ActivityLevel":0},{"ActivityID":100016,"ActivityParentID":0,"ActivityName":"SURFING","ActivityLevel":0},{"ActivityID":100017,"ActivityParentID":0,"ActivityName":"BIRDING","ActivityLevel":0},{"ActivityID":100018,"ActivityParentID":0,"ActivityName":"NON-MOTORIZED
-        BOATING","ActivityLevel":0},{"ActivityID":100019,"ActivityParentID":0,"ActivityName":"WATER
-        ACCESS","ActivityLevel":0},{"ActivityID":100020,"ActivityParentID":0,"ActivityName":"CROSS
-        COUNTRY SKIING","ActivityLevel":0},{"ActivityID":100021,"ActivityParentID":0,"ActivityName":"ANTIQUING","ActivityLevel":0},{"ActivityID":100022,"ActivityParentID":0,"ActivityName":"JET
-        SKIING","ActivityLevel":0},{"ActivityID":100023,"ActivityParentID":0,"ActivityName":"WATER
-        SKIING","ActivityLevel":0},{"ActivityID":100024,"ActivityParentID":0,"ActivityName":"DISC
-        GOLF","ActivityLevel":0},{"ActivityID":100025,"ActivityParentID":0,"ActivityName":"CULTURAL
-        ACTIVITIES","ActivityLevel":0},{"ActivityID":100026,"ActivityParentID":0,"ActivityName":"EVENING
-        PROGRAMS","ActivityLevel":0},{"ActivityID":100027,"ActivityParentID":0,"ActivityName":"GUIDED
-        INTERPRETIVE WALKS","ActivityLevel":0},{"ActivityID":100028,"ActivityParentID":0,"ActivityName":"RECREATION
-        PROGRAMS","ActivityLevel":0},{"ActivityID":100029,"ActivityParentID":0,"ActivityName":"SCENIC
-        DRIVE","ActivityLevel":0},{"ActivityID":100030,"ActivityParentID":0,"ActivityName":"WINDSURFING","ActivityLevel":0},{"ActivityID":100031,"ActivityParentID":0,"ActivityName":"GOLD
-        PANNING","ActivityLevel":0},{"ActivityID":100032,"ActivityParentID":0,"ActivityName":"RAFTING","ActivityLevel":0},{"ActivityID":100033,"ActivityParentID":0,"ActivityName":"RIVER
-        TRIPS","ActivityLevel":0},{"ActivityID":100034,"ActivityParentID":0,"ActivityName":"WHITEWATER
-        RAFTING","ActivityLevel":0},{"ActivityID":100035,"ActivityParentID":0,"ActivityName":"ICE
-        CLIMBING","ActivityLevel":0},{"ActivityID":100036,"ActivityParentID":0,"ActivityName":"BACKPACKING","ActivityLevel":0},{"ActivityID":100037,"ActivityParentID":0,"ActivityName":"SAILING","ActivityLevel":0},{"ActivityID":100038,"ActivityParentID":0,"ActivityName":"SCUBA
-        DIVING","ActivityLevel":0},{"ActivityID":100039,"ActivityParentID":0,"ActivityName":"WHALE
-        WATCHING","ActivityLevel":0},{"ActivityID":100040,"ActivityParentID":0,"ActivityName":"MOUNTAIN
-        CLIMBING","ActivityLevel":0},{"ActivityID":100041,"ActivityParentID":0,"ActivityName":"ROCK
-        CLIMBING","ActivityLevel":0},{"ActivityID":100042,"ActivityParentID":0,"ActivityName":"MUSHROOM
-        PICKING","ActivityLevel":0},{"ActivityID":100043,"ActivityParentID":0,"ActivityName":"AMPHITHEATER","ActivityLevel":0},{"ActivityID":100044,"ActivityParentID":0,"ActivityName":"EDUCATIONAL
-        PROGRAMS","ActivityLevel":0},{"ActivityID":100045,"ActivityParentID":0,"ActivityName":"TUBING","ActivityLevel":0},{"ActivityID":100046,"ActivityParentID":0,"ActivityName":"SNOWSHOEING","ActivityLevel":0},{"ActivityID":100047,"ActivityParentID":0,"ActivityName":"ARCHERY","ActivityLevel":0},{"ActivityID":100048,"ActivityParentID":0,"ActivityName":"HISTORIC
-        SITES","ActivityLevel":0},{"ActivityID":100049,"ActivityParentID":0,"ActivityName":"ACCESSIBLE
-        SWIMMING","ActivityLevel":0},{"ActivityID":100050,"ActivityParentID":0,"ActivityName":"SOFTBALL
-        FIELDS","ActivityLevel":0},{"ActivityID":100051,"ActivityParentID":0,"ActivityName":"SNOWMOBILING","ActivityLevel":0},{"ActivityID":100052,"ActivityParentID":0,"ActivityName":"LOOKOUT
-        TOWER","ActivityLevel":0},{"ActivityID":100053,"ActivityParentID":0,"ActivityName":"SLEDDING","ActivityLevel":0},{"ActivityID":100054,"ActivityParentID":0,"ActivityName":"DOWNHILL
-        SKIING","ActivityLevel":0},{"ActivityID":100055,"ActivityParentID":0,"ActivityName":"SKIING","ActivityLevel":0},{"ActivityID":100056,"ActivityParentID":0,"ActivityName":"SNOWMOBILE
-        TRAILS","ActivityLevel":0},{"ActivityID":100057,"ActivityParentID":0,"ActivityName":"SNOWBOARDING","ActivityLevel":0},{"ActivityID":100058,"ActivityParentID":0,"ActivityName":"WOOD
-        CUTTING","ActivityLevel":0},{"ActivityID":100059,"ActivityParentID":0,"ActivityName":"ICE
-        FISHING","ActivityLevel":0},{"ActivityID":100060,"ActivityParentID":0,"ActivityName":"CRAWFISHING","ActivityLevel":0},{"ActivityID":100061,"ActivityParentID":0,"ActivityName":"BIRD
-        WATCHING","ActivityLevel":0},{"ActivityID":100062,"ActivityParentID":0,"ActivityName":"WILD
-        HORSE VIEWING","ActivityLevel":0},{"ActivityID":100063,"ActivityParentID":0,"ActivityName":"OFF
-        HIGHWAY VEHICLE TRAILS","ActivityLevel":0},{"ActivityID":100064,"ActivityParentID":0,"ActivityName":"BADMINTON","ActivityLevel":0},{"ActivityID":100065,"ActivityParentID":0,"ActivityName":"PICNIC
-        TABLES","ActivityLevel":0},{"ActivityID":100066,"ActivityParentID":0,"ActivityName":"HIKING
-        TRAIL","ActivityLevel":0},{"ActivityID":100067,"ActivityParentID":0,"ActivityName":"ICE
-        SKATING","ActivityLevel":0},{"ActivityID":100068,"ActivityParentID":0,"ActivityName":"SNOW
-        TUBING","ActivityLevel":0},{"ActivityID":100069,"ActivityParentID":0,"ActivityName":"MARINA","ActivityLevel":0},{"ActivityID":100070,"ActivityParentID":0,"ActivityName":"SOCCER
-        FIELDS","ActivityLevel":0},{"ActivityID":100071,"ActivityParentID":0,"ActivityName":"EMERGENCY
-        SERVICES","ActivityLevel":0},{"ActivityID":100072,"ActivityParentID":0,"ActivityName":"MUSEUM","ActivityLevel":0},{"ActivityID":100073,"ActivityParentID":0,"ActivityName":"SAILBOARDING","ActivityLevel":0},{"ActivityID":100074,"ActivityParentID":0,"ActivityName":"TRAILS,
-        ALL TERRAIN/OHV","ActivityLevel":0},{"ActivityID":100075,"ActivityParentID":0,"ActivityName":"TRAILS,
-        HORSE","ActivityLevel":0},{"ActivityID":100076,"ActivityParentID":0,"ActivityName":"TRAILS,
-        DIFFICULT HIKING","ActivityLevel":0},{"ActivityID":100077,"ActivityParentID":0,"ActivityName":"BOAT
-        RENTAL","ActivityLevel":0},{"ActivityID":100078,"ActivityParentID":0,"ActivityName":"GONDOLA
-        RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
-        TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
-        BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Tue, 01 Mar 2022 18:56:11 GMT
-- request:
-    method: get
-    uri: https://ridb.recreation.gov/api/v1/activities?limit=128&offset=0
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Apikey:
-      - apiKey
-      User-Agent:
-      - Faraday v2.2.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Server:
-      - Server
-      Date:
-      - Tue, 01 Mar 2022 18:56:11 GMT
-      X-Amz-Apigw-Id:
-      - OUXb3GI6PHcFzww=
-      X-Amzn-Trace-Id:
-      - Root=1-621e6c4b-53790fb1f2ce8c967962bb4b;Sampled=0
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubdomains; always
-      Access-Control-Allow-Methods:
-      - "*"
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - max_age=600,public,stale-if-error=3600
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Security-Policy:
-      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
-        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
-        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
-        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
-        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
-        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
-        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
-        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
-        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
-        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
-        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
-        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
-        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
-        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
-        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
-        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
-        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
-        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
-        worker-src ''self'' blob: ;'
-      X-Amzn-Requestid:
-      - 9eb3af00-2b18-4d82-a32e-6cd3930129c0
+      - e3221c40-b404-4029-91e4-27f716d5eca7
       Vary:
       - Accept-Encoding
       X-Cache:
@@ -415,7 +247,7 @@ http_interactions:
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - qXdSiRf-QF9Vq2WI9ARiRuEK87BiN2d9wUueXU1IYwTKesEBArYGSA==
+      - Kc9QYfbynCNe8Vox_YJ_7ZwwKWM9UoIaj8D3eVVCCHNA7kNvVh6VPg==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -503,7 +335,7 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Tue, 01 Mar 2022 18:56:11 GMT
+  recorded_at: Tue, 01 Mar 2022 23:00:26 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/activities?limit=128&offset=0
@@ -533,11 +365,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Tue, 01 Mar 2022 18:56:12 GMT
+      - Tue, 01 Mar 2022 23:00:27 GMT
       X-Amz-Apigw-Id:
-      - OUXb6FyxPHcFQPg=
+      - OU7N3FgbPHcFS4w=
       X-Amzn-Trace-Id:
-      - Root=1-621e6c4c-90863ff58655aa25db6c2090;Sampled=0
+      - Root=1-621ea58b-f626e942a48ff029c060d619;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -573,17 +405,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - ad2db4d9-0e98-48b9-b6d6-79cac53da227
+      - 27d12725-fd7f-449d-9292-50b1bc883da7
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 20ebec22e4be2753f048f31dfe94e426.cloudfront.net (CloudFront)
+      - 1.1 5950a1c2bfcf1f3e07bedbb2efad39f2.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - ennJ9u2x95_juUc5LvwgW-Ze5QNUi9rxE3TTyxWGZMIcrdSlLnkYug==
+      - zp5epY24tmAnBrbNxwc7gkJsJR4CNKSUW5MiBgdpjzsoZxQcuTp2nA==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -671,7 +503,7 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Tue, 01 Mar 2022 18:56:12 GMT
+  recorded_at: Tue, 01 Mar 2022 23:00:27 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/activities?limit=128&offset=0
@@ -701,11 +533,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Tue, 01 Mar 2022 18:56:12 GMT
+      - Tue, 01 Mar 2022 23:00:28 GMT
       X-Amz-Apigw-Id:
-      - OUXb-HFFPHcFzlQ=
+      - OU7N7EzdPHcF6ww=
       X-Amzn-Trace-Id:
-      - Root=1-621e6c4c-e37a3d1ec98d5c43c2304db0;Sampled=0
+      - Root=1-621ea58c-9bf4e6f43673b978aedd3b81;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -741,17 +573,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - d58a78bf-2351-4047-9659-075ee718555d
+      - 1832a624-eda5-4c84-9196-a6dfb506982d
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 17a5b9b0c17eb15303e6341f5fc26610.cloudfront.net (CloudFront)
+      - 1.1 e466a87164c3f9591e3c8ac45a4b2074.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - Zgsq0xazOUNPa-UXkMHS51TfuJj46R_pZgLq5IKVb7RfIG4qi3ghxw==
+      - xAdSsnAbs0awamI4DGS2C-BFfKXrj77W4iIxK7LZEchy-bN8nBACYw==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -839,5 +671,173 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Tue, 01 Mar 2022 18:56:12 GMT
+  recorded_at: Tue, 01 Mar 2022 23:00:28 GMT
+- request:
+    method: get
+    uri: https://ridb.recreation.gov/api/v1/activities?limit=128&offset=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - apiKey
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Server
+      Date:
+      - Tue, 01 Mar 2022 23:00:28 GMT
+      X-Amz-Apigw-Id:
+      - OU7OAFd_vHcFdlA=
+      X-Amzn-Trace-Id:
+      - Root=1-621ea58c-ee30974f3980a2881688d6aa;Sampled=0
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; always
+      Access-Control-Allow-Methods:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max_age=600,public,stale-if-error=3600
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
+        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
+        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
+        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
+        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
+        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
+        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
+        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
+        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
+        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
+        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
+        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
+        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
+        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
+        worker-src ''self'' blob: ;'
+      X-Amzn-Requestid:
+      - c6714bd8-0b1b-456b-9252-6b89cd34648a
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 be7f6ce4397843276657a8babac08b6e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-C1
+      X-Amz-Cf-Id:
+      - Na88IDZJxv-iZlbqmcvug7EvUBUM4R7WPvTmNBFaNrxWr55MpEF7Jw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
+        TOURING","ActivityLevel":0},{"ActivityID":5,"ActivityParentID":0,"ActivityName":"BIKING","ActivityLevel":0},{"ActivityID":6,"ActivityParentID":0,"ActivityName":"BOATING","ActivityLevel":0},{"ActivityID":7,"ActivityParentID":0,"ActivityName":"CLIMBING","ActivityLevel":0},{"ActivityID":8,"ActivityParentID":0,"ActivityName":"HISTORIC
+        \u0026 CULTURAL SITE","ActivityLevel":0},{"ActivityID":9,"ActivityParentID":0,"ActivityName":"CAMPING","ActivityLevel":0},{"ActivityID":10,"ActivityParentID":0,"ActivityName":"INTERPRETIVE
+        PROGRAMS","ActivityLevel":0},{"ActivityID":11,"ActivityParentID":0,"ActivityName":"FISHING","ActivityLevel":0},{"ActivityID":14,"ActivityParentID":0,"ActivityName":"HIKING","ActivityLevel":0},{"ActivityID":15,"ActivityParentID":0,"ActivityName":"HORSEBACK
+        RIDING","ActivityLevel":0},{"ActivityID":16,"ActivityParentID":0,"ActivityName":"HUNTING","ActivityLevel":0},{"ActivityID":18,"ActivityParentID":0,"ActivityName":"OFF
+        HIGHWAY VEHICLE","ActivityLevel":0},{"ActivityID":20,"ActivityParentID":0,"ActivityName":"PICNICKING","ActivityLevel":0},{"ActivityID":22,"ActivityParentID":0,"ActivityName":"WINTER
+        SPORTS","ActivityLevel":0},{"ActivityID":23,"ActivityParentID":0,"ActivityName":"RECREATIONAL
+        VEHICLES","ActivityLevel":0},{"ActivityID":24,"ActivityParentID":0,"ActivityName":"VISITOR
+        CENTER","ActivityLevel":0},{"ActivityID":25,"ActivityParentID":0,"ActivityName":"WATER
+        SPORTS","ActivityLevel":0},{"ActivityID":26,"ActivityParentID":0,"ActivityName":"WILDLIFE
+        VIEWING","ActivityLevel":0},{"ActivityID":27,"ActivityParentID":0,"ActivityName":"FISH
+        HATCHERY","ActivityLevel":0},{"ActivityID":28,"ActivityParentID":0,"ActivityName":"WILDERNESS","ActivityLevel":0},{"ActivityID":30,"ActivityParentID":0,"ActivityName":"FIRE
+        LOOKOUTS/CABINS OVERNIGHT","ActivityLevel":0},{"ActivityID":31,"ActivityParentID":0,"ActivityName":"FISH
+        VIEWING SITE","ActivityLevel":0},{"ActivityID":32,"ActivityParentID":0,"ActivityName":"DAY
+        USE AREA","ActivityLevel":0},{"ActivityID":33,"ActivityParentID":0,"ActivityName":"DOCUMENTARY
+        SITE","ActivityLevel":0},{"ActivityID":34,"ActivityParentID":0,"ActivityName":"SWIMMING
+        SITE","ActivityLevel":0},{"ActivityID":35,"ActivityParentID":0,"ActivityName":"ORGANIZATION
+        SITE PRIVATELY OWNED","ActivityLevel":0},{"ActivityID":36,"ActivityParentID":0,"ActivityName":"ORGANIZATION
+        SITE FS OWNED","ActivityLevel":0},{"ActivityID":37,"ActivityParentID":0,"ActivityName":"PLAYGROUND
+        PARK SPECIALIZED SPORT SITE","ActivityLevel":0},{"ActivityID":38,"ActivityParentID":0,"ActivityName":"OTHER
+        RECREATION CONCESSION SITE","ActivityLevel":0},{"ActivityID":39,"ActivityParentID":0,"ActivityName":"OBSERVATION
+        SITE","ActivityLevel":0},{"ActivityID":40,"ActivityParentID":0,"ActivityName":"HOTEL/LODGE/RESORT
+        FS OWNED","ActivityLevel":0},{"ActivityID":41,"ActivityParentID":0,"ActivityName":"INFORMATION
+        SITE","ActivityLevel":0},{"ActivityID":42,"ActivityParentID":0,"ActivityName":"RECREATION
+        RESIDENCE","ActivityLevel":0},{"ActivityID":43,"ActivityParentID":0,"ActivityName":"SNOWPARK","ActivityLevel":0},{"ActivityID":44,"ActivityParentID":0,"ActivityName":"HOTEL/LODGE/RESORT
+        PRIVATELY OWNED","ActivityLevel":0},{"ActivityID":103,"ActivityParentID":0,"ActivityName":"ENVIRONMENTAL
+        EDUCATION","ActivityLevel":0},{"ActivityID":104,"ActivityParentID":0,"ActivityName":"PHOTOGRAPHY","ActivityLevel":0},{"ActivityID":105,"ActivityParentID":0,"ActivityName":"PADDLING","ActivityLevel":0},{"ActivityID":106,"ActivityParentID":0,"ActivityName":"SWIMMING","ActivityLevel":0},{"ActivityID":107,"ActivityParentID":0,"ActivityName":"DIVING","ActivityLevel":0},{"ActivityID":108,"ActivityParentID":0,"ActivityName":"SNORKELING","ActivityLevel":0},{"ActivityID":109,"ActivityParentID":0,"ActivityName":"HORSE
+        CAMPING","ActivityLevel":0},{"ActivityID":110,"ActivityParentID":0,"ActivityName":"RECREATIONAL
+        SHOOTING","ActivityLevel":0},{"ActivityID":100000,"ActivityParentID":0,"ActivityName":"MOTOR
+        BOAT","ActivityLevel":0},{"ActivityID":100001,"ActivityParentID":0,"ActivityName":"SNOWMOBILE","ActivityLevel":0},{"ActivityID":100002,"ActivityParentID":0,"ActivityName":"MOUNTAIN
+        BIKING","ActivityLevel":0},{"ActivityID":100003,"ActivityParentID":0,"ActivityName":"OFF
+        ROAD VEHICLE TRAILS","ActivityLevel":0},{"ActivityID":100004,"ActivityParentID":0,"ActivityName":"RANGER
+        STATION","ActivityLevel":0},{"ActivityID":100005,"ActivityParentID":0,"ActivityName":"PADDLE
+        BOATING","ActivityLevel":0},{"ActivityID":100006,"ActivityParentID":0,"ActivityName":"WATER
+        ACTIVITIES","ActivityLevel":0},{"ActivityID":100007,"ActivityParentID":0,"ActivityName":"KAYAKING","ActivityLevel":0},{"ActivityID":100008,"ActivityParentID":0,"ActivityName":"CANOEING","ActivityLevel":0},{"ActivityID":100009,"ActivityParentID":0,"ActivityName":"BERRY
+        PICKING","ActivityLevel":0},{"ActivityID":100010,"ActivityParentID":0,"ActivityName":"BEACH
+        CAMPING","ActivityLevel":0},{"ActivityID":100011,"ActivityParentID":0,"ActivityName":"BEACHCOMBING","ActivityLevel":0},{"ActivityID":100012,"ActivityParentID":0,"ActivityName":"CLAM
+        DIGGING","ActivityLevel":0},{"ActivityID":100013,"ActivityParentID":0,"ActivityName":"CRABBING","ActivityLevel":0},{"ActivityID":100014,"ActivityParentID":0,"ActivityName":"SEA
+        KAYAKING","ActivityLevel":0},{"ActivityID":100015,"ActivityParentID":0,"ActivityName":"STAR
+        GAZING","ActivityLevel":0},{"ActivityID":100016,"ActivityParentID":0,"ActivityName":"SURFING","ActivityLevel":0},{"ActivityID":100017,"ActivityParentID":0,"ActivityName":"BIRDING","ActivityLevel":0},{"ActivityID":100018,"ActivityParentID":0,"ActivityName":"NON-MOTORIZED
+        BOATING","ActivityLevel":0},{"ActivityID":100019,"ActivityParentID":0,"ActivityName":"WATER
+        ACCESS","ActivityLevel":0},{"ActivityID":100020,"ActivityParentID":0,"ActivityName":"CROSS
+        COUNTRY SKIING","ActivityLevel":0},{"ActivityID":100021,"ActivityParentID":0,"ActivityName":"ANTIQUING","ActivityLevel":0},{"ActivityID":100022,"ActivityParentID":0,"ActivityName":"JET
+        SKIING","ActivityLevel":0},{"ActivityID":100023,"ActivityParentID":0,"ActivityName":"WATER
+        SKIING","ActivityLevel":0},{"ActivityID":100024,"ActivityParentID":0,"ActivityName":"DISC
+        GOLF","ActivityLevel":0},{"ActivityID":100025,"ActivityParentID":0,"ActivityName":"CULTURAL
+        ACTIVITIES","ActivityLevel":0},{"ActivityID":100026,"ActivityParentID":0,"ActivityName":"EVENING
+        PROGRAMS","ActivityLevel":0},{"ActivityID":100027,"ActivityParentID":0,"ActivityName":"GUIDED
+        INTERPRETIVE WALKS","ActivityLevel":0},{"ActivityID":100028,"ActivityParentID":0,"ActivityName":"RECREATION
+        PROGRAMS","ActivityLevel":0},{"ActivityID":100029,"ActivityParentID":0,"ActivityName":"SCENIC
+        DRIVE","ActivityLevel":0},{"ActivityID":100030,"ActivityParentID":0,"ActivityName":"WINDSURFING","ActivityLevel":0},{"ActivityID":100031,"ActivityParentID":0,"ActivityName":"GOLD
+        PANNING","ActivityLevel":0},{"ActivityID":100032,"ActivityParentID":0,"ActivityName":"RAFTING","ActivityLevel":0},{"ActivityID":100033,"ActivityParentID":0,"ActivityName":"RIVER
+        TRIPS","ActivityLevel":0},{"ActivityID":100034,"ActivityParentID":0,"ActivityName":"WHITEWATER
+        RAFTING","ActivityLevel":0},{"ActivityID":100035,"ActivityParentID":0,"ActivityName":"ICE
+        CLIMBING","ActivityLevel":0},{"ActivityID":100036,"ActivityParentID":0,"ActivityName":"BACKPACKING","ActivityLevel":0},{"ActivityID":100037,"ActivityParentID":0,"ActivityName":"SAILING","ActivityLevel":0},{"ActivityID":100038,"ActivityParentID":0,"ActivityName":"SCUBA
+        DIVING","ActivityLevel":0},{"ActivityID":100039,"ActivityParentID":0,"ActivityName":"WHALE
+        WATCHING","ActivityLevel":0},{"ActivityID":100040,"ActivityParentID":0,"ActivityName":"MOUNTAIN
+        CLIMBING","ActivityLevel":0},{"ActivityID":100041,"ActivityParentID":0,"ActivityName":"ROCK
+        CLIMBING","ActivityLevel":0},{"ActivityID":100042,"ActivityParentID":0,"ActivityName":"MUSHROOM
+        PICKING","ActivityLevel":0},{"ActivityID":100043,"ActivityParentID":0,"ActivityName":"AMPHITHEATER","ActivityLevel":0},{"ActivityID":100044,"ActivityParentID":0,"ActivityName":"EDUCATIONAL
+        PROGRAMS","ActivityLevel":0},{"ActivityID":100045,"ActivityParentID":0,"ActivityName":"TUBING","ActivityLevel":0},{"ActivityID":100046,"ActivityParentID":0,"ActivityName":"SNOWSHOEING","ActivityLevel":0},{"ActivityID":100047,"ActivityParentID":0,"ActivityName":"ARCHERY","ActivityLevel":0},{"ActivityID":100048,"ActivityParentID":0,"ActivityName":"HISTORIC
+        SITES","ActivityLevel":0},{"ActivityID":100049,"ActivityParentID":0,"ActivityName":"ACCESSIBLE
+        SWIMMING","ActivityLevel":0},{"ActivityID":100050,"ActivityParentID":0,"ActivityName":"SOFTBALL
+        FIELDS","ActivityLevel":0},{"ActivityID":100051,"ActivityParentID":0,"ActivityName":"SNOWMOBILING","ActivityLevel":0},{"ActivityID":100052,"ActivityParentID":0,"ActivityName":"LOOKOUT
+        TOWER","ActivityLevel":0},{"ActivityID":100053,"ActivityParentID":0,"ActivityName":"SLEDDING","ActivityLevel":0},{"ActivityID":100054,"ActivityParentID":0,"ActivityName":"DOWNHILL
+        SKIING","ActivityLevel":0},{"ActivityID":100055,"ActivityParentID":0,"ActivityName":"SKIING","ActivityLevel":0},{"ActivityID":100056,"ActivityParentID":0,"ActivityName":"SNOWMOBILE
+        TRAILS","ActivityLevel":0},{"ActivityID":100057,"ActivityParentID":0,"ActivityName":"SNOWBOARDING","ActivityLevel":0},{"ActivityID":100058,"ActivityParentID":0,"ActivityName":"WOOD
+        CUTTING","ActivityLevel":0},{"ActivityID":100059,"ActivityParentID":0,"ActivityName":"ICE
+        FISHING","ActivityLevel":0},{"ActivityID":100060,"ActivityParentID":0,"ActivityName":"CRAWFISHING","ActivityLevel":0},{"ActivityID":100061,"ActivityParentID":0,"ActivityName":"BIRD
+        WATCHING","ActivityLevel":0},{"ActivityID":100062,"ActivityParentID":0,"ActivityName":"WILD
+        HORSE VIEWING","ActivityLevel":0},{"ActivityID":100063,"ActivityParentID":0,"ActivityName":"OFF
+        HIGHWAY VEHICLE TRAILS","ActivityLevel":0},{"ActivityID":100064,"ActivityParentID":0,"ActivityName":"BADMINTON","ActivityLevel":0},{"ActivityID":100065,"ActivityParentID":0,"ActivityName":"PICNIC
+        TABLES","ActivityLevel":0},{"ActivityID":100066,"ActivityParentID":0,"ActivityName":"HIKING
+        TRAIL","ActivityLevel":0},{"ActivityID":100067,"ActivityParentID":0,"ActivityName":"ICE
+        SKATING","ActivityLevel":0},{"ActivityID":100068,"ActivityParentID":0,"ActivityName":"SNOW
+        TUBING","ActivityLevel":0},{"ActivityID":100069,"ActivityParentID":0,"ActivityName":"MARINA","ActivityLevel":0},{"ActivityID":100070,"ActivityParentID":0,"ActivityName":"SOCCER
+        FIELDS","ActivityLevel":0},{"ActivityID":100071,"ActivityParentID":0,"ActivityName":"EMERGENCY
+        SERVICES","ActivityLevel":0},{"ActivityID":100072,"ActivityParentID":0,"ActivityName":"MUSEUM","ActivityLevel":0},{"ActivityID":100073,"ActivityParentID":0,"ActivityName":"SAILBOARDING","ActivityLevel":0},{"ActivityID":100074,"ActivityParentID":0,"ActivityName":"TRAILS,
+        ALL TERRAIN/OHV","ActivityLevel":0},{"ActivityID":100075,"ActivityParentID":0,"ActivityName":"TRAILS,
+        HORSE","ActivityLevel":0},{"ActivityID":100076,"ActivityParentID":0,"ActivityName":"TRAILS,
+        DIFFICULT HIKING","ActivityLevel":0},{"ActivityID":100077,"ActivityParentID":0,"ActivityName":"BOAT
+        RENTAL","ActivityLevel":0},{"ActivityID":100078,"ActivityParentID":0,"ActivityName":"GONDOLA
+        RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
+        TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
+        BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
+  recorded_at: Tue, 01 Mar 2022 23:00:28 GMT
 recorded_with: VCR 6.0.0

@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'User Edit Page' do
   it 'can update the user attributes', :vcr do
+
     visit "/register"
 
     user = Faker::Name.first_name
