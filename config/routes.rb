@@ -16,5 +16,5 @@ Rails.application.routes.draw do
   get 'adventures/search', to: 'adventures#search'
 
   get '/areas', to: 'areas#index'
-
+  get '/areas/:id', to: 'areas#show'
 end
