@@ -3,8 +3,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    session_id = 1
-    @user = UserFacade.user_info(session_id)
+    @user = UserFacade.user_info(session[:user_id])
   end
 
   def new
@@ -27,13 +26,14 @@ class UsersController < ApplicationController
 
     if new_user[:data][:id]
       user = User.new(new_user[:data])
+      session[:user_id] = user.id
       flash[:success] = "Your Profile Has Been Created!"
       redirect_to dashboard_path(user)
     elsif new_user[:status] == "ERROR"
       flash[:error] = new_user[:message]
-      render :new
+      redirect_to "/register"
     else
-      render :new
+      redirect_to "/register"
     end
   end
 
