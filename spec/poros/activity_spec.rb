@@ -1,6 +1,6 @@
 require 'rails_helper'
 RSpec.describe Activity do
-  xit "turns parsed JSON into activity obj" do
+  it "turns parsed JSON into activity obj" do
     data = {:ActivityID=>4,
             :ActivityParentID=>0,
             :ActivityName=>"AUTO TOURING",
