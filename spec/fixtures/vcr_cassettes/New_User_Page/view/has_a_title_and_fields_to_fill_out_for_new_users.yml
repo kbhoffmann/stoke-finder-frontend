@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Tue, 01 Mar 2022 05:04:04 GMT
+      - Tue, 01 Mar 2022 23:00:29 GMT
       X-Amz-Apigw-Id:
-      - OSdixEvLvHcFYvA=
+      - OU7OFHUqvHcFujw=
       X-Amzn-Trace-Id:
-      - Root=1-621da944-4085e590f6568683c93d7873;Sampled=0
+      - Root=1-621ea58d-f041490d11b582795bd23765;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 0733a5af-b1f1-4bdb-8ecf-a8ea25cde397
+      - e907dbae-869d-421e-9585-d6662db04a69
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 4f3feb5c4393987d42d1971d404d7cea.cloudfront.net (CloudFront)
+      - 1.1 a7bf7cf3a377b5000ee61eea3824eb74.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA19-C2
+      - DEN52-C1
       X-Amz-Cf-Id:
-      - 2tWKbmPQZ3UXGz5nDPth-kRkdI1wc233wreYDhAiucCieiVPh7Z4Fg==
+      - BKfA57YBipDxF3GkD0HKGFF-wSGAI6wckVtRtD3m-DIGZkrbxaSfwg==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -167,13 +167,13 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Tue, 01 Mar 2022 05:04:04 GMT
+  recorded_at: Tue, 01 Mar 2022 23:00:29 GMT
 - request:
     method: post
     uri: https://arcane-sands-07034.herokuapp.com/api/v1/users
     body:
       encoding: UTF-8
-      string: '{"user_name":"Robin7","email":"robin7@email.com","password":"password12345","password_confirmation":"password12345","access":0,"street_address":"1234
+      string: '{"id":null,"user_name":"Tamie","email":"Tamie@email.com","password":"password12345","password_confirmation":"password12345","access":0,"street_address":"1234
         Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
         SWIMMING SOFTBALL FIELDS"}'
     headers:
@@ -193,32 +193,32 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 01 Mar 2022 05:04:05 GMT
+      - Tue, 01 Mar 2022 23:00:30 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0946d19ecdda26349fdb83de5c4d91d0"
+      - W/"1099e587705c94a39a82d9bec5177c99"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3b9cfd99-9516-4549-b83d-511512dbb286
+      - e5cab7b4-e1a8-4d4b-8c05-83d25dbb3ada
       X-Runtime:
-      - '0.837581'
+      - '0.828622'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"10","type":"id","attributes":{"user_name":"Robin7","email":"robin7@email.com","street_address":"1234
+      string: '{"data":{"id":"58","type":"id","attributes":{"user_name":"Tamie","email":"Tamie@email.com","street_address":"1234
         Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
         SWIMMING SOFTBALL FIELDS","latitude":40.2277056,"longitude":-76.1313541}}}'
-  recorded_at: Tue, 01 Mar 2022 05:04:06 GMT
+  recorded_at: Tue, 01 Mar 2022 23:00:30 GMT
 - request:
     method: get
-    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/1
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/58
     body:
       encoding: US-ASCII
       string: ''
@@ -237,26 +237,71 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 01 Mar 2022 05:04:07 GMT
+      - Tue, 01 Mar 2022 23:00:31 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"8936e44e43f172716f3255dfcdf7445c"
+      - W/"1099e587705c94a39a82d9bec5177c99"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2fd37875-c8c3-4377-83c2-af576c5643c2
+      - 4127aae9-7b0f-473f-a46c-bc642acadb8e
       X-Runtime:
-      - '1.461112'
+      - '0.564211'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"id","attributes":{"user_name":"Borton Preekers","email":"borton@gmail.com","street_address":"123
-        Lane","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"Biking","latitude":39.71854302040816,"longitude":-104.95596330612246}}}'
-  recorded_at: Tue, 01 Mar 2022 05:04:08 GMT
+      string: '{"data":{"id":"58","type":"id","attributes":{"user_name":"Tamie","email":"Tamie@email.com","street_address":"1234
+        Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
+        SWIMMING SOFTBALL FIELDS","latitude":40.2277056,"longitude":-76.1313541}}}'
+  recorded_at: Tue, 01 Mar 2022 23:00:31 GMT
+- request:
+    method: get
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/58
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 01 Mar 2022 23:00:32 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"1099e587705c94a39a82d9bec5177c99"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bd8ed86f-3e0b-4aee-af5f-09a695be77b4
+      X-Runtime:
+      - '0.555913'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"58","type":"id","attributes":{"user_name":"Tamie","email":"Tamie@email.com","street_address":"1234
+        Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
+        SWIMMING SOFTBALL FIELDS","latitude":40.2277056,"longitude":-76.1313541}}}'
+  recorded_at: Tue, 01 Mar 2022 23:00:32 GMT
 recorded_with: VCR 6.0.0

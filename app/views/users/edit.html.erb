@@ -9,7 +9,6 @@ body {margin: 40px;}
   position: relative;
   font-size: 14px;
   color: #333;
-
   .dropdown-list {
     padding: 12px;
     background: #fff;
@@ -24,14 +23,12 @@ body {margin: 40px;}
     max-height: 66vh;
     overflow-y: scroll;
   }
-
   .dropdown-option {
     display: block;
     padding: 8px 12px;
     opacity: 0;
     transition: opacity .15s ease-in-out;
   }
-
   .dropdown-label {
     display: block;
     height: 30px;
@@ -41,7 +38,6 @@ body {margin: 40px;}
     line-height: 1;
     cursor: pointer;
   }
-
   &.on {
    .dropdown-list {
       transform: scale(1, 1);
@@ -49,7 +45,6 @@ body {margin: 40px;}
     }
   }
 }
-
 input[type=text], select, textarea {
   width: 100%;
   padding: 10px;
@@ -57,12 +52,10 @@ input[type=text], select, textarea {
   border-radius: 4px;
   resize: vertical;
 }
-
 label {
   padding: 0px 0px 0px 4px;
   display: inline-block;
 }
-
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
@@ -72,118 +65,103 @@ input[type=submit] {
   cursor: pointer;
   float: right;
 }
-
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #45A049;
 }
-
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   padding: 20px;
 }
-
 .col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
 }
-
 .col-75 {
   float: left;
   width: 75%;
   margin-top: 6px;
 }
-
 </style>
 </head>
 <body>
 <br><br>
 <div class="container">
 <div class="bg-image d-flex justify-content-center">
-  <h1>Edit User Account Info</h1>
+  <h1>Edit Your Account</h1>
   <br><br><br><br>
 </div>
-
-<%= form_with url: edit_user_path(@user), method: :patch, local: true do |form| %>
+<%= form_with url: "/update", method: :patch, local: true do |form| %>
   <div class="row">
     <div class="col-25">
       <%= form.label :user_name %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :user_name, value: "Edit your user_name..." %></p>
+      <p><%= form.text_field :user_name, value: @user.user_name %></p>
     </div>
   </div>
-
   <div class="row">
     <div class="col-25">
       <%= form.label :email %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :email, value: "Edit your email..." %></p>
+      <p><%= form.text_field :email, value: @user.email %></p>
     </div>
   </div>
-
   <div class="row">
     <div class="col-25">
       <%= form.label :password %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :password, value: "Edit your password..." %></p>
+      <p><%= form.text_field :password, value: "Enter New Password"%></p>
     </div>
   </div>
-
   <div class="row">
     <div class="col-25">
       <%= form.label :password_confirmation %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :password_confirmation, value: "Confirm your password..." %></p>
+      <p><%= form.text_field :password_confirmation, value: "Enter New Password" %></p>
     </div>
   </div>
-
   <div class="row">
     <div class="col-25">
       <%= form.label :street_address %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :street_address, value: "Edit your street address..." %></p>
+      <p><%= form.text_field :street_address, value: @user.street_address %></p>
     </div>
   </div>
-
   <div class="row">
     <div class="col-25">
       <%= form.label :city %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :city, value: "Edit your city..." %></p>
+      <p><%= form.text_field :city, value: @user.city %></p>
     </div>
   </div>
-
   <div class="row">
     <div class="col-25">
       <%= form.label :state %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :state, value: "Edit your state..." %></p>
+      <p><%= form.text_field :state, value: @user.state %></p>
     </div>
   </div>
-
   <div class="row">
     <div class="col-25">
       <%= form.label :zipcode %>
     </div>
     <div class="col-75">
-      <p><%= form.text_field :zipcode, value: "Edit your zip code..." %></p>
+      <p><%= form.text_field :zipcode, value: @user.zipcode %></p>
     </div>
   </div>
-
   <%= form.hidden_field :access, value: 0 %>
-
 <div class="row">
   <div class="bg-image d-flex justify-content-center">
     <br>
-      Add/Remove your Favorite Activities
+      Select Your Favorite Activities
       <br><br>
     </div>
   </div>
@@ -191,16 +169,14 @@ input[type=submit]:hover {
   <div class="dropdown-list">
     <% @activities.sort_by(&:name).each do |activity| %>
       <label class="dropdown-option" id="activity-<%= activity.id %>">
-        <p><%= check_box_tag "activity[]", activity.name %><%= label_tag(:activity, "#{activity.name}") %></p>
+        <p><%= check_box_tag "activity_preferences[]", activity.name %><%= label_tag(:activity, "#{activity.name}") %></p>
     </label>
     <% end %>
   </div>
 </div>
-
 <div class="row">
-  <%= form.submit "Confirm Changes" %>
+  <%= form.submit "Update Profile" %>
 <% end %>
 </div>
-
 </body>
 </html>

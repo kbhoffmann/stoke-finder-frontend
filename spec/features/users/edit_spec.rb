@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe 'users dashboard' do
+RSpec.describe 'User Edit Page' do
+  it 'can update the user attributes', :vcr do
 
-  it 'displays user information', :vcr do
     visit "/register"
 
     user = Faker::Name.first_name
@@ -27,6 +27,26 @@ RSpec.describe 'users dashboard' do
 
      click_button 'Submit'
      expect(current_path).to eq('/dashboard')
-  end
+     click_link "Update Account"
+     expect(current_path).to eq('/edit')
 
+     fill_in :user_name, with: "#{user}"
+     fill_in :email, with: "#{user}@email.com"
+     fill_in :password, with: 'password12345'
+     fill_in :password_confirmation, with: 'password12345'
+     fill_in :street_address, with: '3557 Alcott St'
+     fill_in :city, with: 'Denver'
+     fill_in :state, with: 'CO'
+     fill_in :zipcode, with: '80211'
+
+     within '#activity-100049' do #ACCESSIBLE SWIMMING
+       check
+     end
+
+     within '#activity-100050' do #SOFTBALL
+       check
+     end
+
+     click_button 'Update Profile'
+   end
 end
