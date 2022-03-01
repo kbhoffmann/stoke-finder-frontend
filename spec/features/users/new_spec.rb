@@ -23,9 +23,8 @@ RSpec.describe 'New User Page' do
 
 
       expect(page).to have_content("Create a New Account")
-       fill_in :user_name, with: 'Robin'
-         #need to keep email or take from oauth??
-       fill_in :email, with: 'robin@email.com'
+       fill_in :user_name, with: 'Robin5'
+       fill_in :email, with: 'robin5@email.com'
        fill_in :password, with: 'password12345'
        fill_in :password_confirmation, with: 'password12345'
        fill_in :street_address, with: '1234 Main St'

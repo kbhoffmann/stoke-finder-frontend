@@ -23,13 +23,18 @@ class UsersController < ApplicationController
   end
 
   def create
-    UserService.user_create(params)
-   # if @user.save
-   #    session[:user_id] = @user.id
-   #    redirect_to dashboard_path(@user.id)
-   #  else
-   #    render :new
-   #  end
+    new_user = UserFacade.user_create(user_params)
+
+    if new_user[:data][:id]
+      user = User.new(new_user[:data])
+      flash[:success] = "Your Profile Has Been Created!"
+      redirect_to dashboard(user)
+    elsif new_user[:status] == "ERROR"
+      flash[:error] = new_user[:message]
+      render :new
+    else
+      render :new
+    end
   end
 
   def edit
@@ -38,7 +43,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(session[:user_id])
-    if @duser.update_attributes(user_params)
+    if @user.update_attributes(user_params)
       flash[:success] = "Your Information Was Updated"
       redirect_to dashboard_path
     else
@@ -69,5 +74,10 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
-
+private
+  def user_params
+    params["access"] = params["access"].to_i
+    params["activity_preferences"] = params["activity_preferences"].join(" ")
+    params.permit(:user_name, :email, :password, :password_confirmation, :access, :street_address, :city, :state, :zipcode, :activity_preferences)
+  end
 end
