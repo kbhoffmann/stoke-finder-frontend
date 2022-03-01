@@ -191,7 +191,7 @@ input[type=submit]:hover {
   <div class="dropdown-list">
     <% @activities.sort_by(&:name).each do |activity| %>
       <label class="dropdown-option" id="activity-<%= activity.id %>">
-        <p><%= check_box_tag "activity[]", activity.name %><%= label_tag(:activity, "#{activity.name}") %></p>
+        <p><%= check_box_tag "activity_preferences[]", activity.name %><%= label_tag(:activity, "#{activity.name}") %></p>
     </label>
     <% end %>
   </div>
