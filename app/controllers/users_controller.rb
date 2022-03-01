@@ -22,12 +22,11 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
-    if @user.save
-      session[:user_id] = @user.id
-      redirect_to dashboard_path(@user.id)
+    user = User.create(user_params)
+    if user.save
+      render(json: UserSerializer.new(User.update(params[:id], user_params)))
     else
-      render :new
+      render :status => 404
     end
   end
 
@@ -71,6 +70,6 @@ class UsersController < ApplicationController
 private
 
   def user_params
-    params.permit(:user_name, :email, :password, :password_confirmation, :access, :street_address, :city, :state, :zipcode, :age)
+    params.require(:user).permit(:id, :user_name, :email, :street_address, :city, :state, :zipcode, :activity_preferences)
   end
 end
