@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get '/register', to: 'users#new'
   post '/users', to: 'users#create'
+  get '/edit', to: 'users#edit'
+  patch '/update', to: 'users#update'
 
   get 'adventures/search', to: 'adventures#search'
 

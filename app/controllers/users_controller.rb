@@ -28,7 +28,7 @@ class UsersController < ApplicationController
       user = User.new(new_user[:data])
       session[:user_id] = user.id
       flash[:success] = "Your Profile Has Been Created!"
-      redirect_to dashboard_path(user)
+      redirect_to dashboard_path
     elsif new_user[:status] == "ERROR"
       flash[:error] = new_user[:message]
       redirect_to "/register"
@@ -38,11 +38,12 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.find(session[:user_id])
+    @user = UserFacade.user_info(session[:user_id])
+    @activities = RidbFacade.all_activities
   end
 
   def update
-    @user = User.find(session[:user_id])
+    @user = UserFacade.user_update(user_params)
     if @user.update_attributes(user_params)
       flash[:success] = "Your Information Was Updated"
       redirect_to dashboard_path

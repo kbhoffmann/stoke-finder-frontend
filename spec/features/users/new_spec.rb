@@ -39,7 +39,7 @@ RSpec.describe 'New User Page' do
        end
 
        click_button 'Submit'
-save_and_open_page
+       
        expect(page).to have_content("Welcome #{user}")
      end
    end

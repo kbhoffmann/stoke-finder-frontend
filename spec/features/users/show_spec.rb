@@ -8,6 +8,7 @@ RSpec.describe 'users dashboard' do
 
   it 'has a link to the user edit form', :vcr do
 
+
     visit "/dashboard"
 
     click_link "Update Account"
