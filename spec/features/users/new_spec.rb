@@ -16,15 +16,13 @@ RSpec.describe 'New User Page' do
       expect(current_path).to eq("/adventures/search")
     end
 
-    it 'has a title and fields to fill out for new users' do
-      VCR.turn_off!
-      WebMock.enable_net_connect!
+    it 'has a title and fields to fill out for new users', :vcr do
       visit "/register"
 
 
       expect(page).to have_content("Create a New Account")
-       fill_in :user_name, with: 'Robin5'
-       fill_in :email, with: 'robin5@email.com'
+       fill_in :user_name, with: 'Robin7'
+       fill_in :email, with: 'robin7@email.com'
        fill_in :password, with: 'password12345'
        fill_in :password_confirmation, with: 'password12345'
        fill_in :street_address, with: '1234 Main St'
@@ -42,8 +40,7 @@ RSpec.describe 'New User Page' do
 
        click_button 'Submit'
 
-       expect(page).to have_content("Robin's Dashboard")
-       expect(current_path).to eq(dashboard_path(User.last))
+       expect(page).to have_content("Welcome Borton Preekers!")
      end
    end
  end

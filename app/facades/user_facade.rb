@@ -1,7 +1,7 @@
 class UserFacade
   def self.all_users
     json = UserService.all_users
-    binding.pry
+
     json[:data].map do |user|
       User.new(user)
     end
