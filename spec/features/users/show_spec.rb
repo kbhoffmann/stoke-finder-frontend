@@ -8,8 +8,8 @@ RSpec.describe 'users dashboard' do
     user = Faker::Name.first_name
 
     expect(page).to have_content("Create a New Account")
-     fill_in :user_name, with: "#{user}"
-     fill_in :email, with: "#{user}@email.com"
+     fill_in :user_name, with: "#{Faker::Artist.name}"
+     fill_in :email, with: "#{user}@gmail.com"
      fill_in :password, with: 'password12345'
      fill_in :password_confirmation, with: 'password12345'
      fill_in :street_address, with: '1234 Main St'
