@@ -80,7 +80,7 @@ $ rake db:{drop,create,migrate,seed}
 ## Author
 
 <a href="https://github.com/Dittrir/rails-engine/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Dittrir/rails-engine" />
+  <img src="https://contrib.rocks/image?repo=JCNapier/rails-engine" />
 </a>
 
 Robin Dittrich
