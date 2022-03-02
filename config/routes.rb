@@ -3,12 +3,12 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get '/dashboard', to: 'users#show'
-  delete '/logout', to: 'users#logout'
 
   get '/auth/google_oauth2/callback', to: 'users#auth'
 
-  get '/login', to: 'users#login_form'
-  post '/login', to: 'users#login_user'
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
 
   get '/register', to: 'users#new'
   post '/users', to: 'users#create'
