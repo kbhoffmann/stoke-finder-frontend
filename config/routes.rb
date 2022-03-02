@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   post '/users', to: 'users#create'
   get '/edit', to: 'users#edit'
   patch '/update', to: 'users#update'
+  delete '/delete', to: 'users#destroy'
 
   get 'adventures/search', to: 'adventures#search'
 
