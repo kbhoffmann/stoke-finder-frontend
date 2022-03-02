@@ -79,7 +79,7 @@ $ rake db:{drop,create,migrate,seed}
 
 ## Author
 
-<a href="https://github.com/Dittrir/rails-engine/graphs/contributors">
+<a href="https://github.com/JCNapier/rails-engine/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=JCNapier/rails-engine" />
 </a>
 
