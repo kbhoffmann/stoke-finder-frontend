@@ -105,17 +105,27 @@ input[type=submit]:hover {
     <br><br>
   </div>
   <br><br>
-    <%= form_with url: "/search/by_location", local: true do |form| %>
+    <%= form_with url: "/rec_areas/search_by_location", method: :get, local: true do |form| %>
       <div class="row">
         <div class="col-25">
-          <%= form.label :search, 'Search by Location:' %>
+          <%= form.label :search, 'Search all activites by Location(City, State):'%>
           </div>
         <div class="col-75">
-          <%= form.text_field :search %>
+          <%= form.text_field :search, placeholder: "Denver, CO" %>
         </div>
+        <span>
+          <div id="50">
+            <p><%= check_box_tag "miles", "50"%><%= label_tag(:distance, "50 miles") %></p>
+          </div>
+          <div id="100">
+            <p><%= check_box_tag "miles", "100"%><%= label_tag(:distance, "100 miles") %></p>
+          </div>
+          <div id="200">
+            <p><%= check_box_tag "miles", "200"%><%= label_tag(:distance, "200 miles") %></p>
+          </div>
+        </span>
       </div>
       <br><br>
-
       <div class="row">
         <%= form.submit 'Search by Location' %>
       <% end %>

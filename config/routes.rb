@@ -16,7 +16,8 @@ Rails.application.routes.draw do
   patch '/update', to: 'users#update'
   delete '/delete', to: 'users#destroy'
 
-  get 'adventures/search', to: 'adventures#search'
+  get '/rec_areas/search', to: 'rec_areas#search'
+  get '/rec_areas/search_by_location', to: 'rec_areas#search_by_location'
 
   get '/areas', to: 'areas#index'
   get '/areas/:id', to: 'areas#show'

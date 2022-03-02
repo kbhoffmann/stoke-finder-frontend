@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Wed, 02 Mar 2022 00:41:09 GMT
+      - Wed, 02 Mar 2022 05:21:55 GMT
       X-Amz-Apigw-Id:
-      - OVJ97HDevHcFjew=
+      - OVzGHF_WPHcFeuw=
       X-Amzn-Trace-Id:
-      - Root=1-621ebd25-2b6a18d72baaa06ff0acea44;Sampled=0
+      - Root=1-621efef3-1b75e25371ad1fa70d447dbe;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 06e67983-7a9d-422b-8c28-5956ae178e54
+      - cb7f6b14-b94a-4fcc-8292-b7d92aeda828
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 0fdea8d3b1fc76e3ff9d36e8164171e8.cloudfront.net (CloudFront)
+      - 1.1 30ea845097208edbc19305c535a5be98.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - g8NUcNHFy7q6dJSwkQSf9uBQMy1xXQ6tP_DS16GC7WWX61r8hfMv0Q==
+      - A-dS3CVnGpizlRCfAZHRbEjz6vHPApRchTY28FKmhFDzL7N1JI4uSA==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -167,5 +167,5 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Wed, 02 Mar 2022 00:41:09 GMT
+  recorded_at: Wed, 02 Mar 2022 05:21:55 GMT
 recorded_with: VCR 6.0.0
