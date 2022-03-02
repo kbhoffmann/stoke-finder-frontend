@@ -18,7 +18,6 @@ RSpec.describe 'Welcome Index Page' do
     end
 
     it 'has a title' do
-      # WebMock.enable_net_connect!
 
       visit root_path
 
