@@ -1,4 +1,5 @@
 class UserService
+
   def self.all_users
     response = conn.get("/api/v1/users")
     JSON.parse(response.body, symbolize_names: true)

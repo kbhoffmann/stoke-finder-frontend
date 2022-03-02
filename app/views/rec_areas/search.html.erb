@@ -138,11 +138,11 @@ input[type=submit]:hover {
   </div>
 
 <div class="bg-image d-flex justify-content-center">
-  <h3>Search by Activities</h3>
+  <h3>Search by Activities Near You!</h3>
   <br><br>
 </div>
 
-  <%= form_with url: "/search/by_activity", local: true, method: :get do |form| %>
+  <%= form_with url: "/rec_areas/search_by_activities", local: true, method: :get do |form| %>
 
   <div class="dropdown" data-control="checkbox-dropdown">
     <div class="dropdown-list">

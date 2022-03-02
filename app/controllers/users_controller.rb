@@ -26,8 +26,8 @@ class UsersController < ApplicationController
 
     if new_user[:data][:id]
       user = User.new(new_user[:data])
-      session[:user_id] = user.id
       flash[:success] = "Your Profile Has Been Created!"
+      session[:user_id] = user.id
       redirect_to dashboard_path
     elsif new_user[:status] == "ERROR"
       flash[:error] = new_user[:message]

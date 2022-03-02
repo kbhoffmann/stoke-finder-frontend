@@ -11,18 +11,18 @@ RSpec.describe 'New User Page' do
       click_link "Register"
       expect(current_path).to eq("/register")
 
-      visit "/register"
-      click_link "Search for Adventures"
-      expect(current_path).to eq("/adventures/search")
+      # visit "/register"
+      # click_link "Search for Adventures"
+      # expect(current_path).to eq("/adventures/search")
     end
 
     it 'has a title and fields to fill out for new users', :vcr do
       visit "/register"
-      user = "Robin10"
+      user = "liquidsprite"
 
       expect(page).to have_content("Create a New Account")
-       fill_in :user_name, with: "#{user}"
-       fill_in :email, with: "#{user}@turing.edu"
+       fill_in :user_name, with: "#{Faker::GreekPhilosophers.name}"
+       fill_in :email, with: "fishswiminsoda@#{Faker::GreekPhilosophers.name}.edu"
        fill_in :password, with: 'password12345'
        fill_in :password_confirmation, with: 'password12345'
        fill_in :street_address, with: '1234 Main St'
