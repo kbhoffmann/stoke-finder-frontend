@@ -76,3 +76,11 @@ $ rake db:{drop,create,migrate,seed}
 - Test API exposure
 - Consume necessary APIs
 - Fetch Necessary data from APIs exposed on the BE. 
+
+## Author
+
+<a href="https://github.com/Dittrir/rails-engine/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Dittrir/rails-engine" />
+</a>
+
+Robin Dittrich
