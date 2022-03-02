@@ -26,4 +26,11 @@ class RidbFacade
     area_json = RidbService.get_rec_area_by_id(rec_area_id)
     RecArea.new(area_json)
   end
+
+  def self.get_activities_for_rec_area_by_id(rec_area_id)
+    activities= RidbService.get_activities_for_rec_area_by_id(rec_area_id)
+    activities.map do |activity_data|
+      Activity.new(activity_data)
+    end
+  end
 end

@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Wed, 02 Mar 2022 21:56:08 GMT
+      - Wed, 02 Mar 2022 21:56:21 GMT
       X-Amz-Apigw-Id:
-      - OYEu4HQEPHcFsxQ=
+      - OYEw5EyvvHcFu7A=
       X-Amzn-Trace-Id:
-      - Root=1-621fe7f8-6cf7e947a46b58bef9fc670b;Sampled=0
+      - Root=1-621fe805-4b07b606784e59f7c8244819;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - af173ee7-05db-436f-8481-595c47cd520f
+      - d9055d23-10c5-4bde-8fb8-154d44f97eed
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 187855e01bff01816fb7f2e5860898b6.cloudfront.net (CloudFront)
+      - 1.1 bcab77f1ffe9d73bbe5ff7a973cd0160.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - mdhxfjQhyJAG4YIRFVKL-0J0OqMvAMnip4LvI3zuB0AKHuI5a1Mzlg==
+      - mOpQyLROWnfBPnOHcdD4SH1-Te3q-Eackmu7Q1xAVzdhS-xpE91J9g==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -167,7 +167,7 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Wed, 02 Mar 2022 21:56:08 GMT
+  recorded_at: Wed, 02 Mar 2022 21:56:21 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Denver,%20CO
@@ -189,7 +189,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 02 Mar 2022 21:56:09 GMT
+      - Wed, 02 Mar 2022 21:56:22 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -206,7 +206,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sicGxhY2VfaWQiOjMyNzIwOTI4OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJyZWxhdGlvbiIsIm9zbV9pZCI6MTQxMTMzOSwiYm91bmRpbmdib3giOlsiMzkuNjE0MzE1NCIsIjM5LjkxNDIwODciLCItMTA1LjEwOTg4NDUiLCItMTA0LjU5OTY5OTciXSwibGF0IjoiMzkuNzM5MjM2NCIsImxvbiI6Ii0xMDQuOTg0ODYyMyIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgQ29sb3JhZG8sIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwiaW1wb3J0YW5jZSI6MC44MDU0NzU4NzM5MDk1NzkxLCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsiY2l0eSI6IkRlbnZlciIsInN0YXRlIjoiQ29sb3JhZG8iLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjI4ODc1NCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoxNTEzMzMyNDEsImJvdW5kaW5nYm94IjpbIjQyLjY1MTM3NTIiLCI0Mi42OTEzNzUyIiwiLTkyLjM1NzIxNTgiLCItOTIuMzE3MjE1OCJdLCJsYXQiOiI0Mi42NzEzNzUyIiwibG9uIjoiLTkyLjMzNzIxNTgiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIEJyZW1lciBDb3VudHksIElvd2EsIDUwNjIyLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJ2aWxsYWdlIiwiaW1wb3J0YW5jZSI6MC42NDE4Mzk0Mzg1MDE2OTk5LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiQnJlbWVyIENvdW50eSIsInN0YXRlIjoiSW93YSIsInBvc3Rjb2RlIjoiNTA2MjIiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjI4MjMzNTg2NSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJyZWxhdGlvbiIsIm9zbV9pZCI6MTI4NTEyLCJib3VuZGluZ2JveCI6WyI0Mi42NTY3OTk5IiwiNDIuNjgwMzA3MyIsIi05Mi4zNDcxMzY0IiwiLTkyLjMxNzU0MSJdLCJsYXQiOiI0Mi42Njk3NjA5OTk5OTk5OTQiLCJsb24iOiItOTIuMzMyMzI4ODkwMTg4NyIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgQnJlbWVyIENvdW50eSwgSW93YSwgNTA2MjIsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwiaW1wb3J0YW5jZSI6MC42NDE4Mzk0Mzg1MDE2OTk5LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsidmlsbGFnZSI6IkRlbnZlciIsImNvdW50eSI6IkJyZW1lciBDb3VudHkiLCJzdGF0ZSI6Iklvd2EiLCJwb3N0Y29kZSI6IjUwNjIyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjozMzkzMTEsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTUzNTY5NjM1LCJib3VuZGluZ2JveCI6WyI0MC44NDU1ODgyIiwiNDAuODg1NTg4MiIsIi04Ni4wOTg4NTM3IiwiLTg2LjA1ODg1MzciXSwibGF0IjoiNDAuODY1NTg4MiIsImxvbiI6Ii04Ni4wNzg4NTM3IiwiZGlzcGxheV9uYW1lIjoiRGVudmVyLCBNaWFtaSBDb3VudHksIEluZGlhbmEsIDQ2OTI2LCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJ2aWxsYWdlIiwiaW1wb3J0YW5jZSI6MC41NjYyODEwOTMwMzUyMTE4LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiTWlhbWkgQ291bnR5Iiwic3RhdGUiOiJJbmRpYW5hIiwicG9zdGNvZGUiOiI0NjkyNiIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MjgzNjQ0NjAwLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo5MjYwNzQ3LCJib3VuZGluZ2JveCI6WyI0NS4yNzU1ODI4IiwiNDUuMzc0ODY1OSIsIi02Mi4yMjE1NzEiLCItNjIuMDcyNzAyOCJdLCJsYXQiOiI0NS4zMzY5NDM0IiwibG9uIjoiLTYyLjExMDg2MjkiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIFN0LiBNYXJ5J3MgRGlzdHJpY3QgTXVuaWNpcGFsaXR5LCBHdXlzYm9yb3VnaCBDb3VudHksIE5vdmEgU2NvdGlhLCBDYW5hZGEiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwiaW1wb3J0YW5jZSI6MC41NiwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zLy9wb2lfYm91bmRhcnlfYWRtaW5pc3RyYXRpdmUucC4yMC5wbmciLCJhZGRyZXNzIjp7ImhhbWxldCI6IkRlbnZlciIsIm11bmljaXBhbGl0eSI6IlN0LiBNYXJ5J3MgRGlzdHJpY3QgTXVuaWNpcGFsaXR5IiwiY291bnR5IjoiR3V5c2Jvcm91Z2ggQ291bnR5Iiwic3RhdGUiOiJOb3ZhIFNjb3RpYSIsImNvdW50cnkiOiJDYW5hZGEiLCJjb3VudHJ5X2NvZGUiOiJjYSJ9fSx7InBsYWNlX2lkIjoyODIzMTYzNTAsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoicmVsYXRpb24iLCJvc21faWQiOjE4NzY5OSwiYm91bmRpbmdib3giOlsiNDAuMjIxMDA2IiwiNDAuMjQ2NDg1IiwiLTc2LjE1ODYxNCIsIi03Ni4xMjUxNDgiXSwibGF0IjoiNDAuMjM0NTQ1NSIsImxvbiI6Ii03Ni4xMzYwNzM1MjU4MDMzNyIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgTGFuY2FzdGVyIENvdW50eSwgUGVubnN5bHZhbmlhLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsImltcG9ydGFuY2UiOjAuNTM2NTQ4MDExOTM3MjU3OSwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zLy9wb2lfYm91bmRhcnlfYWRtaW5pc3RyYXRpdmUucC4yMC5wbmciLCJhZGRyZXNzIjp7ImJvcm91Z2giOiJEZW52ZXIiLCJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiTGFuY2FzdGVyIENvdW50eSIsInN0YXRlIjoiUGVubnN5bHZhbmlhIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjozNjIxMTgsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTU0MDYwMzYzLCJib3VuZGluZ2JveCI6WyIzNS41MTEyNDUyIiwiMzUuNTUxMjQ1MiIsIi04MS4wNDk3OTk0IiwiLTgxLjAwOTc5OTQiXSwibGF0IjoiMzUuNTMxMjQ1MiIsImxvbiI6Ii04MS4wMjk3OTk0IiwiZGlzcGxheV9uYW1lIjoiRGVudmVyLCBMaW5jb2xuIENvdW50eSwgTm9ydGggQ2Fyb2xpbmEsIDI4MDM3LCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJoYW1sZXQiLCJpbXBvcnRhbmNlIjowLjUxMjMyMzg1NDE3NjQ5MTYsImljb24iOiJodHRwczovL25vbWluYXRpbS5vcGVuc3RyZWV0bWFwLm9yZy91aS9tYXBpY29ucy8vcG9pX3BsYWNlX3ZpbGxhZ2UucC4yMC5wbmciLCJhZGRyZXNzIjp7ImhhbWxldCI6IkRlbnZlciIsImNvdW50eSI6IkxpbmNvbG4gQ291bnR5Iiwic3RhdGUiOiJOb3J0aCBDYXJvbGluYSIsInBvc3Rjb2RlIjoiMjgwMzciLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjQwODEwOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoxNTg1NTA3OTUsImJvdW5kaW5nYm94IjpbIjM5LjM2MjMxNTkiLCIzOS40MDIzMTU5IiwiLTc5Ljc5MDM0MSIsIi03OS43NTAzNDEiXSwibGF0IjoiMzkuMzgyMzE1OSIsImxvbiI6Ii03OS43NzAzNDEiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIFByZXN0b24gQ291bnR5LCBXZXN0IFZpcmdpbmlhLCAyNjQ0NCwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicGxhY2UiLCJ0eXBlIjoiaGFtbGV0IiwiaW1wb3J0YW5jZSI6MC41MDAyNTk2NDYyMjQwNTgyLCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJoYW1sZXQiOiJEZW52ZXIiLCJjb3VudHkiOiJQcmVzdG9uIENvdW50eSIsInN0YXRlIjoiV2VzdCBWaXJnaW5pYSIsInBvc3Rjb2RlIjoiMjY0NDQiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjQwNDUxNSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoxNTg0NTg2ODAsImJvdW5kaW5nYm94IjpbIjQwLjIxMzE0ODMiLCI0MC4yNTMxNDgzIiwiLTc2LjE1NzE2ODQiLCItNzYuMTE3MTY4NCJdLCJsYXQiOiI0MC4yMzMxNDgzIiwibG9uIjoiLTc2LjEzNzE2ODQiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIExhbmNhc3RlciBDb3VudHksIFBlbm5zeWx2YW5pYSwgMTc1NzgsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6InBsYWNlIiwidHlwZSI6InZpbGxhZ2UiLCJpbXBvcnRhbmNlIjowLjQ4NTAwMDAwMDAwMDAwMDA0LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiTGFuY2FzdGVyIENvdW50eSIsInN0YXRlIjoiUGVubnN5bHZhbmlhIiwicG9zdGNvZGUiOiIxNzU3OCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MjgyMjg2ODY0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNDEzNDQsImJvdW5kaW5nYm94IjpbIjQwLjM5MTY5OCIsIjQwLjQwNTk0MSIsIi05NC4zMjkwNDkiLCItOTQuMzE4NzUiXSwibGF0IjoiNDAuMzk3MjAyIiwibG9uIjoiLTk0LjMyNDYwNCIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgV29ydGggQ291bnR5LCBNaXNzb3VyaSwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJpbXBvcnRhbmNlIjowLjQ4NDUzMjExMTUwNjQ0MTc2LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsiaGFtbGV0IjoiRGVudmVyIiwiY291bnR5IjoiV29ydGggQ291bnR5Iiwic3RhdGUiOiJNaXNzb3VyaSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX1d
-  recorded_at: Wed, 02 Mar 2022 21:56:09 GMT
+  recorded_at: Wed, 02 Mar 2022 21:56:22 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/recareas?activity&full=true&latitude=39.7392364&limit=10&longitude=-104.9848623&radius=200
@@ -236,11 +236,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Wed, 02 Mar 2022 21:56:10 GMT
+      - Wed, 02 Mar 2022 21:56:23 GMT
       X-Amz-Apigw-Id:
-      - OYEvAGBLvHcFXug=
+      - OYExBGttvHcFZzQ=
       X-Amzn-Trace-Id:
-      - Root=1-621fe7f9-bbc1f96e501cc6d7a302cab0;Sampled=0
+      - Root=1-621fe806-0d0d38e37b324add90506de9;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -276,17 +276,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 9bea2e7a-d919-4d08-858f-f749b4fd64b1
+      - b714a317-9ccc-4cb4-9d1e-a0d96001b6ba
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 f9a3ca802cab4ac43bafc4dd8667ef98.cloudfront.net (CloudFront)
+      - 1.1 0fdea8d3b1fc76e3ff9d36e8164171e8.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - dA_omDx4Y2gOqUkXQUiPdHzxCNJ9DozGBpGz747zTQ1cvJZCuoaqxw==
+      - bkJAJZJeBceJs_RrimQAIJeCGQdPPNCPH37NXfA1bXxUsUqogNCf0w==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"RecAreaID":"284","OrgRecAreaID":"284","ParentOrgID":"130","RecAreaName":"Chatfield
@@ -405,5 +405,186 @@ http_interactions:
         Web Site","EntityID":"306","EntityType":"RecArea","Title":"Bear Creek Lake
         Website","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/projects.cfm?ID=G672285"},{"EntityLinkID":"0bfb0856091fce0e68cbbfd1ea3007f0","LinkType":"Other","EntityID":"306","EntityType":"RecArea","Title":"Bear
         Creek Lake Photo Album","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/album.cfm?Option=View\u0026Activity=None\u0026ID=G672285"}],"MEDIA":[{"EntityMediaID":"326049","MediaType":"Image","EntityID":"306","EntityType":"RecArea","Title":"","Subtitle":"","Description":"","EmbedCode":"","Height":295,"Width":480,"URL":"https://cdn.recreation.gov/public/images/2138.jpg","Credits":"","IsPrimary":false,"IsPreview":false,"IsGallery":true}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":5,"TOTAL_COUNT":5},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Wed, 02 Mar 2022 21:56:10 GMT
+  recorded_at: Wed, 02 Mar 2022 21:56:23 GMT
+- request:
+    method: get
+    uri: https://ridb.recreation.gov/api/v1/recareas/284
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - apiKey
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Server
+      Date:
+      - Wed, 02 Mar 2022 21:56:24 GMT
+      X-Amz-Apigw-Id:
+      - OYExQF8ZPHcFfvA=
+      X-Amzn-Trace-Id:
+      - Root=1-621fe807-49c9909791bc84a7667ef457;Sampled=0
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; always
+      Access-Control-Allow-Methods:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max_age=600,public,stale-if-error=3600
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
+        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
+        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
+        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
+        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
+        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
+        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
+        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
+        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
+        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
+        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
+        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
+        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
+        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
+        worker-src ''self'' blob: ;'
+      X-Amzn-Requestid:
+      - e337cb7c-9e29-40e3-a72a-2e6b5cf8d8fb
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 20ebec22e4be2753f048f31dfe94e426.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-C1
+      X-Amz-Cf-Id:
+      - qgb9wJKnQM9h9Z36jbSTe0CQHxMm4jneRJ0vBsO_gKy7H1zRTCaHzA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"RecAreaID":"284","OrgRecAreaID":"284","ParentOrgID":"130","RecAreaName":"Chatfield
+        Lake","RecAreaDescription":"Chatfield Dam, located southwest of Denver on
+        the South Platte River, was the second of three dams built to protect the
+        Denver region from floods. The 1,479-acre land and the 5,300 acres surrounding
+        it provide a myriad of recreational opportunities including camping, fishing,
+        and swimming.  Chatfield Nature Preserve for environmental studies and the
+        old Hildebrand Homestead, which is listed on the National Register of Historic
+        Places, are open to visitors.","RecAreaFeeDescription":"","RecAreaDirections":"Located
+        off C-470 southwest of Denver at the Wadsworth interchange.","RecAreaPhone":"","RecAreaEmail":"","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-105.058974,39.559653]},"RecAreaLongitude":-105.058974,"RecAreaLatitude":39.559653,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2021-09-23"}'
+  recorded_at: Wed, 02 Mar 2022 21:56:24 GMT
+- request:
+    method: get
+    uri: https://ridb.recreation.gov/api/v1/recareas/284/activities
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - apiKey
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Server
+      Date:
+      - Wed, 02 Mar 2022 21:56:24 GMT
+      X-Amz-Apigw-Id:
+      - OYExUGACPHcFg3A=
+      X-Amzn-Trace-Id:
+      - Root=1-621fe808-8fd8858afc1cd52c2cdad188;Sampled=0
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; always
+      Access-Control-Allow-Methods:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max_age=600,public,stale-if-error=3600
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
+        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
+        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
+        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
+        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
+        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
+        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
+        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
+        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
+        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
+        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
+        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
+        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
+        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
+        worker-src ''self'' blob: ;'
+      X-Amzn-Requestid:
+      - d055f7f3-6181-40a2-94f8-6a7b6621d095
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 a5bffe3d9fb1379dc2d31313b684f3b6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-C1
+      X-Amz-Cf-Id:
+      - lm2NvljY3WEy9m0yYAJ7250Ubkji4TjmzpZgCnylSZ-bHdlCvIrmzg==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"RECDATA":[{"ActivityID":5,"ActivityParentID":"","RecAreaID":"284","ActivityName":"BIKING","RecAreaActivityDescription":"Biking","RecAreaActivityFeeDescription":""},{"ActivityID":6,"ActivityParentID":"","RecAreaID":"284","ActivityName":"BOATING","RecAreaActivityDescription":"Boating","RecAreaActivityFeeDescription":""},{"ActivityID":9,"ActivityParentID":"","RecAreaID":"284","ActivityName":"CAMPING","RecAreaActivityDescription":"Camping","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"284","ActivityName":"FISHING","RecAreaActivityDescription":"Fishing","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"284","ActivityName":"HIKING","RecAreaActivityDescription":"Hiking","RecAreaActivityFeeDescription":""},{"ActivityID":15,"ActivityParentID":"","RecAreaID":"284","ActivityName":"HORSEBACK
+        RIDING","RecAreaActivityDescription":"Horseback Riding","RecAreaActivityFeeDescription":""},{"ActivityID":20,"ActivityParentID":"","RecAreaID":"284","ActivityName":"PICNICKING","RecAreaActivityDescription":"Picnic","RecAreaActivityFeeDescription":""},{"ActivityID":25,"ActivityParentID":"","RecAreaID":"284","ActivityName":"WATER
+        SPORTS","RecAreaActivityDescription":"Water Sports","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"284","ActivityName":"WILDLIFE
+        VIEWING","RecAreaActivityDescription":"Wildlife Viewing","RecAreaActivityFeeDescription":""},{"ActivityID":37,"ActivityParentID":"","RecAreaID":"284","ActivityName":"PLAYGROUND
+        PARK SPECIALIZED SPORT SITE","RecAreaActivityDescription":"Playground","RecAreaActivityFeeDescription":""},{"ActivityID":38,"ActivityParentID":"","RecAreaID":"284","ActivityName":"OTHER
+        RECREATION CONCESSION SITE","RecAreaActivityDescription":"Restaurant/SnackBar","RecAreaActivityFeeDescription":""}],"METADATA":{"RESULTS":{"CURRENT_COUNT":11,"TOTAL_COUNT":11},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":0,"OFFSET":0}}}'
+  recorded_at: Wed, 02 Mar 2022 21:56:24 GMT
 recorded_with: VCR 6.0.0

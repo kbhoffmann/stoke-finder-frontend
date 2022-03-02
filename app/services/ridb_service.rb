@@ -35,4 +35,9 @@ class RidbService
     response = conn.get("/api/v1/recareas/#{rec_area_id}")
     data = JSON.parse(response.body, symbolize_names: true)
   end
+
+  def self.get_activities_for_rec_area_by_id(rec_area_id)
+    response = conn.get("/api/v1/recareas/#{rec_area_id}/activities")
+    data = JSON.parse(response.body, symbolize_names: true)[:RECDATA]
+  end
 end

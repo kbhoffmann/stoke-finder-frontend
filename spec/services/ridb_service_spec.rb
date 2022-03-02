@@ -75,4 +75,17 @@ RSpec.describe RidbService do
     expect(area_data).to have_key(:RecAreaPhone)
     expect(area_data).to have_key(:Reservable)
   end
+
+  it 'can get all the activities for a rec area by ID', :vcr do
+    rec_area_id = "284"
+
+    expect(RidbService.get_activities_for_rec_area_by_id(rec_area_id)).to be_a(Array)
+    activities_data = RidbService.get_activities_for_rec_area_by_id(rec_area_id)
+    activities_data.map do |activity|
+      expect(activity).to be_a(Hash)
+      expect(activity).to have_key(:ActivityName)
+      expect(activity).to have_key(:RecAreaActivityDescription)
+      expect(activity).to have_key(:RecAreaActivityFeeDescription)
+    end
+  end
 end
