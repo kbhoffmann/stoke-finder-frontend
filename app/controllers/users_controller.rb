@@ -55,6 +55,13 @@ class UsersController < ApplicationController
     end
   end
 
+  def destroy
+    response = UserFacade.user_delete(session[:user_id])
+    session.destroy
+    flash[:error] = response[:message]
+    redirect_to '/'
+  end
+
   def login_user
     user = User.find_by(email: params[:email])
     if user == nil

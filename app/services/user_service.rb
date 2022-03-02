@@ -19,6 +19,11 @@ class UserService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.user_delete(session_user_id)
+   response = conn.delete("/api/v1/users/#{session_user_id}")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   # def self.user_adventures(user_id)
   #   response = conn.get("/api/v1/users/#{user_id}/adventures")
   #   JSON.parse(response.body, symbolize_names: true)

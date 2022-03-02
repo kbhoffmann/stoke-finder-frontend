@@ -20,6 +20,10 @@ class UserFacade
     UserService.user_update(user_params, session_user_id)
   end
 
+  def self.user_delete(session_user_id)
+    UserService.user_delete(session_user_id)
+  end
+
   # def self.user_adventures(user_id)
   #   json = UserService.user_adventures(user_id)
   #   json[:data].map do |adventure|
