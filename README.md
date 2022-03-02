@@ -79,8 +79,8 @@ $ rake db:{drop,create,migrate,seed}
 
 ## Author
 
-<a href="https://github.com/JCNapier/rails-engine/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=JCNapier/rails-engine" />
+<a href="https://github.com/stoke-finder-2110/stoke-finder-frontend/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=stoke-finder-2110/stoke-finder-frontend" />
 </a>
 
-Robin Dittrich
+
