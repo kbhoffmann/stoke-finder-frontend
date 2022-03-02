@@ -11,12 +11,21 @@ class UsersController < ApplicationController
   end
 
   def auth
+    #I kind of want to move this to the sessions controller...but it feels fine
+    #here, open to thoughts.
+    require "pry"; binding.pry
     auth_hash = request.env['omniauth.auth']
-    email = auth_hash['info']['email']
-    user = User.find_by(email: email)
-    if user.nil?
+    user_data = {email: auth_hash['info']['email']}
+    user = UserFacade.oauth_find(user_data)
+    #assuming we can find a way to temporarily add the Oauth user to the DB
+    #this guard checks if the JSON response included a user_id or not. If not
+    #the oauth user is sent to register
+    if user[:data][:id].nil?
       redirect_to '/register'
     else
+      #If the user_id exists, they are sent to the dashboard, and a session
+      #token is generated
+      session[:user_id] = user.id
       redirect_to '/dashboard'
     end
   end
