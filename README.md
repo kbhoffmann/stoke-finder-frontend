@@ -63,7 +63,9 @@ $ bundle update
 ```shell
 $ rake db:{drop,create,migrate,seed}
 ```
-
+## Schema 
+![Screen Shot 2022-03-02 at 11 25 33 AM](https://user-images.githubusercontent.com/81737385/156424646-1a02280b-501d-4583-a211-555ecc7506dc.png)
+![Screen Shot 2022-03-02 at 11 26 35 AM](https://user-images.githubusercontent.com/81737385/156424805-0ae05cf8-5fc9-4d31-8da7-027a2aa31933.png)
 
 ## Learning Goals 
 - Create two independent applications hosted on Heroku that successfully communicate with each other
