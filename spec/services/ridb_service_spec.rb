@@ -58,4 +58,21 @@ RSpec.describe RidbService do
     expect(rec_data).to have_key(:LINK)
     expect(rec_data[:LINK]).to be_a(Array)
   end
+
+  it 'can search for a rec area by rec area ID', :vcr do
+    rec_area_id = "284"
+
+    expect(RidbService.get_rec_area_by_id(rec_area_id)).to be_a(Hash)
+    area_data = RidbService.get_rec_area_by_id(rec_area_id)
+    expect(area_data).to have_key(:RecAreaID)
+    expect(area_data).to have_key(:RecAreaName)
+    expect(area_data).to have_key(:RecAreaDescription)
+    expect(area_data).to have_key(:RecAreaFeeDescription)
+    expect(area_data).to have_key(:RecAreaDirections)
+    expect(area_data).to have_key(:RecAreaLongitude)
+    expect(area_data).to have_key(:RecAreaLatitude)
+    expect(area_data).to have_key(:RecAreaEmail)
+    expect(area_data).to have_key(:RecAreaPhone)
+    expect(area_data).to have_key(:Reservable)
+  end
 end

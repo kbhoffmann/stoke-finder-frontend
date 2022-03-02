@@ -30,4 +30,9 @@ class RidbService
     response = conn.get("/api/v1/recareas?limit=100&activity=#{activities.join(",").gsub(" ", "%20")}")
     data = JSON.parse(response.body, symbolize_names: true)
   end
+
+  def self.get_rec_area_by_id(rec_area_id)
+    response = conn.get("/api/v1/recareas/#{rec_area_id}")
+    data = JSON.parse(response.body, symbolize_names: true)
+  end
 end
