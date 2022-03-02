@@ -16,7 +16,7 @@ class RecAreasController < ApplicationController
     @activities = params["activity"]
   end
 
-  def show 
-
+  def show
+    @area = RidbFacade.get_rec_area_info_by_id(params["id"])
   end
 end
