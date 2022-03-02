@@ -15,4 +15,8 @@ class RecAreasController < ApplicationController
     @areas = RidbFacade.search_by_activities(params["activity"])
     @activities = params["activity"]
   end
+
+  def show 
+
+  end
 end
