@@ -1,0 +1,20 @@
+<%= form_with url: "/adventures/create", method: :post do |form| %>
+
+<%= form.label :guest_email_addresses, "Enter guest email addresses:"%>
+<br>
+<%= form.text_field :guest_email_addresses, placeholder: "friend@gmailcom, otherfriend@yahoo.net" %>
+<br>
+<p>Enter date and time:</p>
+<%= form.datetime_select :datetime %>
+<br>
+<%= form.label :comments, "Enter comments:"%>
+<%= form.text_field :comments, placeholder: "I'm stoked!" %>
+<br>
+<%= form.hidden_field :favorite, value: false %>
+<br>
+<%= form.hidden_field :rec_area_id, value: 1 %>
+<br>
+<%= form.hidden_field :user_id, value: @user_id %>
+<br>
+<%= form.submit "🤙 Create adventure! 🤙" %>
+<% end %>
