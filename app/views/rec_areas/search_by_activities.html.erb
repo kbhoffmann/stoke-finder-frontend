@@ -1,0 +1,13 @@
+<h1>Rec Areas Matching Your Search For: <h3><%= @activities.join(", ") %></h3></h1>
+<% @areas.each do |area| %>
+<ul>
+  <div id= <%= area.name %> >
+<h3><%= area.name %></h3>
+<p><%= area.description %></p>
+<p><%= area.directions %></p>
+<%= link_to "Plan an adventure for #{area.name}", "/adventures/new" %>
+<br>
+</div>
+</ul>
+
+<% end  %>

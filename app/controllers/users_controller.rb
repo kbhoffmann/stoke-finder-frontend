@@ -16,10 +16,10 @@ class UsersController < ApplicationController
 
     if new_user[:data][:id]
       user = User.new(new_user[:data])
-      session[:user_id] = user.id
       flash[:success] = "Your Profile Has Been Created!"
+      session[:user_id] = user.id
       redirect_to dashboard_path
-    elsif new_user[:status] == "ERROR"
+    elsif new_user[:status] == "ERROR" || new_user[:status] == 400
       flash[:error] = new_user[:message]
       redirect_to "/register"
     else
@@ -38,7 +38,7 @@ class UsersController < ApplicationController
       flash[:success] = "Your Profile Has Been Updated!"
       redirect_to dashboard_path
     elsif @user[:status] == "ERROR"
-      flash[:error] = new_user[:message]
+      flash[:error] = @user[:message]
       redirect_to "/edit"
     else
       redirect_to "/edit"
