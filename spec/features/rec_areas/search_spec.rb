@@ -88,10 +88,10 @@ RSpec.describe 'Search Page', :vcr do
     end
   end
 
-  xit "functioning link for create an adventure" do
+  it "functioning link for create an adventure", :vcr do
     VCR.eject_cassette
 
-    # VCR.turn_off!
+    VCR.turn_off!
 
     WebMock.enable_net_connect!
     visit "/register"
@@ -104,7 +104,6 @@ RSpec.describe 'Search Page', :vcr do
      fill_in :state, with: 'CO'
      fill_in :zipcode, with: '80220'
 
-
      within '#activity-100049' do #ACCESSIBLE SWIMMING
        check
      end
@@ -113,15 +112,23 @@ RSpec.describe 'Search Page', :vcr do
     # no login yet so requiring register to set session for things that require session.
 
     click_button "Start An Adventure"
+     
+    expect(current_path).to eq("/rec_areas/search")
 
     fill_in "Search all activites by Location(City, State)", with: "Denver, CO"
 
     click_button "Search by Location"
+
     expect(current_path).to eq("/rec_areas/search_by_location")
     expect(page).to have_content("Chatfield Lake")
+
     click_link("Plan an adventure for Chatfield Lake")
+
+    expect(current_path).to eq("/adventures/new")
+    
     fill_in :guest_email_addresses, with: "bob@gmail.com"
     fill_in :comments, with: "woop"
+    
     click_button "🤙 Create adventure! 🤙"
   end
 end
