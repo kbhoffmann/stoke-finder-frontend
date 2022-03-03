@@ -8,30 +8,11 @@ class UsersController < ApplicationController
 
   def new
     @activities = RidbFacade.all_activities
-  end
-
-  def auth
-    #I kind of want to move this to the sessions controller...but it feels fine
-    #here, open to thoughts.
-    require "pry"; binding.pry
-    auth_hash = request.env['omniauth.auth']
-    user_data = {email: auth_hash['info']['email']}
-    user = UserFacade.oauth_find(user_data)
-    #assuming we can find a way to temporarily add the Oauth user to the DB
-    #this guard checks if the JSON response included a user_id or not. If not
-    #the oauth user is sent to register
-    if user[:data][:id].nil?
-      redirect_to '/register'
-    else
-      #If the user_id exists, they are sent to the dashboard, and a session
-      #token is generated
-      session[:user_id] = user.id
-      redirect_to '/dashboard'
-    end
+    @user = params[:data]
   end
 
   def create
-    new_user = UserFacade.user_create(user_params)
+    new_user = UserFacade.user_create(create_user_params)
 
     if new_user[:data][:id]
       user = User.new(new_user[:data])
@@ -95,6 +76,14 @@ class UsersController < ApplicationController
   end
 
 private
+  def create_user_params
+    params["access"] = params["access"].to_i
+    if params["activity_preferences"].class == Array
+      params["activity_preferences"] = params["activity_preferences"].join(" ")
+    end
+    params.permit(:user_name, :email, :password, :password_confirmation, :access, :street_address, :city, :state, :zipcode, :activity_preferences)
+  end
+
   def user_params
     params["id"] = session[:user_id]
     params["access"] = params["access"].to_i
