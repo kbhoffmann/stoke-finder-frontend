@@ -15,7 +15,7 @@
     <hr>
     <div class="container text-center">
       <h1 class="page-header text-primary"><%= @area.name %></h1>
-        <p class="lead">Description: <%=@area.description %></p>
+        <p class="lead"><%=strip_tags(@area.description) %></p>
         <p>Fees: <small><%=@area.fee %></small></p>
         <p>Email: <small><%=@area.email %></small></p>
         <p>Phone number: <small><%=@area.phone %></small></p>
