@@ -31,8 +31,7 @@ RSpec.describe 'Create New Adventure Page', :vcr do
     expect(current_path).to eq('/adventures/new')
     fill_in :guest_email_addresses, with: "bob@gmail.com"
     fill_in :comments, with: "woop"
-    save_and_open_page
-    click_button "🤙 Create adventure! 🤙"
+    click_button "🤙   Create adventure!   🤙"
     expect(current_path).to eq('/adventures/create')
   end
 end
