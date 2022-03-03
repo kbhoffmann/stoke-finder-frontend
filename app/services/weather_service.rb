@@ -6,7 +6,6 @@ class WeatherService
 
   def self.conn
     get_url(url: 'https://api.openweathermap.org')
-    # headers: {'appid' => ENV['weather_api_key']})
   end
 
   def self.get_weather(latitude, longitude)
