@@ -7,9 +7,7 @@ class AdventuresController < ApplicationController
   end
 
   def create
-    adventure = AdventureFacade.adventure_create(adventure_params)
-    # date = datetime_helper(params)
-    #set adventure ID as session or param in here
+    adventure = AdventuresFacade.adventure_create(adventure_params)
   end
 
   def datetime_helper(params)
@@ -20,6 +18,10 @@ class AdventuresController < ApplicationController
   def adventure_params
     params[:date] = datetime_helper(params)
     params[:comment] = params["comments"]
-    params.permit(:guest_email_addresses, :date, :comment, :activities, :favorite, :rec_area_id)
+    params[:user_id] = session[:user_id]
+    if params["activity_preferences"].class == Array
+      params[:activities] = params["activity_preferences"].join(" ")
+    end
+    params.permit(:guest_email_addresses, :date, :comment, :activities, :favorite, :rec_area_id, :user_id)
   end
 end
