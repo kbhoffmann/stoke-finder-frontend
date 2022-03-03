@@ -1,0 +1,181 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://ridb.recreation.gov/api/v1/recareas/284/activities
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - apiKey
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Server
+      Date:
+      - Thu, 03 Mar 2022 00:26:39 GMT
+      X-Amz-Apigw-Id:
+      - OYax8HDavHcFs9w=
+      X-Amzn-Trace-Id:
+      - Root=1-62200b3f-94b67b2e2837c5d5cb43c040;Sampled=0
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; always
+      Access-Control-Allow-Methods:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max_age=600,public,stale-if-error=3600
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
+        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
+        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
+        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
+        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
+        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
+        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
+        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
+        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
+        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
+        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
+        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
+        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
+        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
+        worker-src ''self'' blob: ;'
+      X-Amzn-Requestid:
+      - bfa0f35a-92fd-47bc-8f71-931eeb68d608
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 c1923648567bf97d3117cd3896d4cfd8.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-C1
+      X-Amz-Cf-Id:
+      - dfFdRclUK3Ix7PsNieDwzk5IF56XSU7bPuXLl6i_1O_0BQxmSsiQfw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"RECDATA":[{"ActivityID":5,"ActivityParentID":"","RecAreaID":"284","ActivityName":"BIKING","RecAreaActivityDescription":"Biking","RecAreaActivityFeeDescription":""},{"ActivityID":6,"ActivityParentID":"","RecAreaID":"284","ActivityName":"BOATING","RecAreaActivityDescription":"Boating","RecAreaActivityFeeDescription":""},{"ActivityID":9,"ActivityParentID":"","RecAreaID":"284","ActivityName":"CAMPING","RecAreaActivityDescription":"Camping","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"284","ActivityName":"FISHING","RecAreaActivityDescription":"Fishing","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"284","ActivityName":"HIKING","RecAreaActivityDescription":"Hiking","RecAreaActivityFeeDescription":""},{"ActivityID":15,"ActivityParentID":"","RecAreaID":"284","ActivityName":"HORSEBACK
+        RIDING","RecAreaActivityDescription":"Horseback Riding","RecAreaActivityFeeDescription":""},{"ActivityID":20,"ActivityParentID":"","RecAreaID":"284","ActivityName":"PICNICKING","RecAreaActivityDescription":"Picnic","RecAreaActivityFeeDescription":""},{"ActivityID":25,"ActivityParentID":"","RecAreaID":"284","ActivityName":"WATER
+        SPORTS","RecAreaActivityDescription":"Water Sports","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"284","ActivityName":"WILDLIFE
+        VIEWING","RecAreaActivityDescription":"Wildlife Viewing","RecAreaActivityFeeDescription":""},{"ActivityID":37,"ActivityParentID":"","RecAreaID":"284","ActivityName":"PLAYGROUND
+        PARK SPECIALIZED SPORT SITE","RecAreaActivityDescription":"Playground","RecAreaActivityFeeDescription":""},{"ActivityID":38,"ActivityParentID":"","RecAreaID":"284","ActivityName":"OTHER
+        RECREATION CONCESSION SITE","RecAreaActivityDescription":"Restaurant/SnackBar","RecAreaActivityFeeDescription":""}],"METADATA":{"RESULTS":{"CURRENT_COUNT":11,"TOTAL_COUNT":11},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":0,"OFFSET":0}}}'
+  recorded_at: Thu, 03 Mar 2022 00:26:39 GMT
+- request:
+    method: get
+    uri: https://ridb.recreation.gov/api/v1/recareas/284/activities
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - apiKey
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Server
+      Date:
+      - Thu, 03 Mar 2022 00:26:39 GMT
+      X-Amz-Apigw-Id:
+      - OYayAFXlPHcF-ig=
+      X-Amzn-Trace-Id:
+      - Root=1-62200b3f-c108b8140cdab661f5fb1bd7;Sampled=0
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; always
+      Access-Control-Allow-Methods:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max_age=600,public,stale-if-error=3600
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
+        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
+        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
+        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
+        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
+        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
+        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
+        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
+        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
+        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
+        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
+        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
+        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
+        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
+        worker-src ''self'' blob: ;'
+      X-Amzn-Requestid:
+      - cef347b9-527a-4c90-8015-16ba9bb07fed
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 be1936c1908faca6448a305dec94dc72.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-C1
+      X-Amz-Cf-Id:
+      - RVxhlrd4aGVFNPeJknJv4qUvzGdTt67TRT-cwgg4kAQ24iMpyl9Vog==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"RECDATA":[{"ActivityID":5,"ActivityParentID":"","RecAreaID":"284","ActivityName":"BIKING","RecAreaActivityDescription":"Biking","RecAreaActivityFeeDescription":""},{"ActivityID":6,"ActivityParentID":"","RecAreaID":"284","ActivityName":"BOATING","RecAreaActivityDescription":"Boating","RecAreaActivityFeeDescription":""},{"ActivityID":9,"ActivityParentID":"","RecAreaID":"284","ActivityName":"CAMPING","RecAreaActivityDescription":"Camping","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"284","ActivityName":"FISHING","RecAreaActivityDescription":"Fishing","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"284","ActivityName":"HIKING","RecAreaActivityDescription":"Hiking","RecAreaActivityFeeDescription":""},{"ActivityID":15,"ActivityParentID":"","RecAreaID":"284","ActivityName":"HORSEBACK
+        RIDING","RecAreaActivityDescription":"Horseback Riding","RecAreaActivityFeeDescription":""},{"ActivityID":20,"ActivityParentID":"","RecAreaID":"284","ActivityName":"PICNICKING","RecAreaActivityDescription":"Picnic","RecAreaActivityFeeDescription":""},{"ActivityID":25,"ActivityParentID":"","RecAreaID":"284","ActivityName":"WATER
+        SPORTS","RecAreaActivityDescription":"Water Sports","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"284","ActivityName":"WILDLIFE
+        VIEWING","RecAreaActivityDescription":"Wildlife Viewing","RecAreaActivityFeeDescription":""},{"ActivityID":37,"ActivityParentID":"","RecAreaID":"284","ActivityName":"PLAYGROUND
+        PARK SPECIALIZED SPORT SITE","RecAreaActivityDescription":"Playground","RecAreaActivityFeeDescription":""},{"ActivityID":38,"ActivityParentID":"","RecAreaID":"284","ActivityName":"OTHER
+        RECREATION CONCESSION SITE","RecAreaActivityDescription":"Restaurant/SnackBar","RecAreaActivityFeeDescription":""}],"METADATA":{"RESULTS":{"CURRENT_COUNT":11,"TOTAL_COUNT":11},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":0,"OFFSET":0}}}'
+  recorded_at: Thu, 03 Mar 2022 00:26:40 GMT
+recorded_with: VCR 6.0.0

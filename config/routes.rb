@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get '/rec_areas/search', to: 'rec_areas#search'
   get '/rec_areas/search_by_location', to: 'rec_areas#search_by_location'
   get '/rec_areas/search_by_activities', to: 'rec_areas#search_by_activities'
+  get '/rec_areas/:id', to: 'rec_areas#show'
 
 
   get '/areas', to: 'areas#index'
