@@ -3,7 +3,7 @@
 <ul>
   <div id= <%= area.name %> >
 <h3><%= area.name %></h3>
-<p><%= area.description %></p>
+<p><%= strip_tags(area.description) %></p>
 <p><%= area.directions %></p>
 <p><%= link_to "Plan an adventure for #{area.name}", adventures_new_path(area_activities: area.activities) %></p>
 <p><%= link_to "#{area.name} Details", "/rec_areas/#{area.id}"%></p>
