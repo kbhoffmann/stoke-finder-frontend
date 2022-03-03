@@ -6,8 +6,17 @@
 <br>
 <%= form.text_field :guest_email_addresses, placeholder: "friend@gmailcom, otherfriend@yahoo.net" %>
 <br>
-<p>Enter date and time:</p>
-<%= form.datetime_select :datetime %>
+<%# <p>Enter date and time:</p>
+<%= form.datetime_select :datetime %> 
+
+<div class="datetime">
+<p>Select Date:</p>
+  <%= form.date_select :datetime %>
+  <br><br>
+  <p>Select Time:</p>
+  <%= form.time_select :datetime %>
+</div>
+
 <br>
 <%= form.label :comments, "Enter comments:"%>
 <%= form.text_field :comments, placeholder: "I'm stoked!" %>
