@@ -4,6 +4,7 @@ class AdventuresController < ApplicationController
     @activities = params["area_activities"].map { |activity| activity[:ActivityName] }
     @user_id = session[:user_id]
     # @area = some facade call
+    #can pass area id as params
   end
 
   def create

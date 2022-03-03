@@ -96,7 +96,7 @@ RSpec.describe 'Search Page', :vcr do
     WebMock.enable_net_connect!
     visit "/register"
      fill_in :user_name, with: "#{rand.to_s}"
-     fill_in :email, with: "#{rand.to_s}@#{Faker::Artist.name}.com"
+     fill_in :email, with: "#{rand.to_s}@mail.com"
      fill_in :password, with: 'password12345'
      fill_in :password_confirmation, with: 'password12345'
      fill_in :street_address, with: '1234 Main St'

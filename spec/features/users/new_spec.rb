@@ -16,13 +16,13 @@ RSpec.describe 'New User Page' do
       # expect(current_path).to eq("/adventures/search")
     end
 
-    xit 'has a title and fields to fill out for new users', :vcr do
+    it 'has a title and fields to fill out for new users', :vcr do
       #check with robin!!
       visit "/register"
 
       expect(page).to have_content("Create a New Account")
-       fill_in :user_name, with: "#{Faker::Artist.name}"
-       fill_in :email, with: "agop5134@gmail.com"
+       fill_in :user_name, with: "#{rand.to_s}"
+       fill_in :email, with: "#{rand.to_s}@gmail.com"
        fill_in :password, with: 'password12345'
        fill_in :password_confirmation, with: 'password12345'
        fill_in :street_address, with: '3557 Alcott St'
@@ -35,11 +35,8 @@ RSpec.describe 'New User Page' do
        end
 
        click_button 'Submit'
-       save_and_open_page
-
 
        expect(page).to have_content("Your Profile Has Been Created!")
-       save_and_open_page
      end
    end
  end

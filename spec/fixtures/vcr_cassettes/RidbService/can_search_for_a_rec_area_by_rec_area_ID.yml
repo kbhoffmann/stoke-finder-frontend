@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 04:43:05 GMT
+      - Thu, 03 Mar 2022 16:50:24 GMT
       X-Amz-Apigw-Id:
-      - OZAWDFQhvHcFolg=
+      - Oaq4nHHvvHcFdlA=
       X-Amzn-Trace-Id:
-      - Root=1-62204759-44335c19ac5bdbdc6124aa87;Sampled=0
+      - Root=1-6220f1d0-d727c4bca2855200b70fcb29;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 5fd64673-751e-42b4-bf1e-bd44d8625649
+      - 6d5a0e05-1b04-44da-84c6-4eac600984e6
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 9bed99ac619d23b077acdc859dc1c43c.cloudfront.net (CloudFront)
+      - 1.1 592e119b061227362dc16266517f02c2.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - Z9mwKW7RL4ndTy9M-NHky7gHU7mSxSAODRX2PlKMq9xPiLLZ57i_eA==
+      - SCbW7ThrFk_FCAhs7cMeWbfbotr0Mlr1Y9iYcPAPiyixssLEkuHp7w==
     body:
       encoding: ASCII-8BIT
       string: '{"RecAreaID":"284","OrgRecAreaID":"284","ParentOrgID":"130","RecAreaName":"Chatfield
@@ -91,7 +91,7 @@ http_interactions:
         old Hildebrand Homestead, which is listed on the National Register of Historic
         Places, are open to visitors.","RecAreaFeeDescription":"","RecAreaDirections":"Located
         off C-470 southwest of Denver at the Wadsworth interchange.","RecAreaPhone":"","RecAreaEmail":"","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-105.058974,39.559653]},"RecAreaLongitude":-105.058974,"RecAreaLatitude":39.559653,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2021-09-23"}'
-  recorded_at: Thu, 03 Mar 2022 04:43:06 GMT
+  recorded_at: Thu, 03 Mar 2022 16:50:24 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/recareas/284
@@ -121,11 +121,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 04:43:06 GMT
+      - Thu, 03 Mar 2022 16:50:25 GMT
       X-Amz-Apigw-Id:
-      - OZAWIEdMPHcFlXQ=
+      - Oaq4tHFPvHcF9Mw=
       X-Amzn-Trace-Id:
-      - Root=1-6220475a-5c73db90c5ee19aa5adce992;Sampled=0
+      - Root=1-6220f1d1-294250cc4d769120f5e496de;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -161,17 +161,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - e7c3aa27-3c3b-48d0-a9c6-ead6821e6f23
+      - e22cb5b0-6fe9-4d18-b86f-f0e470e393d2
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 f5cdd38f09a779678a15f788f0f3cbe2.cloudfront.net (CloudFront)
+      - 1.1 9d8f66b0c71d2e8a1b8c6f76102da8ca.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - GYK1b4PgKipgcRiLQy__2F5c4jUmpX7RTZQ9v3rI6BF_1SKLmXDDhQ==
+      - '08__Gwi-BkxyrrY0AAKTzwuJB879fHYvBNRLhhPZUGUaYZ_8RiP2xw=='
     body:
       encoding: ASCII-8BIT
       string: '{"RecAreaID":"284","OrgRecAreaID":"284","ParentOrgID":"130","RecAreaName":"Chatfield
@@ -183,5 +183,5 @@ http_interactions:
         old Hildebrand Homestead, which is listed on the National Register of Historic
         Places, are open to visitors.","RecAreaFeeDescription":"","RecAreaDirections":"Located
         off C-470 southwest of Denver at the Wadsworth interchange.","RecAreaPhone":"","RecAreaEmail":"","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-105.058974,39.559653]},"RecAreaLongitude":-105.058974,"RecAreaLatitude":39.559653,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2021-09-23"}'
-  recorded_at: Thu, 03 Mar 2022 04:43:06 GMT
+  recorded_at: Thu, 03 Mar 2022 16:50:25 GMT
 recorded_with: VCR 6.0.0

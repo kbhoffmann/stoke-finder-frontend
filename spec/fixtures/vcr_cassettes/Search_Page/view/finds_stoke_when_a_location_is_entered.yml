@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 04:42:37 GMT
+      - Thu, 03 Mar 2022 16:49:36 GMT
       X-Amz-Apigw-Id:
-      - OZARqGLXvHcFshQ=
+      - OaqxGHT6vHcFsTA=
       X-Amzn-Trace-Id:
-      - Root=1-6220473d-055ddbe00f7d051858d5730f;Sampled=0
+      - Root=1-6220f1a0-a82aa7fd6adf286c54749697;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 83e95396-d310-43f6-9b61-115bc78914ec
+      - c83ae17d-7086-4db4-9310-25ff9f5e04e1
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 e466a87164c3f9591e3c8ac45a4b2074.cloudfront.net (CloudFront)
+      - 1.1 be1936c1908faca6448a305dec94dc72.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - gH1gmuaTHD2OOmTEKF2XE3lhxz5ZOfbsCRFvWejLmOsN0LYLhpTsQg==
+      - 8l5TEyErbfqLcOYMO3o6HYyo4TOmSFvr-ClZ1wT8eEjNUAiZadvlvQ==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -167,7 +167,7 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 04:42:37 GMT
+  recorded_at: Thu, 03 Mar 2022 16:49:36 GMT
 - request:
     method: get
     uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Denver,%20CO
@@ -189,7 +189,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 03 Mar 2022 04:42:38 GMT
+      - Thu, 03 Mar 2022 16:49:38 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -206,7 +206,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sicGxhY2VfaWQiOjMyNzIwOTI4OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJyZWxhdGlvbiIsIm9zbV9pZCI6MTQxMTMzOSwiYm91bmRpbmdib3giOlsiMzkuNjE0MzE1NCIsIjM5LjkxNDIwODciLCItMTA1LjEwOTg4NDUiLCItMTA0LjU5OTY5OTciXSwibGF0IjoiMzkuNzM5MjM2NCIsImxvbiI6Ii0xMDQuOTg0ODYyMyIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgQ29sb3JhZG8sIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwiaW1wb3J0YW5jZSI6MC44MDU0NzU4NzM5MDk1NzkxLCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsiY2l0eSI6IkRlbnZlciIsInN0YXRlIjoiQ29sb3JhZG8iLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjI4ODc1NCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoxNTEzMzMyNDEsImJvdW5kaW5nYm94IjpbIjQyLjY1MTM3NTIiLCI0Mi42OTEzNzUyIiwiLTkyLjM1NzIxNTgiLCItOTIuMzE3MjE1OCJdLCJsYXQiOiI0Mi42NzEzNzUyIiwibG9uIjoiLTkyLjMzNzIxNTgiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIEJyZW1lciBDb3VudHksIElvd2EsIDUwNjIyLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJ2aWxsYWdlIiwiaW1wb3J0YW5jZSI6MC42NDE4Mzk0Mzg1MDE2OTk5LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiQnJlbWVyIENvdW50eSIsInN0YXRlIjoiSW93YSIsInBvc3Rjb2RlIjoiNTA2MjIiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjI4MjMzNTg2NSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJyZWxhdGlvbiIsIm9zbV9pZCI6MTI4NTEyLCJib3VuZGluZ2JveCI6WyI0Mi42NTY3OTk5IiwiNDIuNjgwMzA3MyIsIi05Mi4zNDcxMzY0IiwiLTkyLjMxNzU0MSJdLCJsYXQiOiI0Mi42Njk3NjA5OTk5OTk5OTQiLCJsb24iOiItOTIuMzMyMzI4ODkwMTg4NyIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgQnJlbWVyIENvdW50eSwgSW93YSwgNTA2MjIsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwiaW1wb3J0YW5jZSI6MC42NDE4Mzk0Mzg1MDE2OTk5LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsidmlsbGFnZSI6IkRlbnZlciIsImNvdW50eSI6IkJyZW1lciBDb3VudHkiLCJzdGF0ZSI6Iklvd2EiLCJwb3N0Y29kZSI6IjUwNjIyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjozMzkzMTEsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTUzNTY5NjM1LCJib3VuZGluZ2JveCI6WyI0MC44NDU1ODgyIiwiNDAuODg1NTg4MiIsIi04Ni4wOTg4NTM3IiwiLTg2LjA1ODg1MzciXSwibGF0IjoiNDAuODY1NTg4MiIsImxvbiI6Ii04Ni4wNzg4NTM3IiwiZGlzcGxheV9uYW1lIjoiRGVudmVyLCBNaWFtaSBDb3VudHksIEluZGlhbmEsIDQ2OTI2LCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJ2aWxsYWdlIiwiaW1wb3J0YW5jZSI6MC41NjYyODEwOTMwMzUyMTE4LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiTWlhbWkgQ291bnR5Iiwic3RhdGUiOiJJbmRpYW5hIiwicG9zdGNvZGUiOiI0NjkyNiIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MjgzNjQ0NjAwLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo5MjYwNzQ3LCJib3VuZGluZ2JveCI6WyI0NS4yNzU1ODI4IiwiNDUuMzc0ODY1OSIsIi02Mi4yMjE1NzEiLCItNjIuMDcyNzAyOCJdLCJsYXQiOiI0NS4zMzY5NDM0IiwibG9uIjoiLTYyLjExMDg2MjkiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIFN0LiBNYXJ5J3MgRGlzdHJpY3QgTXVuaWNpcGFsaXR5LCBHdXlzYm9yb3VnaCBDb3VudHksIE5vdmEgU2NvdGlhLCBDYW5hZGEiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwiaW1wb3J0YW5jZSI6MC41NiwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zLy9wb2lfYm91bmRhcnlfYWRtaW5pc3RyYXRpdmUucC4yMC5wbmciLCJhZGRyZXNzIjp7ImhhbWxldCI6IkRlbnZlciIsIm11bmljaXBhbGl0eSI6IlN0LiBNYXJ5J3MgRGlzdHJpY3QgTXVuaWNpcGFsaXR5IiwiY291bnR5IjoiR3V5c2Jvcm91Z2ggQ291bnR5Iiwic3RhdGUiOiJOb3ZhIFNjb3RpYSIsImNvdW50cnkiOiJDYW5hZGEiLCJjb3VudHJ5X2NvZGUiOiJjYSJ9fSx7InBsYWNlX2lkIjoyODIzMTYzNTAsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoicmVsYXRpb24iLCJvc21faWQiOjE4NzY5OSwiYm91bmRpbmdib3giOlsiNDAuMjIxMDA2IiwiNDAuMjQ2NDg1IiwiLTc2LjE1ODYxNCIsIi03Ni4xMjUxNDgiXSwibGF0IjoiNDAuMjM0NTQ1NSIsImxvbiI6Ii03Ni4xMzYwNzM1MjU4MDMzNyIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgTGFuY2FzdGVyIENvdW50eSwgUGVubnN5bHZhbmlhLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsImltcG9ydGFuY2UiOjAuNTM2NTQ4MDExOTM3MjU3OSwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zLy9wb2lfYm91bmRhcnlfYWRtaW5pc3RyYXRpdmUucC4yMC5wbmciLCJhZGRyZXNzIjp7ImJvcm91Z2giOiJEZW52ZXIiLCJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiTGFuY2FzdGVyIENvdW50eSIsInN0YXRlIjoiUGVubnN5bHZhbmlhIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjozNjIxMTgsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTU0MDYwMzYzLCJib3VuZGluZ2JveCI6WyIzNS41MTEyNDUyIiwiMzUuNTUxMjQ1MiIsIi04MS4wNDk3OTk0IiwiLTgxLjAwOTc5OTQiXSwibGF0IjoiMzUuNTMxMjQ1MiIsImxvbiI6Ii04MS4wMjk3OTk0IiwiZGlzcGxheV9uYW1lIjoiRGVudmVyLCBMaW5jb2xuIENvdW50eSwgTm9ydGggQ2Fyb2xpbmEsIDI4MDM3LCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJoYW1sZXQiLCJpbXBvcnRhbmNlIjowLjUxMjMyMzg1NDE3NjQ5MTYsImljb24iOiJodHRwczovL25vbWluYXRpbS5vcGVuc3RyZWV0bWFwLm9yZy91aS9tYXBpY29ucy8vcG9pX3BsYWNlX3ZpbGxhZ2UucC4yMC5wbmciLCJhZGRyZXNzIjp7ImhhbWxldCI6IkRlbnZlciIsImNvdW50eSI6IkxpbmNvbG4gQ291bnR5Iiwic3RhdGUiOiJOb3J0aCBDYXJvbGluYSIsInBvc3Rjb2RlIjoiMjgwMzciLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjQwODEwOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoxNTg1NTA3OTUsImJvdW5kaW5nYm94IjpbIjM5LjM2MjMxNTkiLCIzOS40MDIzMTU5IiwiLTc5Ljc5MDM0MSIsIi03OS43NTAzNDEiXSwibGF0IjoiMzkuMzgyMzE1OSIsImxvbiI6Ii03OS43NzAzNDEiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIFByZXN0b24gQ291bnR5LCBXZXN0IFZpcmdpbmlhLCAyNjQ0NCwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicGxhY2UiLCJ0eXBlIjoiaGFtbGV0IiwiaW1wb3J0YW5jZSI6MC41MDAyNTk2NDYyMjQwNTgyLCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJoYW1sZXQiOiJEZW52ZXIiLCJjb3VudHkiOiJQcmVzdG9uIENvdW50eSIsInN0YXRlIjoiV2VzdCBWaXJnaW5pYSIsInBvc3Rjb2RlIjoiMjY0NDQiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjQwNDUxNSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoxNTg0NTg2ODAsImJvdW5kaW5nYm94IjpbIjQwLjIxMzE0ODMiLCI0MC4yNTMxNDgzIiwiLTc2LjE1NzE2ODQiLCItNzYuMTE3MTY4NCJdLCJsYXQiOiI0MC4yMzMxNDgzIiwibG9uIjoiLTc2LjEzNzE2ODQiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIExhbmNhc3RlciBDb3VudHksIFBlbm5zeWx2YW5pYSwgMTc1NzgsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6InBsYWNlIiwidHlwZSI6InZpbGxhZ2UiLCJpbXBvcnRhbmNlIjowLjQ4NTAwMDAwMDAwMDAwMDA0LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiTGFuY2FzdGVyIENvdW50eSIsInN0YXRlIjoiUGVubnN5bHZhbmlhIiwicG9zdGNvZGUiOiIxNzU3OCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MjgyMjg2ODY0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNDEzNDQsImJvdW5kaW5nYm94IjpbIjQwLjM5MTY5OCIsIjQwLjQwNTk0MSIsIi05NC4zMjkwNDkiLCItOTQuMzE4NzUiXSwibGF0IjoiNDAuMzk3MjAyIiwibG9uIjoiLTk0LjMyNDYwNCIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgV29ydGggQ291bnR5LCBNaXNzb3VyaSwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJpbXBvcnRhbmNlIjowLjQ4NDUzMjExMTUwNjQ0MTc2LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsiaGFtbGV0IjoiRGVudmVyIiwiY291bnR5IjoiV29ydGggQ291bnR5Iiwic3RhdGUiOiJNaXNzb3VyaSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX1d
-  recorded_at: Thu, 03 Mar 2022 04:42:38 GMT
+  recorded_at: Thu, 03 Mar 2022 16:49:38 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/recareas?activity&full=true&latitude=39.7392364&limit=10&longitude=-104.9848623&radius=200
@@ -236,11 +236,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 04:42:39 GMT
+      - Thu, 03 Mar 2022 16:49:39 GMT
       X-Amz-Apigw-Id:
-      - OZARxGHavHcFcYA=
+      - OaqxYFoHvHcFyIQ=
       X-Amzn-Trace-Id:
-      - Root=1-6220473e-aecd3a09522be742a66063c7;Sampled=0
+      - Root=1-6220f1a2-897aef8b4179e2e62bedd602;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -276,17 +276,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 10ebee50-3530-4140-84da-c5653fed0acf
+      - 726253a7-2ca7-4581-928e-863297d5fcef
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 5950a1c2bfcf1f3e07bedbb2efad39f2.cloudfront.net (CloudFront)
+      - 1.1 402032e48d13c4b7217c7a59235bf8cc.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - "-yFWDRClCReoFroDJDaqhyrTQRYhmJf27F0eZJGgo8Dp5GBmmJsbkw=="
+      - "-0Yn1rppV8A-oESMURYYwohbFTDVa2cRIcjhweOKWNDDcCovEOaSyw=="
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"RecAreaID":"284","OrgRecAreaID":"284","ParentOrgID":"130","RecAreaName":"Chatfield
@@ -377,13 +377,13 @@ http_interactions:
         PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"FISHING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":24,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"VISITOR
         CENTER","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"WILDLIFE
         VIEWING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"9611d31747205cc50999c68c5a1bdab8","LinkType":"Official
-        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
-        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
-        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
-        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false},{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
         Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
         Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":340,"Width":1440,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_0f866aa1-4aff-4568-9292-25f29db7d712_1440.jpg","Credits":"John
-        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false}]},{"RecAreaID":"306","OrgRecAreaID":"306","ParentOrgID":"130","RecAreaName":"Bear
+        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false},{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false}]},{"RecAreaID":"306","OrgRecAreaID":"306","ParentOrgID":"130","RecAreaName":"Bear
         Creek Lake","RecAreaDescription":"Bear Creek Dam, the last of three dams built
         to protect the Denver region from floods, is located on the southwest edge
         of suburban Lakewood at the confluence of Bear Creek and Turkey Creek.  This
@@ -405,5 +405,5 @@ http_interactions:
         Web Site","EntityID":"306","EntityType":"RecArea","Title":"Bear Creek Lake
         Website","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/projects.cfm?ID=G672285"},{"EntityLinkID":"0bfb0856091fce0e68cbbfd1ea3007f0","LinkType":"Other","EntityID":"306","EntityType":"RecArea","Title":"Bear
         Creek Lake Photo Album","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/album.cfm?Option=View\u0026Activity=None\u0026ID=G672285"}],"MEDIA":[{"EntityMediaID":"326049","MediaType":"Image","EntityID":"306","EntityType":"RecArea","Title":"","Subtitle":"","Description":"","EmbedCode":"","Height":295,"Width":480,"URL":"https://cdn.recreation.gov/public/images/2138.jpg","Credits":"","IsPrimary":false,"IsPreview":false,"IsGallery":true}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":5,"TOTAL_COUNT":5},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 04:42:39 GMT
+  recorded_at: Thu, 03 Mar 2022 16:49:39 GMT
 recorded_with: VCR 6.0.0
