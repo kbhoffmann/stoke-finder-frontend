@@ -26,7 +26,11 @@ RSpec.describe Forecast do
      expect(forecast.overview).to eq("Clouds")
      expect(forecast.description).to eq("broken clouds")
      expect(forecast.icon_number).to eq("04d")
-     #would need to make another query for icon image
+     expect(forecast.feels_like_temp).to eq(61.74)
+     expect(forecast.humidity).to eq(21)
+     expect(forecast.wind_speed_mph).to eq(1.77)
+     expect(forecast.uv_index).to eq(0.76)
+
      # expect(forecast.alerts)
      #  expect(forecast.sunrise).to eq()
      #  # Unix, UTC
