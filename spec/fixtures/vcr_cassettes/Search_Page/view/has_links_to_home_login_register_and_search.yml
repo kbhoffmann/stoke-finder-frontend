@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Wed, 02 Mar 2022 09:27:39 GMT
+      - Thu, 03 Mar 2022 00:25:40 GMT
       X-Amz-Apigw-Id:
-      - OWXFwEWYvHcFY2w=
+      - OYaosGiEPHcF4aA=
       X-Amzn-Trace-Id:
-      - Root=1-621f388b-2ed3aac7e4ae5db36808ecff;Sampled=0
+      - Root=1-62200b04-3de8b7cb1cb547180e23301c;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 13a21ee0-f05d-441e-aaf0-d5f64c25acc3
+      - 7ed9c097-dac4-4d65-b3c7-914ed6ea5dd3
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 3f7e5e686bf8f19b9c786efbe99c7588.cloudfront.net (CloudFront)
+      - 1.1 5babf08f08448687a0208408106aaed8.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - FYgh3Whm_29W0bPfD9n7YMVsUO2LAU9QwKI6qyoYQSGWyv_0T8ryRA==
+      - UMxt4HASbJNR8EGdJyqqqCEz_Woj2Rji-sEi1_Npr0i3wPoUR9eP8w==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -167,7 +167,7 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Wed, 02 Mar 2022 09:27:39 GMT
+  recorded_at: Thu, 03 Mar 2022 00:25:40 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/activities?limit=128&offset=0
@@ -197,11 +197,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Wed, 02 Mar 2022 09:27:39 GMT
+      - Thu, 03 Mar 2022 00:25:41 GMT
       X-Amz-Apigw-Id:
-      - OWXF2G24PHcFZDg=
+      - OYao0EQ2PHcFR6w=
       X-Amzn-Trace-Id:
-      - Root=1-621f388b-05de72dc7e700094a5fe1403;Sampled=0
+      - Root=1-62200b05-7eb7da73cefad682f4d5fa92;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -237,17 +237,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 540d7075-c0b8-473e-a80c-af86f74601a4
+      - f4296d2f-e07f-4bf6-9f86-6e93aa700bc1
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 c1923648567bf97d3117cd3896d4cfd8.cloudfront.net (CloudFront)
+      - 1.1 543364398a9b5ee1ed0d763a4bb2c14a.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - OI8yU6hOWh66e8DWLrsqYjH_MrQCmwOpIAN320MJqq_1eEJOgv9JkQ==
+      - UCyrDCFwIRmpElKE36vQVMdum7BU2LCV8KarG7L0CoMsaMTbiB31FA==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -335,7 +335,7 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Wed, 02 Mar 2022 09:27:39 GMT
+  recorded_at: Thu, 03 Mar 2022 00:25:41 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/activities?limit=128&offset=0
@@ -365,11 +365,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Wed, 02 Mar 2022 09:27:40 GMT
+      - Thu, 03 Mar 2022 00:25:41 GMT
       X-Amz-Apigw-Id:
-      - OWXF5HqxPHcF7cQ=
+      - OYao4G6sPHcFp5Q=
       X-Amzn-Trace-Id:
-      - Root=1-621f388b-13d8c75b899e81d991a7cde0;Sampled=0
+      - Root=1-62200b05-cb5e9f3f8fe9a324b44ec616;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -405,17 +405,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 2e7d1f18-e13f-4d62-95fe-68b3e53e859d
+      - ebd45dc2-e460-4fcb-bdd6-30f03c2929f8
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 e466a87164c3f9591e3c8ac45a4b2074.cloudfront.net (CloudFront)
+      - 1.1 5539e869b7b6ea60eddee5f69c9a0d9c.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - hHC771nLQf1PyFESh7qlaWxptc2A7N1sV-CwJy2mmrPyIkgWJicCmg==
+      - dkslkKhfFFTep5P_4p697VHigndK6Yea3BMXzOfGYqXqjl5sPwPs0w==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -503,5 +503,5 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Wed, 02 Mar 2022 09:27:40 GMT
+  recorded_at: Thu, 03 Mar 2022 00:25:41 GMT
 recorded_with: VCR 6.0.0

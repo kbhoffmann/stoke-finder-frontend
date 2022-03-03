@@ -1,0 +1,27 @@
+<h1><%= @area.name %></h1>
+
+<p>Description: <%=@area.description %></p>
+<p>Fees: <%=@area.fee %></p>
+<p>Email: <%=@area.email %></p>
+<p>Phone number: <%=@area.phone %></p>
+
+<br>
+<hr>
+
+<h3>Activities for the area: </h3>
+  <% @all_activities.each do |activity| %>
+    <h2><%= activity.name %></h2>
+    <p>Description: <%= activity.description %></p>
+    <p>Fee: <%= activity.fee %></p>
+  <% end %>
+
+<br>
+<hr>
+<h2>Weather for <%= @area.name %></h2>
+<p>Current Temperature: <%= @forecast.temp.round %>&deg;F</p>
+<p>Feels Like: <%=@forecast.feels_like_temp%>&deg;F</p>
+<p>Conditions: <%= @forecast.description.capitalize %></p>
+<%= image_tag "http://openweathermap.org/img/wn/#{@forecast.icon_number}.png" %>
+<p>Humidity: <%=@forecast.humidity%> % </p>
+<p>Wind Speed: <%=@forecast.wind_speed_mph%> mph </p>
+<p>UV Index: <%=@forecast.uv_index%></p>

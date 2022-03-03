@@ -20,9 +20,6 @@ RSpec.describe 'Search Page', :vcr do
     end
 
     it "finds stoke when a location is entered", :vcr do
-      # VCR.turn_off!
-      # WebMock.enable_net_connect!
-
       visit "/rec_areas/search"
       fill_in "Search all activites by Location(City, State)", with: "Denver, CO"
       within '#200' do
@@ -34,9 +31,7 @@ RSpec.describe 'Search Page', :vcr do
       expect(page).to have_content("Plan an adventure for Chatfield Lake")
     end
 
-
     it "finds stoke preferences are entered based on user's saved addy", :vcr do
-
       visit "/register"
        fill_in :user_name, with: "#{Faker::Artist.name}"
        fill_in :email, with: "#{Faker::GreekPhilosophers.name}@#{Faker::Artist.name}.com"
@@ -57,7 +52,6 @@ RSpec.describe 'Search Page', :vcr do
 
       click_button 'Submit'
 
-
       # no login yet so requiring register to set session for things that require session.
 
       click_button "Start An Adventure"
@@ -69,9 +63,26 @@ RSpec.describe 'Search Page', :vcr do
         check
       end
       click_button "Search by Activity"
-      save_and_open_page
+
       expect(current_path).to eq("/rec_areas/search_by_activities")
       expect(page).to have_link("Plan an adventure for Apostle Islands National Lakeshore")
+    end
+
+    it "links to the rec area show page", :vcr do
+      visit "/rec_areas/search"
+      
+      id = "284"
+
+      fill_in "Search all activites by Location(City, State)", with: "Denver, CO"
+      within '#200' do
+        check
+      end
+      click_button "Search by Location"
+
+      expect(current_path).to eq("/rec_areas/search_by_location")
+      expect(page).to have_content("Chatfield Lake")
+      click_link("Chatfield Lake Details")
+      expect(current_path).to eq("/rec_areas/#{id}")
     end
   end
 end
