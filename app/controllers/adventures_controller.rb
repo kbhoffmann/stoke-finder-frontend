@@ -7,12 +7,19 @@ class AdventuresController < ApplicationController
   end
 
   def create
-    date = datetime_helper(params)
-    # require 'pry'; binding.pry
+    adventure = AdventureFacade.adventure_create(adventure_params)
+    # date = datetime_helper(params)
     #set adventure ID as session or param in here
   end
 
   def datetime_helper(params)
     (params["datetime(3i)"] + "/" + params["datetime(2i)"] + "/" + params["datetime(1i)"] + "/" +  params["datetime(4i)"] + ":" + params["datetime(5i)"]).to_datetime
+  end
+
+  private 
+  def adventure_params
+    params[:date] = datetime_helper(params)
+    params[:comment] = params["comments"]
+    params.permit(:guest_email_addresses, :date, :comment, :activities, :favorite, :rec_area_id)
   end
 end
