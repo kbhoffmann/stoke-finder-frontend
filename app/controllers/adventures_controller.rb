@@ -9,7 +9,6 @@ class AdventuresController < ApplicationController
 
   def create
     date = datetime_helper(params)
-    binding.pry
     #set adventure ID as session or param in here
   end
 

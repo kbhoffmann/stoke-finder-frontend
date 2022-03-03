@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 16:49:39 GMT
+      - Thu, 03 Mar 2022 18:04:36 GMT
       X-Amz-Apigw-Id:
-      - OaqxmHujvHcF9Mw=
+      - Oa1wLGqmPHcF2uA=
       X-Amzn-Trace-Id:
-      - Root=1-6220f1a3-03f1f957b0d009043e7bbd52;Sampled=0
+      - Root=1-62210334-790db2b684917ed2fcb66582;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 2e14c067-9b35-4e89-b395-d122891beaf7
+      - 81fd97b8-640c-419c-af4d-97e0199a01db
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 9d8f66b0c71d2e8a1b8c6f76102da8ca.cloudfront.net (CloudFront)
+      - 1.1 95ab38d462185df6df78ba1102868640.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - tTWH2JnGNjg8d7B-eY2jHZ7JZMZTWonm6gScnRHo7jKnc0bbPul4xA==
+      - 8fckbxv4x3upLo9ZQisPPQg9yA8JEXl_ScpKeZ7q9lBPYl5sIhxeag==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -167,49 +167,146 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 16:49:39 GMT
+  recorded_at: Thu, 03 Mar 2022 18:04:36 GMT
 - request:
-    method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Denver,%20CO
+    method: post
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users
     body:
-      encoding: US-ASCII
-      string: ''
+      encoding: UTF-8
+      string: '{"id":null,"user_name":"0.0597602089000987","email":"0.6835004355034922@mail.com","password":"password12345","password_confirmation":"password12345","access":0,"street_address":"1234
+        Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
+        SWIMMING"}'
     headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Content-Type:
+      - application/x-www-form-urlencoded
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 03 Mar 2022 18:04:37 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"eb5edc168d31c82fbcc11fde7f444c50"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fb563c20-6b60-48ee-9968-ac4c724baa8e
+      X-Runtime:
+      - '0.826897'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"269","type":"user","attributes":{"user_name":"0.0597602089000987","email":"0.6835004355034922@mail.com","street_address":"1234
+        Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
+        SWIMMING","latitude":40.2277056,"longitude":-76.1313541}}}'
+  recorded_at: Thu, 03 Mar 2022 18:04:37 GMT
+- request:
+    method: get
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/269
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
       User-Agent:
-      - Ruby
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
   response:
     status:
       code: 200
       message: OK
     headers:
       Server:
-      - nginx
+      - Cowboy
       Date:
-      - Thu, 03 Mar 2022 16:49:40 GMT
-      Content-Type:
-      - application/json; charset=UTF-8
-      Transfer-Encoding:
-      - chunked
+      - Thu, 03 Mar 2022 18:04:38 GMT
       Connection:
       - keep-alive
-      Keep-Alive:
-      - timeout=20
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - OPTIONS,GET
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"eb5edc168d31c82fbcc11fde7f444c50"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 744c7a0a-de1b-4d36-a31e-5f7f56a024bd
+      X-Runtime:
+      - '0.576805'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjMyNzIwOTI4OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJyZWxhdGlvbiIsIm9zbV9pZCI6MTQxMTMzOSwiYm91bmRpbmdib3giOlsiMzkuNjE0MzE1NCIsIjM5LjkxNDIwODciLCItMTA1LjEwOTg4NDUiLCItMTA0LjU5OTY5OTciXSwibGF0IjoiMzkuNzM5MjM2NCIsImxvbiI6Ii0xMDQuOTg0ODYyMyIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgQ29sb3JhZG8sIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwiaW1wb3J0YW5jZSI6MC44MDU0NzU4NzM5MDk1NzkxLCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsiY2l0eSI6IkRlbnZlciIsInN0YXRlIjoiQ29sb3JhZG8iLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjI4ODc1NCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoxNTEzMzMyNDEsImJvdW5kaW5nYm94IjpbIjQyLjY1MTM3NTIiLCI0Mi42OTEzNzUyIiwiLTkyLjM1NzIxNTgiLCItOTIuMzE3MjE1OCJdLCJsYXQiOiI0Mi42NzEzNzUyIiwibG9uIjoiLTkyLjMzNzIxNTgiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIEJyZW1lciBDb3VudHksIElvd2EsIDUwNjIyLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJ2aWxsYWdlIiwiaW1wb3J0YW5jZSI6MC42NDE4Mzk0Mzg1MDE2OTk5LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiQnJlbWVyIENvdW50eSIsInN0YXRlIjoiSW93YSIsInBvc3Rjb2RlIjoiNTA2MjIiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjI4MjMzNTg2NSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJyZWxhdGlvbiIsIm9zbV9pZCI6MTI4NTEyLCJib3VuZGluZ2JveCI6WyI0Mi42NTY3OTk5IiwiNDIuNjgwMzA3MyIsIi05Mi4zNDcxMzY0IiwiLTkyLjMxNzU0MSJdLCJsYXQiOiI0Mi42Njk3NjA5OTk5OTk5OTQiLCJsb24iOiItOTIuMzMyMzI4ODkwMTg4NyIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgQnJlbWVyIENvdW50eSwgSW93YSwgNTA2MjIsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwiaW1wb3J0YW5jZSI6MC42NDE4Mzk0Mzg1MDE2OTk5LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsidmlsbGFnZSI6IkRlbnZlciIsImNvdW50eSI6IkJyZW1lciBDb3VudHkiLCJzdGF0ZSI6Iklvd2EiLCJwb3N0Y29kZSI6IjUwNjIyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjozMzkzMTEsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTUzNTY5NjM1LCJib3VuZGluZ2JveCI6WyI0MC44NDU1ODgyIiwiNDAuODg1NTg4MiIsIi04Ni4wOTg4NTM3IiwiLTg2LjA1ODg1MzciXSwibGF0IjoiNDAuODY1NTg4MiIsImxvbiI6Ii04Ni4wNzg4NTM3IiwiZGlzcGxheV9uYW1lIjoiRGVudmVyLCBNaWFtaSBDb3VudHksIEluZGlhbmEsIDQ2OTI2LCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJ2aWxsYWdlIiwiaW1wb3J0YW5jZSI6MC41NjYyODEwOTMwMzUyMTE4LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiTWlhbWkgQ291bnR5Iiwic3RhdGUiOiJJbmRpYW5hIiwicG9zdGNvZGUiOiI0NjkyNiIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MjgzNjQ0NjAwLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo5MjYwNzQ3LCJib3VuZGluZ2JveCI6WyI0NS4yNzU1ODI4IiwiNDUuMzc0ODY1OSIsIi02Mi4yMjE1NzEiLCItNjIuMDcyNzAyOCJdLCJsYXQiOiI0NS4zMzY5NDM0IiwibG9uIjoiLTYyLjExMDg2MjkiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIFN0LiBNYXJ5J3MgRGlzdHJpY3QgTXVuaWNpcGFsaXR5LCBHdXlzYm9yb3VnaCBDb3VudHksIE5vdmEgU2NvdGlhLCBDYW5hZGEiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwiaW1wb3J0YW5jZSI6MC41NiwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zLy9wb2lfYm91bmRhcnlfYWRtaW5pc3RyYXRpdmUucC4yMC5wbmciLCJhZGRyZXNzIjp7ImhhbWxldCI6IkRlbnZlciIsIm11bmljaXBhbGl0eSI6IlN0LiBNYXJ5J3MgRGlzdHJpY3QgTXVuaWNpcGFsaXR5IiwiY291bnR5IjoiR3V5c2Jvcm91Z2ggQ291bnR5Iiwic3RhdGUiOiJOb3ZhIFNjb3RpYSIsImNvdW50cnkiOiJDYW5hZGEiLCJjb3VudHJ5X2NvZGUiOiJjYSJ9fSx7InBsYWNlX2lkIjoyODIzMTYzNTAsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoicmVsYXRpb24iLCJvc21faWQiOjE4NzY5OSwiYm91bmRpbmdib3giOlsiNDAuMjIxMDA2IiwiNDAuMjQ2NDg1IiwiLTc2LjE1ODYxNCIsIi03Ni4xMjUxNDgiXSwibGF0IjoiNDAuMjM0NTQ1NSIsImxvbiI6Ii03Ni4xMzYwNzM1MjU4MDMzNyIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgTGFuY2FzdGVyIENvdW50eSwgUGVubnN5bHZhbmlhLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsImltcG9ydGFuY2UiOjAuNTM2NTQ4MDExOTM3MjU3OSwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zLy9wb2lfYm91bmRhcnlfYWRtaW5pc3RyYXRpdmUucC4yMC5wbmciLCJhZGRyZXNzIjp7ImJvcm91Z2giOiJEZW52ZXIiLCJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiTGFuY2FzdGVyIENvdW50eSIsInN0YXRlIjoiUGVubnN5bHZhbmlhIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjozNjIxMTgsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTU0MDYwMzYzLCJib3VuZGluZ2JveCI6WyIzNS41MTEyNDUyIiwiMzUuNTUxMjQ1MiIsIi04MS4wNDk3OTk0IiwiLTgxLjAwOTc5OTQiXSwibGF0IjoiMzUuNTMxMjQ1MiIsImxvbiI6Ii04MS4wMjk3OTk0IiwiZGlzcGxheV9uYW1lIjoiRGVudmVyLCBMaW5jb2xuIENvdW50eSwgTm9ydGggQ2Fyb2xpbmEsIDI4MDM3LCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJoYW1sZXQiLCJpbXBvcnRhbmNlIjowLjUxMjMyMzg1NDE3NjQ5MTYsImljb24iOiJodHRwczovL25vbWluYXRpbS5vcGVuc3RyZWV0bWFwLm9yZy91aS9tYXBpY29ucy8vcG9pX3BsYWNlX3ZpbGxhZ2UucC4yMC5wbmciLCJhZGRyZXNzIjp7ImhhbWxldCI6IkRlbnZlciIsImNvdW50eSI6IkxpbmNvbG4gQ291bnR5Iiwic3RhdGUiOiJOb3J0aCBDYXJvbGluYSIsInBvc3Rjb2RlIjoiMjgwMzciLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjQwODEwOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoxNTg1NTA3OTUsImJvdW5kaW5nYm94IjpbIjM5LjM2MjMxNTkiLCIzOS40MDIzMTU5IiwiLTc5Ljc5MDM0MSIsIi03OS43NTAzNDEiXSwibGF0IjoiMzkuMzgyMzE1OSIsImxvbiI6Ii03OS43NzAzNDEiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIFByZXN0b24gQ291bnR5LCBXZXN0IFZpcmdpbmlhLCAyNjQ0NCwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicGxhY2UiLCJ0eXBlIjoiaGFtbGV0IiwiaW1wb3J0YW5jZSI6MC41MDAyNTk2NDYyMjQwNTgyLCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJoYW1sZXQiOiJEZW52ZXIiLCJjb3VudHkiOiJQcmVzdG9uIENvdW50eSIsInN0YXRlIjoiV2VzdCBWaXJnaW5pYSIsInBvc3Rjb2RlIjoiMjY0NDQiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjQwNDUxNSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoxNTg0NTg2ODAsImJvdW5kaW5nYm94IjpbIjQwLjIxMzE0ODMiLCI0MC4yNTMxNDgzIiwiLTc2LjE1NzE2ODQiLCItNzYuMTE3MTY4NCJdLCJsYXQiOiI0MC4yMzMxNDgzIiwibG9uIjoiLTc2LjEzNzE2ODQiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIExhbmNhc3RlciBDb3VudHksIFBlbm5zeWx2YW5pYSwgMTc1NzgsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6InBsYWNlIiwidHlwZSI6InZpbGxhZ2UiLCJpbXBvcnRhbmNlIjowLjQ4NTAwMDAwMDAwMDAwMDA0LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiTGFuY2FzdGVyIENvdW50eSIsInN0YXRlIjoiUGVubnN5bHZhbmlhIiwicG9zdGNvZGUiOiIxNzU3OCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MjgyMjg2ODY0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNDEzNDQsImJvdW5kaW5nYm94IjpbIjQwLjM5MTY5OCIsIjQwLjQwNTk0MSIsIi05NC4zMjkwNDkiLCItOTQuMzE4NzUiXSwibGF0IjoiNDAuMzk3MjAyIiwibG9uIjoiLTk0LjMyNDYwNCIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgV29ydGggQ291bnR5LCBNaXNzb3VyaSwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJpbXBvcnRhbmNlIjowLjQ4NDUzMjExMTUwNjQ0MTc2LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsiaGFtbGV0IjoiRGVudmVyIiwiY291bnR5IjoiV29ydGggQ291bnR5Iiwic3RhdGUiOiJNaXNzb3VyaSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX1d
-  recorded_at: Thu, 03 Mar 2022 16:49:40 GMT
+      encoding: UTF-8
+      string: '{"data":{"id":"269","type":"user","attributes":{"user_name":"0.0597602089000987","email":"0.6835004355034922@mail.com","street_address":"1234
+        Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
+        SWIMMING","latitude":40.2277056,"longitude":-76.1313541}}}'
+  recorded_at: Thu, 03 Mar 2022 18:04:38 GMT
 - request:
     method: get
-    uri: https://ridb.recreation.gov/api/v1/recareas?activity&full=true&latitude=39.7392364&limit=10&longitude=-104.9848623&radius=200
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/269
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 03 Mar 2022 18:04:39 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"eb5edc168d31c82fbcc11fde7f444c50"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2aef42fe-098b-4770-9f9b-fb0b77b36fde
+      X-Runtime:
+      - '0.591900'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"269","type":"user","attributes":{"user_name":"0.0597602089000987","email":"0.6835004355034922@mail.com","street_address":"1234
+        Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
+        SWIMMING","latitude":40.2277056,"longitude":-76.1313541}}}'
+  recorded_at: Thu, 03 Mar 2022 18:04:39 GMT
+- request:
+    method: get
+    uri: https://ridb.recreation.gov/api/v1/activities?limit=128&offset=0
     body:
       encoding: US-ASCII
       string: ''
@@ -236,11 +333,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 16:49:42 GMT
+      - Thu, 03 Mar 2022 18:04:40 GMT
       X-Amz-Apigw-Id:
-      - Oaqx7FSbvHcFwQQ=
+      - Oa1wzG6FvHcF6Nw=
       X-Amzn-Trace-Id:
-      - Root=1-6220f1a5-d24411dd388b9e15fdb064cb;Sampled=0
+      - Root=1-62210338-dbe1de531abaf90e3770d138;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -276,17 +373,268 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - c376a7c6-5a7e-4b71-8ca8-7a09a6b5c5e2
+      - 4e52ce39-9b20-4e37-bf02-3dcb05c84345
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 0fdea8d3b1fc76e3ff9d36e8164171e8.cloudfront.net (CloudFront)
+      - 1.1 c1923648567bf97d3117cd3896d4cfd8.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - WJ_b8GuGbgU8Z0Fc3O9QDA6HQORu-ulWY57Y0yGYOzY7uiItTQ-h2w==
+      - jzFcTIlCEAKsg_I37idaGv5HFW9ZcxK-0zAwwwQhCh7kJNEnz0qnUA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
+        TOURING","ActivityLevel":0},{"ActivityID":5,"ActivityParentID":0,"ActivityName":"BIKING","ActivityLevel":0},{"ActivityID":6,"ActivityParentID":0,"ActivityName":"BOATING","ActivityLevel":0},{"ActivityID":7,"ActivityParentID":0,"ActivityName":"CLIMBING","ActivityLevel":0},{"ActivityID":8,"ActivityParentID":0,"ActivityName":"HISTORIC
+        \u0026 CULTURAL SITE","ActivityLevel":0},{"ActivityID":9,"ActivityParentID":0,"ActivityName":"CAMPING","ActivityLevel":0},{"ActivityID":10,"ActivityParentID":0,"ActivityName":"INTERPRETIVE
+        PROGRAMS","ActivityLevel":0},{"ActivityID":11,"ActivityParentID":0,"ActivityName":"FISHING","ActivityLevel":0},{"ActivityID":14,"ActivityParentID":0,"ActivityName":"HIKING","ActivityLevel":0},{"ActivityID":15,"ActivityParentID":0,"ActivityName":"HORSEBACK
+        RIDING","ActivityLevel":0},{"ActivityID":16,"ActivityParentID":0,"ActivityName":"HUNTING","ActivityLevel":0},{"ActivityID":18,"ActivityParentID":0,"ActivityName":"OFF
+        HIGHWAY VEHICLE","ActivityLevel":0},{"ActivityID":20,"ActivityParentID":0,"ActivityName":"PICNICKING","ActivityLevel":0},{"ActivityID":22,"ActivityParentID":0,"ActivityName":"WINTER
+        SPORTS","ActivityLevel":0},{"ActivityID":23,"ActivityParentID":0,"ActivityName":"RECREATIONAL
+        VEHICLES","ActivityLevel":0},{"ActivityID":24,"ActivityParentID":0,"ActivityName":"VISITOR
+        CENTER","ActivityLevel":0},{"ActivityID":25,"ActivityParentID":0,"ActivityName":"WATER
+        SPORTS","ActivityLevel":0},{"ActivityID":26,"ActivityParentID":0,"ActivityName":"WILDLIFE
+        VIEWING","ActivityLevel":0},{"ActivityID":27,"ActivityParentID":0,"ActivityName":"FISH
+        HATCHERY","ActivityLevel":0},{"ActivityID":28,"ActivityParentID":0,"ActivityName":"WILDERNESS","ActivityLevel":0},{"ActivityID":30,"ActivityParentID":0,"ActivityName":"FIRE
+        LOOKOUTS/CABINS OVERNIGHT","ActivityLevel":0},{"ActivityID":31,"ActivityParentID":0,"ActivityName":"FISH
+        VIEWING SITE","ActivityLevel":0},{"ActivityID":32,"ActivityParentID":0,"ActivityName":"DAY
+        USE AREA","ActivityLevel":0},{"ActivityID":33,"ActivityParentID":0,"ActivityName":"DOCUMENTARY
+        SITE","ActivityLevel":0},{"ActivityID":34,"ActivityParentID":0,"ActivityName":"SWIMMING
+        SITE","ActivityLevel":0},{"ActivityID":35,"ActivityParentID":0,"ActivityName":"ORGANIZATION
+        SITE PRIVATELY OWNED","ActivityLevel":0},{"ActivityID":36,"ActivityParentID":0,"ActivityName":"ORGANIZATION
+        SITE FS OWNED","ActivityLevel":0},{"ActivityID":37,"ActivityParentID":0,"ActivityName":"PLAYGROUND
+        PARK SPECIALIZED SPORT SITE","ActivityLevel":0},{"ActivityID":38,"ActivityParentID":0,"ActivityName":"OTHER
+        RECREATION CONCESSION SITE","ActivityLevel":0},{"ActivityID":39,"ActivityParentID":0,"ActivityName":"OBSERVATION
+        SITE","ActivityLevel":0},{"ActivityID":40,"ActivityParentID":0,"ActivityName":"HOTEL/LODGE/RESORT
+        FS OWNED","ActivityLevel":0},{"ActivityID":41,"ActivityParentID":0,"ActivityName":"INFORMATION
+        SITE","ActivityLevel":0},{"ActivityID":42,"ActivityParentID":0,"ActivityName":"RECREATION
+        RESIDENCE","ActivityLevel":0},{"ActivityID":43,"ActivityParentID":0,"ActivityName":"SNOWPARK","ActivityLevel":0},{"ActivityID":44,"ActivityParentID":0,"ActivityName":"HOTEL/LODGE/RESORT
+        PRIVATELY OWNED","ActivityLevel":0},{"ActivityID":103,"ActivityParentID":0,"ActivityName":"ENVIRONMENTAL
+        EDUCATION","ActivityLevel":0},{"ActivityID":104,"ActivityParentID":0,"ActivityName":"PHOTOGRAPHY","ActivityLevel":0},{"ActivityID":105,"ActivityParentID":0,"ActivityName":"PADDLING","ActivityLevel":0},{"ActivityID":106,"ActivityParentID":0,"ActivityName":"SWIMMING","ActivityLevel":0},{"ActivityID":107,"ActivityParentID":0,"ActivityName":"DIVING","ActivityLevel":0},{"ActivityID":108,"ActivityParentID":0,"ActivityName":"SNORKELING","ActivityLevel":0},{"ActivityID":109,"ActivityParentID":0,"ActivityName":"HORSE
+        CAMPING","ActivityLevel":0},{"ActivityID":110,"ActivityParentID":0,"ActivityName":"RECREATIONAL
+        SHOOTING","ActivityLevel":0},{"ActivityID":100000,"ActivityParentID":0,"ActivityName":"MOTOR
+        BOAT","ActivityLevel":0},{"ActivityID":100001,"ActivityParentID":0,"ActivityName":"SNOWMOBILE","ActivityLevel":0},{"ActivityID":100002,"ActivityParentID":0,"ActivityName":"MOUNTAIN
+        BIKING","ActivityLevel":0},{"ActivityID":100003,"ActivityParentID":0,"ActivityName":"OFF
+        ROAD VEHICLE TRAILS","ActivityLevel":0},{"ActivityID":100004,"ActivityParentID":0,"ActivityName":"RANGER
+        STATION","ActivityLevel":0},{"ActivityID":100005,"ActivityParentID":0,"ActivityName":"PADDLE
+        BOATING","ActivityLevel":0},{"ActivityID":100006,"ActivityParentID":0,"ActivityName":"WATER
+        ACTIVITIES","ActivityLevel":0},{"ActivityID":100007,"ActivityParentID":0,"ActivityName":"KAYAKING","ActivityLevel":0},{"ActivityID":100008,"ActivityParentID":0,"ActivityName":"CANOEING","ActivityLevel":0},{"ActivityID":100009,"ActivityParentID":0,"ActivityName":"BERRY
+        PICKING","ActivityLevel":0},{"ActivityID":100010,"ActivityParentID":0,"ActivityName":"BEACH
+        CAMPING","ActivityLevel":0},{"ActivityID":100011,"ActivityParentID":0,"ActivityName":"BEACHCOMBING","ActivityLevel":0},{"ActivityID":100012,"ActivityParentID":0,"ActivityName":"CLAM
+        DIGGING","ActivityLevel":0},{"ActivityID":100013,"ActivityParentID":0,"ActivityName":"CRABBING","ActivityLevel":0},{"ActivityID":100014,"ActivityParentID":0,"ActivityName":"SEA
+        KAYAKING","ActivityLevel":0},{"ActivityID":100015,"ActivityParentID":0,"ActivityName":"STAR
+        GAZING","ActivityLevel":0},{"ActivityID":100016,"ActivityParentID":0,"ActivityName":"SURFING","ActivityLevel":0},{"ActivityID":100017,"ActivityParentID":0,"ActivityName":"BIRDING","ActivityLevel":0},{"ActivityID":100018,"ActivityParentID":0,"ActivityName":"NON-MOTORIZED
+        BOATING","ActivityLevel":0},{"ActivityID":100019,"ActivityParentID":0,"ActivityName":"WATER
+        ACCESS","ActivityLevel":0},{"ActivityID":100020,"ActivityParentID":0,"ActivityName":"CROSS
+        COUNTRY SKIING","ActivityLevel":0},{"ActivityID":100021,"ActivityParentID":0,"ActivityName":"ANTIQUING","ActivityLevel":0},{"ActivityID":100022,"ActivityParentID":0,"ActivityName":"JET
+        SKIING","ActivityLevel":0},{"ActivityID":100023,"ActivityParentID":0,"ActivityName":"WATER
+        SKIING","ActivityLevel":0},{"ActivityID":100024,"ActivityParentID":0,"ActivityName":"DISC
+        GOLF","ActivityLevel":0},{"ActivityID":100025,"ActivityParentID":0,"ActivityName":"CULTURAL
+        ACTIVITIES","ActivityLevel":0},{"ActivityID":100026,"ActivityParentID":0,"ActivityName":"EVENING
+        PROGRAMS","ActivityLevel":0},{"ActivityID":100027,"ActivityParentID":0,"ActivityName":"GUIDED
+        INTERPRETIVE WALKS","ActivityLevel":0},{"ActivityID":100028,"ActivityParentID":0,"ActivityName":"RECREATION
+        PROGRAMS","ActivityLevel":0},{"ActivityID":100029,"ActivityParentID":0,"ActivityName":"SCENIC
+        DRIVE","ActivityLevel":0},{"ActivityID":100030,"ActivityParentID":0,"ActivityName":"WINDSURFING","ActivityLevel":0},{"ActivityID":100031,"ActivityParentID":0,"ActivityName":"GOLD
+        PANNING","ActivityLevel":0},{"ActivityID":100032,"ActivityParentID":0,"ActivityName":"RAFTING","ActivityLevel":0},{"ActivityID":100033,"ActivityParentID":0,"ActivityName":"RIVER
+        TRIPS","ActivityLevel":0},{"ActivityID":100034,"ActivityParentID":0,"ActivityName":"WHITEWATER
+        RAFTING","ActivityLevel":0},{"ActivityID":100035,"ActivityParentID":0,"ActivityName":"ICE
+        CLIMBING","ActivityLevel":0},{"ActivityID":100036,"ActivityParentID":0,"ActivityName":"BACKPACKING","ActivityLevel":0},{"ActivityID":100037,"ActivityParentID":0,"ActivityName":"SAILING","ActivityLevel":0},{"ActivityID":100038,"ActivityParentID":0,"ActivityName":"SCUBA
+        DIVING","ActivityLevel":0},{"ActivityID":100039,"ActivityParentID":0,"ActivityName":"WHALE
+        WATCHING","ActivityLevel":0},{"ActivityID":100040,"ActivityParentID":0,"ActivityName":"MOUNTAIN
+        CLIMBING","ActivityLevel":0},{"ActivityID":100041,"ActivityParentID":0,"ActivityName":"ROCK
+        CLIMBING","ActivityLevel":0},{"ActivityID":100042,"ActivityParentID":0,"ActivityName":"MUSHROOM
+        PICKING","ActivityLevel":0},{"ActivityID":100043,"ActivityParentID":0,"ActivityName":"AMPHITHEATER","ActivityLevel":0},{"ActivityID":100044,"ActivityParentID":0,"ActivityName":"EDUCATIONAL
+        PROGRAMS","ActivityLevel":0},{"ActivityID":100045,"ActivityParentID":0,"ActivityName":"TUBING","ActivityLevel":0},{"ActivityID":100046,"ActivityParentID":0,"ActivityName":"SNOWSHOEING","ActivityLevel":0},{"ActivityID":100047,"ActivityParentID":0,"ActivityName":"ARCHERY","ActivityLevel":0},{"ActivityID":100048,"ActivityParentID":0,"ActivityName":"HISTORIC
+        SITES","ActivityLevel":0},{"ActivityID":100049,"ActivityParentID":0,"ActivityName":"ACCESSIBLE
+        SWIMMING","ActivityLevel":0},{"ActivityID":100050,"ActivityParentID":0,"ActivityName":"SOFTBALL
+        FIELDS","ActivityLevel":0},{"ActivityID":100051,"ActivityParentID":0,"ActivityName":"SNOWMOBILING","ActivityLevel":0},{"ActivityID":100052,"ActivityParentID":0,"ActivityName":"LOOKOUT
+        TOWER","ActivityLevel":0},{"ActivityID":100053,"ActivityParentID":0,"ActivityName":"SLEDDING","ActivityLevel":0},{"ActivityID":100054,"ActivityParentID":0,"ActivityName":"DOWNHILL
+        SKIING","ActivityLevel":0},{"ActivityID":100055,"ActivityParentID":0,"ActivityName":"SKIING","ActivityLevel":0},{"ActivityID":100056,"ActivityParentID":0,"ActivityName":"SNOWMOBILE
+        TRAILS","ActivityLevel":0},{"ActivityID":100057,"ActivityParentID":0,"ActivityName":"SNOWBOARDING","ActivityLevel":0},{"ActivityID":100058,"ActivityParentID":0,"ActivityName":"WOOD
+        CUTTING","ActivityLevel":0},{"ActivityID":100059,"ActivityParentID":0,"ActivityName":"ICE
+        FISHING","ActivityLevel":0},{"ActivityID":100060,"ActivityParentID":0,"ActivityName":"CRAWFISHING","ActivityLevel":0},{"ActivityID":100061,"ActivityParentID":0,"ActivityName":"BIRD
+        WATCHING","ActivityLevel":0},{"ActivityID":100062,"ActivityParentID":0,"ActivityName":"WILD
+        HORSE VIEWING","ActivityLevel":0},{"ActivityID":100063,"ActivityParentID":0,"ActivityName":"OFF
+        HIGHWAY VEHICLE TRAILS","ActivityLevel":0},{"ActivityID":100064,"ActivityParentID":0,"ActivityName":"BADMINTON","ActivityLevel":0},{"ActivityID":100065,"ActivityParentID":0,"ActivityName":"PICNIC
+        TABLES","ActivityLevel":0},{"ActivityID":100066,"ActivityParentID":0,"ActivityName":"HIKING
+        TRAIL","ActivityLevel":0},{"ActivityID":100067,"ActivityParentID":0,"ActivityName":"ICE
+        SKATING","ActivityLevel":0},{"ActivityID":100068,"ActivityParentID":0,"ActivityName":"SNOW
+        TUBING","ActivityLevel":0},{"ActivityID":100069,"ActivityParentID":0,"ActivityName":"MARINA","ActivityLevel":0},{"ActivityID":100070,"ActivityParentID":0,"ActivityName":"SOCCER
+        FIELDS","ActivityLevel":0},{"ActivityID":100071,"ActivityParentID":0,"ActivityName":"EMERGENCY
+        SERVICES","ActivityLevel":0},{"ActivityID":100072,"ActivityParentID":0,"ActivityName":"MUSEUM","ActivityLevel":0},{"ActivityID":100073,"ActivityParentID":0,"ActivityName":"SAILBOARDING","ActivityLevel":0},{"ActivityID":100074,"ActivityParentID":0,"ActivityName":"TRAILS,
+        ALL TERRAIN/OHV","ActivityLevel":0},{"ActivityID":100075,"ActivityParentID":0,"ActivityName":"TRAILS,
+        HORSE","ActivityLevel":0},{"ActivityID":100076,"ActivityParentID":0,"ActivityName":"TRAILS,
+        DIFFICULT HIKING","ActivityLevel":0},{"ActivityID":100077,"ActivityParentID":0,"ActivityName":"BOAT
+        RENTAL","ActivityLevel":0},{"ActivityID":100078,"ActivityParentID":0,"ActivityName":"GONDOLA
+        RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
+        TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
+        BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
+  recorded_at: Thu, 03 Mar 2022 18:04:40 GMT
+- request:
+    method: get
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/269
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 03 Mar 2022 18:04:41 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"eb5edc168d31c82fbcc11fde7f444c50"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3e2b9c83-f578-452a-a8b1-fa61b2fde9f5
+      X-Runtime:
+      - '0.629312'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"269","type":"user","attributes":{"user_name":"0.0597602089000987","email":"0.6835004355034922@mail.com","street_address":"1234
+        Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
+        SWIMMING","latitude":40.2277056,"longitude":-76.1313541}}}'
+  recorded_at: Thu, 03 Mar 2022 18:04:41 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=Denver,%20CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 03 Mar 2022 18:04:41 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjMyNzIwOTI4OSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJyZWxhdGlvbiIsIm9zbV9pZCI6MTQxMTMzOSwiYm91bmRpbmdib3giOlsiMzkuNjE0MzE1NCIsIjM5LjkxNDIwODciLCItMTA1LjEwOTg4NDUiLCItMTA0LjU5OTY5OTciXSwibGF0IjoiMzkuNzM5MjM2NCIsImxvbiI6Ii0xMDQuOTg0ODYyMyIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgQ29sb3JhZG8sIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwiaW1wb3J0YW5jZSI6MC44MDU0NzU4NzM5MDk1NzkxLCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsiY2l0eSI6IkRlbnZlciIsInN0YXRlIjoiQ29sb3JhZG8iLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjI4ODc1NCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoxNTEzMzMyNDEsImJvdW5kaW5nYm94IjpbIjQyLjY1MTM3NTIiLCI0Mi42OTEzNzUyIiwiLTkyLjM1NzIxNTgiLCItOTIuMzE3MjE1OCJdLCJsYXQiOiI0Mi42NzEzNzUyIiwibG9uIjoiLTkyLjMzNzIxNTgiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIEJyZW1lciBDb3VudHksIElvd2EsIDUwNjIyLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJ2aWxsYWdlIiwiaW1wb3J0YW5jZSI6MC42NDE4Mzk0Mzg1MDE2OTk5LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiQnJlbWVyIENvdW50eSIsInN0YXRlIjoiSW93YSIsInBvc3Rjb2RlIjoiNTA2MjIiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjI4MjMzNTg2NSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJyZWxhdGlvbiIsIm9zbV9pZCI6MTI4NTEyLCJib3VuZGluZ2JveCI6WyI0Mi42NTY3OTk5IiwiNDIuNjgwMzA3MyIsIi05Mi4zNDcxMzY0IiwiLTkyLjMxNzU0MSJdLCJsYXQiOiI0Mi42Njk3NjA5OTk5OTk5OTQiLCJsb24iOiItOTIuMzMyMzI4ODkwMTg4NyIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgQnJlbWVyIENvdW50eSwgSW93YSwgNTA2MjIsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwiaW1wb3J0YW5jZSI6MC42NDE4Mzk0Mzg1MDE2OTk5LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsidmlsbGFnZSI6IkRlbnZlciIsImNvdW50eSI6IkJyZW1lciBDb3VudHkiLCJzdGF0ZSI6Iklvd2EiLCJwb3N0Y29kZSI6IjUwNjIyIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjozMzkzMTEsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTUzNTY5NjM1LCJib3VuZGluZ2JveCI6WyI0MC44NDU1ODgyIiwiNDAuODg1NTg4MiIsIi04Ni4wOTg4NTM3IiwiLTg2LjA1ODg1MzciXSwibGF0IjoiNDAuODY1NTg4MiIsImxvbiI6Ii04Ni4wNzg4NTM3IiwiZGlzcGxheV9uYW1lIjoiRGVudmVyLCBNaWFtaSBDb3VudHksIEluZGlhbmEsIDQ2OTI2LCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJ2aWxsYWdlIiwiaW1wb3J0YW5jZSI6MC41NjYyODEwOTMwMzUyMTE4LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiTWlhbWkgQ291bnR5Iiwic3RhdGUiOiJJbmRpYW5hIiwicG9zdGNvZGUiOiI0NjkyNiIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MjgzNjQ0NjAwLCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjo5MjYwNzQ3LCJib3VuZGluZ2JveCI6WyI0NS4yNzU1ODI4IiwiNDUuMzc0ODY1OSIsIi02Mi4yMjE1NzEiLCItNjIuMDcyNzAyOCJdLCJsYXQiOiI0NS4zMzY5NDM0IiwibG9uIjoiLTYyLjExMDg2MjkiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIFN0LiBNYXJ5J3MgRGlzdHJpY3QgTXVuaWNpcGFsaXR5LCBHdXlzYm9yb3VnaCBDb3VudHksIE5vdmEgU2NvdGlhLCBDYW5hZGEiLCJjbGFzcyI6ImJvdW5kYXJ5IiwidHlwZSI6ImFkbWluaXN0cmF0aXZlIiwiaW1wb3J0YW5jZSI6MC41NiwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zLy9wb2lfYm91bmRhcnlfYWRtaW5pc3RyYXRpdmUucC4yMC5wbmciLCJhZGRyZXNzIjp7ImhhbWxldCI6IkRlbnZlciIsIm11bmljaXBhbGl0eSI6IlN0LiBNYXJ5J3MgRGlzdHJpY3QgTXVuaWNpcGFsaXR5IiwiY291bnR5IjoiR3V5c2Jvcm91Z2ggQ291bnR5Iiwic3RhdGUiOiJOb3ZhIFNjb3RpYSIsImNvdW50cnkiOiJDYW5hZGEiLCJjb3VudHJ5X2NvZGUiOiJjYSJ9fSx7InBsYWNlX2lkIjoyODIzMTYzNTAsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoicmVsYXRpb24iLCJvc21faWQiOjE4NzY5OSwiYm91bmRpbmdib3giOlsiNDAuMjIxMDA2IiwiNDAuMjQ2NDg1IiwiLTc2LjE1ODYxNCIsIi03Ni4xMjUxNDgiXSwibGF0IjoiNDAuMjM0NTQ1NSIsImxvbiI6Ii03Ni4xMzYwNzM1MjU4MDMzNyIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgTGFuY2FzdGVyIENvdW50eSwgUGVubnN5bHZhbmlhLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJib3VuZGFyeSIsInR5cGUiOiJhZG1pbmlzdHJhdGl2ZSIsImltcG9ydGFuY2UiOjAuNTM2NTQ4MDExOTM3MjU3OSwiaWNvbiI6Imh0dHBzOi8vbm9taW5hdGltLm9wZW5zdHJlZXRtYXAub3JnL3VpL21hcGljb25zLy9wb2lfYm91bmRhcnlfYWRtaW5pc3RyYXRpdmUucC4yMC5wbmciLCJhZGRyZXNzIjp7ImJvcm91Z2giOiJEZW52ZXIiLCJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiTGFuY2FzdGVyIENvdW50eSIsInN0YXRlIjoiUGVubnN5bHZhbmlhIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjozNjIxMTgsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoibm9kZSIsIm9zbV9pZCI6MTU0MDYwMzYzLCJib3VuZGluZ2JveCI6WyIzNS41MTEyNDUyIiwiMzUuNTUxMjQ1MiIsIi04MS4wNDk3OTk0IiwiLTgxLjAwOTc5OTQiXSwibGF0IjoiMzUuNTMxMjQ1MiIsImxvbiI6Ii04MS4wMjk3OTk0IiwiZGlzcGxheV9uYW1lIjoiRGVudmVyLCBMaW5jb2xuIENvdW50eSwgTm9ydGggQ2Fyb2xpbmEsIDI4MDM3LCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJoYW1sZXQiLCJpbXBvcnRhbmNlIjowLjUxMjMyMzg1NDE3NjQ5MTYsImljb24iOiJodHRwczovL25vbWluYXRpbS5vcGVuc3RyZWV0bWFwLm9yZy91aS9tYXBpY29ucy8vcG9pX3BsYWNlX3ZpbGxhZ2UucC4yMC5wbmciLCJhZGRyZXNzIjp7ImhhbWxldCI6IkRlbnZlciIsImNvdW50eSI6IkxpbmNvbG4gQ291bnR5Iiwic3RhdGUiOiJOb3J0aCBDYXJvbGluYSIsInBvc3Rjb2RlIjoiMjgwMzciLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjQwODEwOCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoxNTg1NTA3OTUsImJvdW5kaW5nYm94IjpbIjM5LjM2MjMxNTkiLCIzOS40MDIzMTU5IiwiLTc5Ljc5MDM0MSIsIi03OS43NTAzNDEiXSwibGF0IjoiMzkuMzgyMzE1OSIsImxvbiI6Ii03OS43NzAzNDEiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIFByZXN0b24gQ291bnR5LCBXZXN0IFZpcmdpbmlhLCAyNjQ0NCwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicGxhY2UiLCJ0eXBlIjoiaGFtbGV0IiwiaW1wb3J0YW5jZSI6MC41MDAyNTk2NDYyMjQwNTgyLCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJoYW1sZXQiOiJEZW52ZXIiLCJjb3VudHkiOiJQcmVzdG9uIENvdW50eSIsInN0YXRlIjoiV2VzdCBWaXJnaW5pYSIsInBvc3Rjb2RlIjoiMjY0NDQiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjQwNDUxNSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoxNTg0NTg2ODAsImJvdW5kaW5nYm94IjpbIjQwLjIxMzE0ODMiLCI0MC4yNTMxNDgzIiwiLTc2LjE1NzE2ODQiLCItNzYuMTE3MTY4NCJdLCJsYXQiOiI0MC4yMzMxNDgzIiwibG9uIjoiLTc2LjEzNzE2ODQiLCJkaXNwbGF5X25hbWUiOiJEZW52ZXIsIExhbmNhc3RlciBDb3VudHksIFBlbm5zeWx2YW5pYSwgMTc1NzgsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6InBsYWNlIiwidHlwZSI6InZpbGxhZ2UiLCJpbXBvcnRhbmNlIjowLjQ4NTAwMDAwMDAwMDAwMDA0LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9wbGFjZV92aWxsYWdlLnAuMjAucG5nIiwiYWRkcmVzcyI6eyJ2aWxsYWdlIjoiRGVudmVyIiwiY291bnR5IjoiTGFuY2FzdGVyIENvdW50eSIsInN0YXRlIjoiUGVubnN5bHZhbmlhIiwicG9zdGNvZGUiOiIxNzU3OCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX0seyJwbGFjZV9pZCI6MjgyMjg2ODY0LCJsaWNlbmNlIjoiRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHBzOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6InJlbGF0aW9uIiwib3NtX2lkIjoxNDEzNDQsImJvdW5kaW5nYm94IjpbIjQwLjM5MTY5OCIsIjQwLjQwNTk0MSIsIi05NC4zMjkwNDkiLCItOTQuMzE4NzUiXSwibGF0IjoiNDAuMzk3MjAyIiwibG9uIjoiLTk0LjMyNDYwNCIsImRpc3BsYXlfbmFtZSI6IkRlbnZlciwgV29ydGggQ291bnR5LCBNaXNzb3VyaSwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoiYm91bmRhcnkiLCJ0eXBlIjoiYWRtaW5pc3RyYXRpdmUiLCJpbXBvcnRhbmNlIjowLjQ4NDUzMjExMTUwNjQ0MTc2LCJpY29uIjoiaHR0cHM6Ly9ub21pbmF0aW0ub3BlbnN0cmVldG1hcC5vcmcvdWkvbWFwaWNvbnMvL3BvaV9ib3VuZGFyeV9hZG1pbmlzdHJhdGl2ZS5wLjIwLnBuZyIsImFkZHJlc3MiOnsiaGFtbGV0IjoiRGVudmVyIiwiY291bnR5IjoiV29ydGggQ291bnR5Iiwic3RhdGUiOiJNaXNzb3VyaSIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX1d
+  recorded_at: Thu, 03 Mar 2022 18:04:41 GMT
+- request:
+    method: get
+    uri: https://ridb.recreation.gov/api/v1/recareas?activity&full=true&latitude=39.7392364&limit=10&longitude=-104.9848623&radius
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - apiKey
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Server
+      Date:
+      - Thu, 03 Mar 2022 18:04:43 GMT
+      X-Amz-Apigw-Id:
+      - Oa1xEEQsPHcFpBg=
+      X-Amzn-Trace-Id:
+      - Root=1-62210339-cb9e70da29c43448a31025ec;Sampled=0
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; always
+      Access-Control-Allow-Methods:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max_age=600,public,stale-if-error=3600
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
+        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
+        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
+        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
+        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
+        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
+        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
+        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
+        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
+        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
+        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
+        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
+        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
+        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
+        worker-src ''self'' blob: ;'
+      X-Amzn-Requestid:
+      - 3226c41c-8275-4ae3-ba90-d7c42bda4161
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 f9a3ca802cab4ac43bafc4dd8667ef98.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-C1
+      X-Amz-Cf-Id:
+      - 77Hf4hPxNAa-FOYIV6ffjXVyQSFWi2qAlIku_GEATXgw8VbU_BTMOQ==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"RecAreaID":"284","OrgRecAreaID":"284","ParentOrgID":"130","RecAreaName":"Chatfield
@@ -405,16 +753,14 @@ http_interactions:
         Web Site","EntityID":"306","EntityType":"RecArea","Title":"Bear Creek Lake
         Website","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/projects.cfm?ID=G672285"},{"EntityLinkID":"0bfb0856091fce0e68cbbfd1ea3007f0","LinkType":"Other","EntityID":"306","EntityType":"RecArea","Title":"Bear
         Creek Lake Photo Album","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/album.cfm?Option=View\u0026Activity=None\u0026ID=G672285"}],"MEDIA":[{"EntityMediaID":"326049","MediaType":"Image","EntityID":"306","EntityType":"RecArea","Title":"","Subtitle":"","Description":"","EmbedCode":"","Height":295,"Width":480,"URL":"https://cdn.recreation.gov/public/images/2138.jpg","Credits":"","IsPrimary":false,"IsPreview":false,"IsGallery":true}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":5,"TOTAL_COUNT":5},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 16:49:43 GMT
+  recorded_at: Thu, 03 Mar 2022 18:04:42 GMT
 - request:
     method: get
-    uri: https://ridb.recreation.gov/api/v1/recareas/284
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/269
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Apikey:
-      - apiKey
       User-Agent:
       - Faraday v2.2.0
       Accept-Encoding:
@@ -426,260 +772,74 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 03 Mar 2022 18:04:43 GMT
       Connection:
       - keep-alive
-      Server:
-      - Server
-      Date:
-      - Thu, 03 Mar 2022 16:49:43 GMT
-      X-Amz-Apigw-Id:
-      - OaqyKFXPvHcF-lA=
-      X-Amzn-Trace-Id:
-      - Root=1-6220f1a7-ae2f854ccc74ecddee61bf0e;Sampled=0
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubdomains; always
-      Access-Control-Allow-Methods:
-      - "*"
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - max_age=600,public,stale-if-error=3600
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Security-Policy:
-      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
-        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
-        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
-        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
-        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
-        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
-        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
-        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
-        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
-        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
-        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
-        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
-        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
-        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
-        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
-        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
-        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
-        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
-        worker-src ''self'' blob: ;'
-      X-Amzn-Requestid:
-      - 2f004ffd-d914-431a-9287-b98ac141352d
-      Vary:
-      - Accept-Encoding
-      X-Cache:
-      - Miss from cloudfront
-      Via:
-      - 1.1 17a5b9b0c17eb15303e6341f5fc26610.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - DEN52-C1
-      X-Amz-Cf-Id:
-      - mAW3buHfx1G3AaF2_vp7Mw03feCu9BeL7Fx7XMI74zsPgtuC1mtLsg==
-    body:
-      encoding: ASCII-8BIT
-      string: '{"RecAreaID":"284","OrgRecAreaID":"284","ParentOrgID":"130","RecAreaName":"Chatfield
-        Lake","RecAreaDescription":"Chatfield Dam, located southwest of Denver on
-        the South Platte River, was the second of three dams built to protect the
-        Denver region from floods. The 1,479-acre land and the 5,300 acres surrounding
-        it provide a myriad of recreational opportunities including camping, fishing,
-        and swimming.  Chatfield Nature Preserve for environmental studies and the
-        old Hildebrand Homestead, which is listed on the National Register of Historic
-        Places, are open to visitors.","RecAreaFeeDescription":"","RecAreaDirections":"Located
-        off C-470 southwest of Denver at the Wadsworth interchange.","RecAreaPhone":"","RecAreaEmail":"","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-105.058974,39.559653]},"RecAreaLongitude":-105.058974,"RecAreaLatitude":39.559653,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2021-09-23"}'
-  recorded_at: Thu, 03 Mar 2022 16:49:43 GMT
-- request:
-    method: get
-    uri: https://ridb.recreation.gov/api/v1/recareas/284/activities
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Apikey:
-      - apiKey
-      User-Agent:
-      - Faraday v2.2.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Server:
-      - Server
-      Date:
-      - Thu, 03 Mar 2022 16:49:43 GMT
-      X-Amz-Apigw-Id:
-      - OaqyOE95PHcFf8g=
-      X-Amzn-Trace-Id:
-      - Root=1-6220f1a7-242ac9f5be60cf569abcecf7;Sampled=0
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubdomains; always
-      Access-Control-Allow-Methods:
-      - "*"
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - max_age=600,public,stale-if-error=3600
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Security-Policy:
-      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
-        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
-        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
-        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
-        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
-        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
-        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
-        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
-        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
-        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
-        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
-        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
-        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
-        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
-        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
-        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
-        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
-        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
-        worker-src ''self'' blob: ;'
-      X-Amzn-Requestid:
-      - 5371971f-a5d1-4803-b528-b81fd0b7d581
-      Vary:
-      - Accept-Encoding
-      X-Cache:
-      - Miss from cloudfront
-      Via:
-      - 1.1 5950a1c2bfcf1f3e07bedbb2efad39f2.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - DEN52-C1
-      X-Amz-Cf-Id:
-      - eaIrCMTJdH5R1mb9q9xQdCo8usbDdydSLOIgAJAFdAkfbbAqn9fCow==
-    body:
-      encoding: ASCII-8BIT
-      string: '{"RECDATA":[{"ActivityID":5,"ActivityParentID":"","RecAreaID":"284","ActivityName":"BIKING","RecAreaActivityDescription":"Biking","RecAreaActivityFeeDescription":""},{"ActivityID":6,"ActivityParentID":"","RecAreaID":"284","ActivityName":"BOATING","RecAreaActivityDescription":"Boating","RecAreaActivityFeeDescription":""},{"ActivityID":9,"ActivityParentID":"","RecAreaID":"284","ActivityName":"CAMPING","RecAreaActivityDescription":"Camping","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"284","ActivityName":"FISHING","RecAreaActivityDescription":"Fishing","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"284","ActivityName":"HIKING","RecAreaActivityDescription":"Hiking","RecAreaActivityFeeDescription":""},{"ActivityID":15,"ActivityParentID":"","RecAreaID":"284","ActivityName":"HORSEBACK
-        RIDING","RecAreaActivityDescription":"Horseback Riding","RecAreaActivityFeeDescription":""},{"ActivityID":20,"ActivityParentID":"","RecAreaID":"284","ActivityName":"PICNICKING","RecAreaActivityDescription":"Picnic","RecAreaActivityFeeDescription":""},{"ActivityID":25,"ActivityParentID":"","RecAreaID":"284","ActivityName":"WATER
-        SPORTS","RecAreaActivityDescription":"Water Sports","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"284","ActivityName":"WILDLIFE
-        VIEWING","RecAreaActivityDescription":"Wildlife Viewing","RecAreaActivityFeeDescription":""},{"ActivityID":37,"ActivityParentID":"","RecAreaID":"284","ActivityName":"PLAYGROUND
-        PARK SPECIALIZED SPORT SITE","RecAreaActivityDescription":"Playground","RecAreaActivityFeeDescription":""},{"ActivityID":38,"ActivityParentID":"","RecAreaID":"284","ActivityName":"OTHER
-        RECREATION CONCESSION SITE","RecAreaActivityDescription":"Restaurant/SnackBar","RecAreaActivityFeeDescription":""}],"METADATA":{"RESULTS":{"CURRENT_COUNT":11,"TOTAL_COUNT":11},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":0,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 16:49:43 GMT
-- request:
-    method: get
-    uri: https://api.openweathermap.org/data/2.5/onecall?appid=b223e219a2cff0890dbe4fae9e6d5836&lat=39.559653&lon=-105.058974&units=imperial
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.2.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - openresty
-      Date:
-      - Thu, 03 Mar 2022 16:49:44 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Content-Length:
-      - '20124'
-      Connection:
-      - keep-alive
-      X-Cache-Key:
-      - "/data/2.5/onecall?lat=39.56&lon=-105.06&units=imperial"
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Methods:
-      - GET, POST
+      Etag:
+      - W/"eb5edc168d31c82fbcc11fde7f444c50"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dde3d899-f960-4aed-8f0e-aa718a997a80
+      X-Runtime:
+      - '0.577765'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"lat":39.5597,"lon":-105.059,"timezone":"America/Denver","timezone_offset":-25200,"current":{"dt":1646326184,"sunrise":1646314220,"sunset":1646355257,"temp":59.49,"feels_like":56.21,"pressure":1018,"humidity":23,"dew_point":22.87,"uvi":3.22,"clouds":40,"visibility":10000,"wind_speed":5.99,"wind_deg":169,"wind_gust":11.99,"weather":[{"id":802,"main":"Clouds","description":"scattered
-        clouds","icon":"03d"}]},"minutely":[{"dt":1646326200,"precipitation":0},{"dt":1646326260,"precipitation":0},{"dt":1646326320,"precipitation":0},{"dt":1646326380,"precipitation":0},{"dt":1646326440,"precipitation":0},{"dt":1646326500,"precipitation":0},{"dt":1646326560,"precipitation":0},{"dt":1646326620,"precipitation":0},{"dt":1646326680,"precipitation":0},{"dt":1646326740,"precipitation":0},{"dt":1646326800,"precipitation":0},{"dt":1646326860,"precipitation":0},{"dt":1646326920,"precipitation":0},{"dt":1646326980,"precipitation":0},{"dt":1646327040,"precipitation":0},{"dt":1646327100,"precipitation":0},{"dt":1646327160,"precipitation":0},{"dt":1646327220,"precipitation":0},{"dt":1646327280,"precipitation":0},{"dt":1646327340,"precipitation":0},{"dt":1646327400,"precipitation":0},{"dt":1646327460,"precipitation":0},{"dt":1646327520,"precipitation":0},{"dt":1646327580,"precipitation":0},{"dt":1646327640,"precipitation":0},{"dt":1646327700,"precipitation":0},{"dt":1646327760,"precipitation":0},{"dt":1646327820,"precipitation":0},{"dt":1646327880,"precipitation":0},{"dt":1646327940,"precipitation":0},{"dt":1646328000,"precipitation":0},{"dt":1646328060,"precipitation":0},{"dt":1646328120,"precipitation":0},{"dt":1646328180,"precipitation":0},{"dt":1646328240,"precipitation":0},{"dt":1646328300,"precipitation":0},{"dt":1646328360,"precipitation":0},{"dt":1646328420,"precipitation":0},{"dt":1646328480,"precipitation":0},{"dt":1646328540,"precipitation":0},{"dt":1646328600,"precipitation":0},{"dt":1646328660,"precipitation":0},{"dt":1646328720,"precipitation":0},{"dt":1646328780,"precipitation":0},{"dt":1646328840,"precipitation":0},{"dt":1646328900,"precipitation":0},{"dt":1646328960,"precipitation":0},{"dt":1646329020,"precipitation":0},{"dt":1646329080,"precipitation":0},{"dt":1646329140,"precipitation":0},{"dt":1646329200,"precipitation":0},{"dt":1646329260,"precipitation":0},{"dt":1646329320,"precipitation":0},{"dt":1646329380,"precipitation":0},{"dt":1646329440,"precipitation":0},{"dt":1646329500,"precipitation":0},{"dt":1646329560,"precipitation":0},{"dt":1646329620,"precipitation":0},{"dt":1646329680,"precipitation":0},{"dt":1646329740,"precipitation":0},{"dt":1646329800,"precipitation":0}],"hourly":[{"dt":1646323200,"temp":58.06,"feels_like":54.84,"pressure":1018,"humidity":27,"dew_point":25.18,"uvi":1.84,"clouds":36,"visibility":10000,"wind_speed":4.79,"wind_deg":218,"wind_gust":6.46,"weather":[{"id":802,"main":"Clouds","description":"scattered
-        clouds","icon":"03d"}],"pop":0},{"dt":1646326800,"temp":59.49,"feels_like":56.21,"pressure":1018,"humidity":23,"dew_point":22.87,"uvi":3.22,"clouds":40,"visibility":10000,"wind_speed":2.82,"wind_deg":214,"wind_gust":4.9,"weather":[{"id":802,"main":"Clouds","description":"scattered
-        clouds","icon":"03d"}],"pop":0},{"dt":1646330400,"temp":59.77,"feels_like":56.59,"pressure":1017,"humidity":24,"dew_point":23.97,"uvi":4.4,"clouds":38,"visibility":10000,"wind_speed":0.58,"wind_deg":114,"wind_gust":3.2,"weather":[{"id":802,"main":"Clouds","description":"scattered
-        clouds","icon":"03d"}],"pop":0},{"dt":1646334000,"temp":60.78,"feels_like":57.69,"pressure":1016,"humidity":24,"dew_point":24.75,"uvi":5.18,"clouds":64,"visibility":10000,"wind_speed":2.53,"wind_deg":65,"wind_gust":3.53,"weather":[{"id":803,"main":"Clouds","description":"broken
-        clouds","icon":"04d"}],"pop":0},{"dt":1646337600,"temp":62.38,"feels_like":59.45,"pressure":1014,"humidity":24,"dew_point":25.95,"uvi":4.73,"clouds":65,"visibility":10000,"wind_speed":2.84,"wind_deg":43,"wind_gust":4.54,"weather":[{"id":803,"main":"Clouds","description":"broken
-        clouds","icon":"04d"}],"pop":0},{"dt":1646341200,"temp":63.84,"feels_like":61.02,"pressure":1012,"humidity":23,"dew_point":26.13,"uvi":3.52,"clouds":75,"visibility":10000,"wind_speed":3.71,"wind_deg":23,"wind_gust":4.59,"weather":[{"id":803,"main":"Clouds","description":"broken
-        clouds","icon":"04d"}],"pop":0},{"dt":1646344800,"temp":64.18,"feels_like":61.48,"pressure":1010,"humidity":25,"dew_point":25.14,"uvi":1.95,"clouds":88,"visibility":10000,"wind_speed":3.83,"wind_deg":10,"wind_gust":5.44,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0},{"dt":1646348400,"temp":62.49,"feels_like":59.85,"pressure":1010,"humidity":30,"dew_point":28.29,"uvi":0.8,"clouds":90,"visibility":10000,"wind_speed":3.83,"wind_deg":12,"wind_gust":4.52,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0},{"dt":1646352000,"temp":58.35,"feels_like":55.58,"pressure":1010,"humidity":36,"dew_point":28.92,"uvi":0.19,"clouds":91,"visibility":10000,"wind_speed":3.67,"wind_deg":350,"wind_gust":3.98,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0},{"dt":1646355600,"temp":53.33,"feels_like":50.14,"pressure":1011,"humidity":38,"dew_point":25.66,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":3.11,"wind_deg":287,"wind_gust":4.09,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04n"}],"pop":0},{"dt":1646359200,"temp":51.48,"feels_like":48.25,"pressure":1011,"humidity":41,"dew_point":26.2,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":4.68,"wind_deg":258,"wind_gust":4.81,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04n"}],"pop":0},{"dt":1646362800,"temp":49.89,"feels_like":47.71,"pressure":1012,"humidity":44,"dew_point":26.92,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":5.66,"wind_deg":244,"wind_gust":5.3,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04n"}],"pop":0},{"dt":1646366400,"temp":48.7,"feels_like":46.15,"pressure":1012,"humidity":46,"dew_point":26.91,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":5.95,"wind_deg":235,"wind_gust":5.55,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04n"}],"pop":0},{"dt":1646370000,"temp":48.22,"feels_like":45.37,"pressure":1011,"humidity":47,"dew_point":26.82,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":6.33,"wind_deg":230,"wind_gust":5.99,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04n"}],"pop":0},{"dt":1646373600,"temp":46.8,"feels_like":43.32,"pressure":1011,"humidity":49,"dew_point":26.53,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":7.02,"wind_deg":232,"wind_gust":6.89,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04n"}],"pop":0},{"dt":1646377200,"temp":45.25,"feels_like":41.25,"pressure":1011,"humidity":51,"dew_point":26.17,"uvi":0,"clouds":86,"visibility":10000,"wind_speed":7.4,"wind_deg":230,"wind_gust":7.29,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04n"}],"pop":0},{"dt":1646380800,"temp":44.24,"feels_like":39.88,"pressure":1011,"humidity":52,"dew_point":25.65,"uvi":0,"clouds":65,"visibility":10000,"wind_speed":7.72,"wind_deg":230,"wind_gust":7.72,"weather":[{"id":803,"main":"Clouds","description":"broken
-        clouds","icon":"04n"}],"pop":0},{"dt":1646384400,"temp":43.63,"feels_like":39.04,"pressure":1010,"humidity":53,"dew_point":25.41,"uvi":0,"clouds":45,"visibility":10000,"wind_speed":7.92,"wind_deg":232,"wind_gust":7.9,"weather":[{"id":802,"main":"Clouds","description":"scattered
-        clouds","icon":"03n"}],"pop":0},{"dt":1646388000,"temp":43.3,"feels_like":38.62,"pressure":1010,"humidity":52,"dew_point":24.98,"uvi":0,"clouds":36,"visibility":10000,"wind_speed":7.96,"wind_deg":227,"wind_gust":8.05,"weather":[{"id":802,"main":"Clouds","description":"scattered
-        clouds","icon":"03n"}],"pop":0},{"dt":1646391600,"temp":43.39,"feels_like":38.84,"pressure":1010,"humidity":51,"dew_point":24.35,"uvi":0,"clouds":49,"visibility":10000,"wind_speed":7.74,"wind_deg":221,"wind_gust":7.76,"weather":[{"id":802,"main":"Clouds","description":"scattered
-        clouds","icon":"03n"}],"pop":0},{"dt":1646395200,"temp":43.16,"feels_like":38.5,"pressure":1010,"humidity":49,"dew_point":23.59,"uvi":0,"clouds":58,"visibility":10000,"wind_speed":7.87,"wind_deg":222,"wind_gust":8.12,"weather":[{"id":803,"main":"Clouds","description":"broken
-        clouds","icon":"04n"}],"pop":0},{"dt":1646398800,"temp":43.03,"feels_like":38.79,"pressure":1009,"humidity":48,"dew_point":22.78,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":7,"wind_deg":225,"wind_gust":6.89,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04n"}],"pop":0},{"dt":1646402400,"temp":43.65,"feels_like":39.18,"pressure":1009,"humidity":48,"dew_point":23.07,"uvi":0.16,"clouds":100,"visibility":10000,"wind_speed":7.67,"wind_deg":221,"wind_gust":7.83,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0},{"dt":1646406000,"temp":46.71,"feels_like":43.45,"pressure":1008,"humidity":46,"dew_point":24.94,"uvi":0.76,"clouds":100,"visibility":10000,"wind_speed":6.53,"wind_deg":222,"wind_gust":7.47,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0},{"dt":1646409600,"temp":49.82,"feels_like":47.5,"pressure":1007,"humidity":44,"dew_point":26.8,"uvi":1.77,"clouds":100,"visibility":10000,"wind_speed":5.91,"wind_deg":219,"wind_gust":7.78,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0},{"dt":1646413200,"temp":53.11,"feels_like":50,"pressure":1006,"humidity":40,"dew_point":27.55,"uvi":3.08,"clouds":100,"visibility":10000,"wind_speed":5.17,"wind_deg":215,"wind_gust":7.7,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0},{"dt":1646416800,"temp":54.79,"feels_like":51.8,"pressure":1005,"humidity":39,"dew_point":28.27,"uvi":4.2,"clouds":100,"visibility":10000,"wind_speed":5.35,"wind_deg":205,"wind_gust":11.39,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0},{"dt":1646420400,"temp":54.99,"feels_like":52.02,"pressure":1004,"humidity":39,"dew_point":28.31,"uvi":2.48,"clouds":100,"visibility":10000,"wind_speed":11.3,"wind_deg":223,"wind_gust":17.6,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0.35},{"dt":1646424000,"temp":54.45,"feels_like":51.66,"pressure":1003,"humidity":44,"dew_point":30.56,"uvi":2.27,"clouds":100,"visibility":10000,"wind_speed":11.79,"wind_deg":229,"wind_gust":17.09,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0.34},{"dt":1646427600,"temp":54.88,"feels_like":52.03,"pressure":1002,"humidity":42,"dew_point":30.27,"uvi":1.69,"clouds":100,"visibility":10000,"wind_speed":5.03,"wind_deg":226,"wind_gust":8.43,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0.28},{"dt":1646431200,"temp":57.09,"feels_like":54.34,"pressure":1001,"humidity":39,"dew_point":30.31,"uvi":1.49,"clouds":94,"visibility":10000,"wind_speed":5.79,"wind_deg":196,"wind_gust":8.39,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0.21},{"dt":1646434800,"temp":57.54,"feels_like":54.73,"pressure":1000,"humidity":37,"dew_point":29.82,"uvi":0.62,"clouds":78,"visibility":10000,"wind_speed":7.23,"wind_deg":199,"wind_gust":11.45,"weather":[{"id":803,"main":"Clouds","description":"broken
-        clouds","icon":"04d"}],"pop":0.14},{"dt":1646438400,"temp":55.51,"feels_like":52.74,"pressure":999,"humidity":42,"dew_point":31.05,"uvi":0.15,"clouds":65,"visibility":10000,"wind_speed":4.74,"wind_deg":191,"wind_gust":9.4,"weather":[{"id":803,"main":"Clouds","description":"broken
-        clouds","icon":"04d"}],"pop":0.12},{"dt":1646442000,"temp":49.86,"feels_like":48.51,"pressure":1000,"humidity":51,"dew_point":30.65,"uvi":0,"clouds":39,"visibility":10000,"wind_speed":4.27,"wind_deg":219,"wind_gust":5.1,"weather":[{"id":500,"main":"Rain","description":"light
-        rain","icon":"10n"}],"pop":0.65,"rain":{"1h":0.3}},{"dt":1646445600,"temp":48.07,"feels_like":46.26,"pressure":1000,"humidity":57,"dew_point":31.41,"uvi":0,"clouds":70,"visibility":10000,"wind_speed":4.54,"wind_deg":244,"wind_gust":6.93,"weather":[{"id":500,"main":"Rain","description":"light
-        rain","icon":"10n"}],"pop":0.74,"rain":{"1h":0.22}},{"dt":1646449200,"temp":46.02,"feels_like":44.35,"pressure":1000,"humidity":64,"dew_point":32.45,"uvi":0,"clouds":80,"visibility":10000,"wind_speed":3.91,"wind_deg":259,"wind_gust":6.35,"weather":[{"id":500,"main":"Rain","description":"light
-        rain","icon":"10n"}],"pop":0.74,"rain":{"1h":0.32}},{"dt":1646452800,"temp":45.75,"feels_like":43.84,"pressure":1001,"humidity":68,"dew_point":33.89,"uvi":0,"clouds":85,"visibility":10000,"wind_speed":4.14,"wind_deg":278,"wind_gust":6.33,"weather":[{"id":500,"main":"Rain","description":"light
-        rain","icon":"10n"}],"pop":0.7,"rain":{"1h":0.12}},{"dt":1646456400,"temp":45.12,"feels_like":43.79,"pressure":1000,"humidity":69,"dew_point":33.31,"uvi":0,"clouds":88,"visibility":10000,"wind_speed":3.38,"wind_deg":300,"wind_gust":7.14,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04n"}],"pop":0.69},{"dt":1646460000,"temp":43.7,"feels_like":42.48,"pressure":1001,"humidity":72,"dew_point":33.22,"uvi":0,"clouds":90,"visibility":10000,"wind_speed":3.06,"wind_deg":279,"wind_gust":5.53,"weather":[{"id":500,"main":"Rain","description":"light
-        rain","icon":"10n"}],"pop":0.7,"rain":{"1h":0.17}},{"dt":1646463600,"temp":43.66,"feels_like":38.79,"pressure":1000,"humidity":74,"dew_point":33.94,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":8.59,"wind_deg":336,"wind_gust":13.89,"weather":[{"id":500,"main":"Rain","description":"light
-        rain","icon":"10n"}],"pop":0.54,"rain":{"1h":0.12}},{"dt":1646467200,"temp":41.34,"feels_like":34.93,"pressure":1001,"humidity":86,"dew_point":35.53,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":10.94,"wind_deg":335,"wind_gust":17.49,"weather":[{"id":500,"main":"Rain","description":"light
-        rain","icon":"10n"}],"pop":0.59,"rain":{"1h":0.49}},{"dt":1646470800,"temp":39.65,"feels_like":34.43,"pressure":1001,"humidity":88,"dew_point":34.38,"uvi":0,"clouds":100,"visibility":4297,"wind_speed":7.49,"wind_deg":355,"wind_gust":13.6,"weather":[{"id":501,"main":"Rain","description":"moderate
-        rain","icon":"10n"}],"pop":0.7,"rain":{"1h":1.04}},{"dt":1646474400,"temp":38.82,"feels_like":33.6,"pressure":1002,"humidity":87,"dew_point":33.19,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":7.2,"wind_deg":14,"wind_gust":11.74,"weather":[{"id":500,"main":"Rain","description":"light
-        rain","icon":"10n"}],"pop":0.8,"rain":{"1h":0.64}},{"dt":1646478000,"temp":37.09,"feels_like":32.13,"pressure":1003,"humidity":92,"dew_point":32.95,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":6.24,"wind_deg":6,"wind_gust":9.73,"weather":[{"id":500,"main":"Rain","description":"light
-        rain","icon":"10n"}],"pop":0.85,"rain":{"1h":0.38}},{"dt":1646481600,"temp":36.66,"feels_like":32.67,"pressure":1003,"humidity":93,"dew_point":32.86,"uvi":0,"clouds":100,"visibility":10000,"wind_speed":4.85,"wind_deg":25,"wind_gust":7,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04n"}],"pop":0.82},{"dt":1646485200,"temp":36.43,"feels_like":32.63,"pressure":1003,"humidity":94,"dew_point":32.76,"uvi":0,"clouds":100,"visibility":3516,"wind_speed":4.59,"wind_deg":39,"wind_gust":5.73,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04n"}],"pop":0.08},{"dt":1646488800,"temp":36.28,"feels_like":30.67,"pressure":1004,"humidity":95,"dew_point":33.08,"uvi":0.12,"clouds":100,"visibility":1091,"wind_speed":6.98,"wind_deg":16,"wind_gust":9.8,"weather":[{"id":804,"main":"Clouds","description":"overcast
-        clouds","icon":"04d"}],"pop":0.16},{"dt":1646492400,"temp":36.07,"feels_like":30.85,"pressure":1005,"humidity":95,"dew_point":32.81,"uvi":0.55,"clouds":100,"visibility":161,"wind_speed":6.33,"wind_deg":22,"wind_gust":9.51,"weather":[{"id":600,"main":"Snow","description":"light
-        snow","icon":"13d"}],"pop":0.28,"snow":{"1h":0.13}}],"daily":[{"dt":1646334000,"sunrise":1646314220,"sunset":1646355257,"moonrise":1646317320,"moonset":1646359800,"moon_phase":0.04,"temp":{"day":60.78,"min":41.25,"max":64.18,"night":46.8,"eve":53.33,"morn":44.49},"feels_like":{"day":57.69,"night":43.32,"eve":50.14,"morn":40.53},"pressure":1016,"humidity":24,"dew_point":24.75,"wind_speed":7.83,"wind_deg":228,"wind_gust":7.52,"weather":[{"id":803,"main":"Clouds","description":"broken
-        clouds","icon":"04d"}],"clouds":64,"pop":0,"uvi":5.18},{"dt":1646420400,"sunrise":1646400529,"sunset":1646441721,"moonrise":1646405220,"moonset":1646450160,"moon_phase":0.07,"temp":{"day":54.99,"min":43.03,"max":57.54,"night":43.7,"eve":49.86,"morn":43.03},"feels_like":{"day":52.02,"night":42.48,"eve":48.51,"morn":38.79},"pressure":1004,"humidity":39,"dew_point":28.31,"wind_speed":11.79,"wind_deg":229,"wind_gust":17.6,"weather":[{"id":500,"main":"Rain","description":"light
-        rain","icon":"10d"}],"clouds":100,"pop":0.74,"rain":1.13,"uvi":4.2},{"dt":1646506800,"sunrise":1646486838,"sunset":1646528185,"moonrise":1646493060,"moonset":1646540460,"moon_phase":0.11,"temp":{"day":34.32,"min":27.66,"max":43.66,"night":27.66,"eve":30.87,"morn":36.43},"feels_like":{"day":27.36,"night":21.76,"eve":24.58,"morn":32.63},"pressure":1010,"humidity":93,"dew_point":30.42,"wind_speed":10.94,"wind_deg":335,"wind_gust":17.49,"weather":[{"id":616,"main":"Snow","description":"rain
-        and snow","icon":"13d"}],"clouds":100,"pop":0.85,"rain":2.67,"snow":4.64,"uvi":4.33},{"dt":1646593200,"sunrise":1646573146,"sunset":1646614648,"moonrise":1646580900,"moonset":1646630640,"moon_phase":0.14,"temp":{"day":28.13,"min":23.43,"max":29.57,"night":23.43,"eve":27.41,"morn":24.93},"feels_like":{"day":20.7,"night":17.31,"eve":18.34,"morn":18.3},"pressure":1019,"humidity":86,"dew_point":22.24,"wind_speed":9.48,"wind_deg":2,"wind_gust":14.27,"weather":[{"id":601,"main":"Snow","description":"snow","icon":"13d"}],"clouds":100,"pop":0.99,"snow":9.48,"uvi":2.29},{"dt":1646679600,"sunrise":1646659453,"sunset":1646701111,"moonrise":1646668920,"moonset":1646720820,"moon_phase":0.17,"temp":{"day":24.44,"min":15.75,"max":27.1,"night":15.75,"eve":26.33,"morn":19.67},"feels_like":{"day":17.73,"night":7.36,"eve":21.69,"morn":11.52},"pressure":1030,"humidity":77,"dew_point":15.76,"wind_speed":6.64,"wind_deg":12,"wind_gust":9.73,"weather":[{"id":600,"main":"Snow","description":"light
-        snow","icon":"13d"}],"clouds":100,"pop":0.7,"snow":2.77,"uvi":3},{"dt":1646766000,"sunrise":1646745760,"sunset":1646787574,"moonrise":1646757060,"moonset":0,"moon_phase":0.2,"temp":{"day":34.05,"min":15.26,"max":36.64,"night":25.93,"eve":34.77,"morn":15.26},"feels_like":{"day":29.52,"night":19.44,"eve":30.31,"morn":6.44},"pressure":1024,"humidity":62,"dew_point":20.37,"wind_speed":6.06,"wind_deg":120,"wind_gust":8.99,"weather":[{"id":800,"main":"Clear","description":"clear
-        sky","icon":"01d"}],"clouds":2,"pop":0,"uvi":3},{"dt":1646852400,"sunrise":1646832067,"sunset":1646874036,"moonrise":1646845440,"moonset":1646810880,"moon_phase":0.23,"temp":{"day":43.56,"min":25.88,"max":46.06,"night":33.3,"eve":42.78,"morn":25.88},"feels_like":{"day":43.56,"night":27.39,"eve":42.78,"morn":18.1},"pressure":1004,"humidity":60,"dew_point":27.1,"wind_speed":7.02,"wind_deg":227,"wind_gust":9.69,"weather":[{"id":803,"main":"Clouds","description":"broken
-        clouds","icon":"04d"}],"clouds":52,"pop":0,"uvi":3},{"dt":1646938800,"sunrise":1646918373,"sunset":1646960498,"moonrise":1646934240,"moonset":1646900880,"moon_phase":0.25,"temp":{"day":21.54,"min":13.6,"max":32.79,"night":13.6,"eve":17.22,"morn":32.14},"feels_like":{"day":8.94,"night":2.16,"eve":4.86,"morn":28.42},"pressure":1018,"humidity":81,"dew_point":14.05,"wind_speed":15.41,"wind_deg":14,"wind_gust":20.22,"weather":[{"id":601,"main":"Snow","description":"snow","icon":"13d"}],"clouds":99,"pop":1,"snow":8.05,"uvi":3}]}'
-  recorded_at: Thu, 03 Mar 2022 16:49:44 GMT
+      string: '{"data":{"id":"269","type":"user","attributes":{"user_name":"0.0597602089000987","email":"0.6835004355034922@mail.com","street_address":"1234
+        Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
+        SWIMMING","latitude":40.2277056,"longitude":-76.1313541}}}'
+  recorded_at: Thu, 03 Mar 2022 18:04:43 GMT
+- request:
+    method: get
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/269
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 03 Mar 2022 18:04:44 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"eb5edc168d31c82fbcc11fde7f444c50"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f8414179-ac0e-4bb0-904a-fef20a4bdf5c
+      X-Runtime:
+      - '0.521817'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"269","type":"user","attributes":{"user_name":"0.0597602089000987","email":"0.6835004355034922@mail.com","street_address":"1234
+        Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
+        SWIMMING","latitude":40.2277056,"longitude":-76.1313541}}}'
+  recorded_at: Thu, 03 Mar 2022 18:04:44 GMT
 recorded_with: VCR 6.0.0
