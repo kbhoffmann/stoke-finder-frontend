@@ -3,10 +3,7 @@ class AdventuresController < ApplicationController
   def new
     @activities = params["area_activities"].map { |activity| activity[:ActivityName] }
     @user_id = session[:user_id]
-    # area_id = params["area_activities"].first["RecAreaID"]
     @area = RidbFacade.get_rec_area_info_by_id(params["area_activities"].first["RecAreaID"])
-    require 'pry'; binding.pry
-    #can pass area id as params
   end
 
   def create
