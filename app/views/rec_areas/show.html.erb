@@ -23,18 +23,15 @@
 
 
     <div class="container text-wrap" style="width: 50rem; float:left; margin:75px">
-      <div style= "float:left; margin:50px">
       <h3>Activities for <%= @area.name %>: </h3>
         <% @all_activities.each do |activity| %>
           <h3><%= activity.name %></h3>
           <p>Description: <%= activity.description %></p>
           <p>Fee: <%= activity.fee %></p>
         <% end %>
-      </div>
     </div>
 
     <div class= "container text-wrap" style="width: 50rem; float:right; margin:75px">
-      <div style= "float:right; margin:50px">
       <h3>Weather for <%= @area.name %></h3>
         <p>Current Temperature: <%= @forecast.temp.round %>&deg;F</p>
         <p>Feels Like: <%=@forecast.feels_like_temp%>&deg;F</p>
@@ -43,7 +40,6 @@
         <p>Humidity: <%=@forecast.humidity%> % </p>
         <p>Wind Speed: <%=@forecast.wind_speed_mph%> mph </p>
         <p>UV Index: <%=@forecast.uv_index%></p>
-      </div>
     </div>
 
 
