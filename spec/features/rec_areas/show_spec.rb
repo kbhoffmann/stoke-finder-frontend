@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Rec Area Show Page', type: :view do
-  it 'links to the show page from the search page', :vcr do
+  xit 'links to the show page from the search page', :vcr do
     visit "/rec_areas/search"
 
     id = "284"

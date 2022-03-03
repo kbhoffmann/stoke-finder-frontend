@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 00:26:08 GMT
+      - Thu, 03 Mar 2022 04:42:40 GMT
       X-Amz-Apigw-Id:
-      - OYatJHufPHcFyeQ=
+      - OZASAGSDPHcF4aA=
       X-Amzn-Trace-Id:
-      - Root=1-62200b20-b1cb83d5f79fb1477563067b;Sampled=0
+      - Root=1-6220473f-f4e5166c0d0f529b6638f385;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 93908c26-9bee-4a34-ac11-f20b0193919c
+      - fbbc7346-52aa-45a6-9f80-93bf2bae1a6e
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 20ebec22e4be2753f048f31dfe94e426.cloudfront.net (CloudFront)
+      - 1.1 cf1928ef9a9a7bb589a35ead31bcb4ea.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - RJutsQuBBqLVqDilP_KH3IKF5MVOCRnVOLfoxP8uhFYksdVStF-Yag==
+      - T9V0H4pEa3zSkB6zbnD-O74uJqPy-t6YU2XUoxsYmH02I4DIepRNCg==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -167,13 +167,13 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:08 GMT
+  recorded_at: Thu, 03 Mar 2022 04:42:40 GMT
 - request:
     method: post
     uri: https://arcane-sands-07034.herokuapp.com/api/v1/users
     body:
       encoding: UTF-8
-      string: '{"id":null,"user_name":"Ronald","email":"Ronald@email.com","password":"password12345","password_confirmation":"password12345","access":0,"street_address":"1234
+      string: '{"id":null,"user_name":"0.0437418283052432","email":"0.9458702148409976@0.8505250184270375.com","password":"password12345","password_confirmation":"password12345","access":0,"street_address":"1234
         Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
         SWIMMING SOFTBALL FIELDS"}'
     headers:
@@ -193,32 +193,32 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 03 Mar 2022 00:26:09 GMT
+      - Thu, 03 Mar 2022 04:42:40 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0f3868dc006e3da1a4655414b4ad0951"
+      - W/"3d6e520d56e11a96f8535e8e5a611230"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2fd94cf2-ebab-4503-9046-38779aa1e779
+      - 23418a7e-b028-4665-a4dc-710c88d50e11
       X-Runtime:
-      - '0.868187'
+      - '0.767628'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"207","type":"id","attributes":{"user_name":"Ronald","email":"Ronald@email.com","street_address":"1234
+      string: '{"data":{"id":"243","type":"user","attributes":{"user_name":"0.0437418283052432","email":"0.9458702148409976@0.8505250184270375.com","street_address":"1234
         Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
         SWIMMING SOFTBALL FIELDS","latitude":40.2277056,"longitude":-76.1313541}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:10 GMT
+  recorded_at: Thu, 03 Mar 2022 04:42:41 GMT
 - request:
     method: get
-    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/207
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/243
     body:
       encoding: US-ASCII
       string: ''
@@ -237,32 +237,32 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 03 Mar 2022 00:26:10 GMT
+      - Thu, 03 Mar 2022 04:42:41 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0f3868dc006e3da1a4655414b4ad0951"
+      - W/"3d6e520d56e11a96f8535e8e5a611230"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f9134ec4-535f-4696-a605-a4e2626a0c91
+      - baa9db3f-c2df-4ed8-81c2-251a93407933
       X-Runtime:
-      - '0.532099'
+      - '0.508386'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"207","type":"id","attributes":{"user_name":"Ronald","email":"Ronald@email.com","street_address":"1234
+      string: '{"data":{"id":"243","type":"user","attributes":{"user_name":"0.0437418283052432","email":"0.9458702148409976@0.8505250184270375.com","street_address":"1234
         Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
         SWIMMING SOFTBALL FIELDS","latitude":40.2277056,"longitude":-76.1313541}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:11 GMT
+  recorded_at: Thu, 03 Mar 2022 04:42:42 GMT
 - request:
     method: get
-    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/207
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/243
     body:
       encoding: US-ASCII
       string: ''
@@ -281,32 +281,32 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 03 Mar 2022 00:26:11 GMT
+      - Thu, 03 Mar 2022 04:42:42 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0f3868dc006e3da1a4655414b4ad0951"
+      - W/"3d6e520d56e11a96f8535e8e5a611230"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9a03f259-59be-479c-9468-cac68f476ee9
+      - a1e29eea-c036-4f73-a8b3-51e70c39cb6a
       X-Runtime:
-      - '0.543033'
+      - '0.517747'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"207","type":"id","attributes":{"user_name":"Ronald","email":"Ronald@email.com","street_address":"1234
+      string: '{"data":{"id":"243","type":"user","attributes":{"user_name":"0.0437418283052432","email":"0.9458702148409976@0.8505250184270375.com","street_address":"1234
         Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
         SWIMMING SOFTBALL FIELDS","latitude":40.2277056,"longitude":-76.1313541}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:12 GMT
+  recorded_at: Thu, 03 Mar 2022 04:42:42 GMT
 - request:
     method: get
-    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/207
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/243
     body:
       encoding: US-ASCII
       string: ''
@@ -325,29 +325,29 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 03 Mar 2022 00:26:12 GMT
+      - Thu, 03 Mar 2022 04:42:43 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0f3868dc006e3da1a4655414b4ad0951"
+      - W/"3d6e520d56e11a96f8535e8e5a611230"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - adbedba1-1e51-4edf-9c92-ee885db8ad18
+      - 2482dc11-ee37-4700-8aa2-3a092fcad84a
       X-Runtime:
-      - '0.506887'
+      - '0.556338'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"207","type":"id","attributes":{"user_name":"Ronald","email":"Ronald@email.com","street_address":"1234
+      string: '{"data":{"id":"243","type":"user","attributes":{"user_name":"0.0437418283052432","email":"0.9458702148409976@0.8505250184270375.com","street_address":"1234
         Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
         SWIMMING SOFTBALL FIELDS","latitude":40.2277056,"longitude":-76.1313541}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:13 GMT
+  recorded_at: Thu, 03 Mar 2022 04:42:43 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/activities?limit=128&offset=0
@@ -377,11 +377,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 00:26:13 GMT
+      - Thu, 03 Mar 2022 04:42:44 GMT
       X-Amz-Apigw-Id:
-      - OYat3GYrvHcFaUA=
+      - OZASpGZIvHcFdfg=
       X-Amzn-Trace-Id:
-      - Root=1-62200b25-60dd95ca461dccb14fa23b9e;Sampled=0
+      - Root=1-62204744-d6d0a6d431e032e3aa320c22;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -417,17 +417,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - f199c417-0786-471c-bd93-b4cd623161ac
+      - 2125257a-a706-444a-984f-dc7555df4ee7
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 d50ea39d66fbd0459a5507b1cf70c2dc.cloudfront.net (CloudFront)
+      - 1.1 be7f6ce4397843276657a8babac08b6e.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - urUHnsri_TgS6Gvytcg6cIZTzAWiZERqEksnv_pqFwZzGyxUbwsYIw==
+      - jgvb0eznencrMBLUb0Gn58LG26ED4QbvgkcVDJNENntt01XHowp8cA==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -515,10 +515,10 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:13 GMT
+  recorded_at: Thu, 03 Mar 2022 04:42:44 GMT
 - request:
     method: get
-    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/207
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/243
     body:
       encoding: US-ASCII
       string: ''
@@ -537,35 +537,35 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 03 Mar 2022 00:26:13 GMT
+      - Thu, 03 Mar 2022 04:42:44 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0f3868dc006e3da1a4655414b4ad0951"
+      - W/"3d6e520d56e11a96f8535e8e5a611230"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5cef4ffb-747f-4f83-9ffa-971cca3c8cac
+      - 8b4d6949-67e2-4eea-a7d1-d087e8479626
       X-Runtime:
-      - '0.585725'
+      - '0.532039'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"207","type":"id","attributes":{"user_name":"Ronald","email":"Ronald@email.com","street_address":"1234
+      string: '{"data":{"id":"243","type":"user","attributes":{"user_name":"0.0437418283052432","email":"0.9458702148409976@0.8505250184270375.com","street_address":"1234
         Main St","city":"Denver","state":"CO","zipcode":"80220","activity_preferences":"ACCESSIBLE
         SWIMMING SOFTBALL FIELDS","latitude":40.2277056,"longitude":-76.1313541}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:14 GMT
+  recorded_at: Thu, 03 Mar 2022 04:42:45 GMT
 - request:
     method: patch
-    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/207
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/243
     body:
       encoding: UTF-8
-      string: '{"id":"207","user_name":"Ronald","email":"Ronald@email.com","password":"password12345","password_confirmation":"password12345","access":0,"street_address":"3557
+      string: '{"id":"243","user_name":"0.6238052608646416","email":"0.9458702148409976@0.8505250184270375.com","password":"password12345","password_confirmation":"password12345","access":0,"street_address":"3557
         Alcott St","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"ACCESSIBLE
         SWIMMING SOFTBALL FIELDS"}'
     headers:
@@ -579,38 +579,34 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 201
-      message: Created
+      code: 400
+      message: Bad Request
     headers:
       Server:
       - Cowboy
       Date:
-      - Thu, 03 Mar 2022 00:26:14 GMT
+      - Thu, 03 Mar 2022 04:42:45 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"0eb26aeeb03756c16f264365d9fc4d4a"
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       X-Request-Id:
-      - 679ece45-15fe-4143-a29f-b6a044abf422
+      - 30052ed8-5e6c-4e91-b07c-156eecf75279
       X-Runtime:
-      - '0.586653'
+      - '0.267298'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"207","type":"id","attributes":{"user_name":"Ronald","email":"Ronald@email.com","street_address":"3557
-        Alcott St","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"ACCESSIBLE
-        SWIMMING SOFTBALL FIELDS","latitude":39.766710700000004,"longitude":-105.01780017511793}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:15 GMT
+      string: '{"status":"ERROR","message":"User ID does not match a current user.","data":{}}'
+  recorded_at: Thu, 03 Mar 2022 04:42:46 GMT
 - request:
     method: get
-    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/207
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/243
     body:
       encoding: US-ASCII
       string: ''
@@ -629,32 +625,200 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 03 Mar 2022 00:26:15 GMT
+      - Thu, 03 Mar 2022 04:42:46 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0eb26aeeb03756c16f264365d9fc4d4a"
+      - W/"4aefef7e63d94bc0ad722a8d0633f58e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 340dbf6b-4dd4-4631-af58-5fe2ed2f787d
+      - 4f0a1e22-469e-46e2-a9c9-e459c509d536
       X-Runtime:
-      - '0.274569'
+      - '0.320852'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"207","type":"id","attributes":{"user_name":"Ronald","email":"Ronald@email.com","street_address":"3557
+      string: '{"data":{"id":"243","type":"user","attributes":{"user_name":"0.6238052608646416","email":"0.9458702148409976@0.8505250184270375.com","street_address":"3557
         Alcott St","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"ACCESSIBLE
         SWIMMING SOFTBALL FIELDS","latitude":39.766710700000004,"longitude":-105.01780017511793}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:16 GMT
+  recorded_at: Thu, 03 Mar 2022 04:42:46 GMT
 - request:
     method: get
-    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/207
+    uri: https://ridb.recreation.gov/api/v1/activities?limit=128&offset=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - apiKey
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Server
+      Date:
+      - Thu, 03 Mar 2022 04:42:47 GMT
+      X-Amz-Apigw-Id:
+      - OZATIEjTvHcF_EA=
+      X-Amzn-Trace-Id:
+      - Root=1-62204747-eaec3e37ef0b9d5a2fbbdef5;Sampled=0
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; always
+      Access-Control-Allow-Methods:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max_age=600,public,stale-if-error=3600
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
+        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
+        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
+        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
+        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
+        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
+        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
+        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
+        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
+        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
+        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
+        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
+        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
+        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
+        worker-src ''self'' blob: ;'
+      X-Amzn-Requestid:
+      - 192af77e-8a4d-42ef-89d2-eb48b9360b1a
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 30ea845097208edbc19305c535a5be98.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-C1
+      X-Amz-Cf-Id:
+      - WO3aJTyG9wvyWapNYpQ3Vh1m0YJQEfrXbFoHb8DmFIAP1UbdVr8a9g==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
+        TOURING","ActivityLevel":0},{"ActivityID":5,"ActivityParentID":0,"ActivityName":"BIKING","ActivityLevel":0},{"ActivityID":6,"ActivityParentID":0,"ActivityName":"BOATING","ActivityLevel":0},{"ActivityID":7,"ActivityParentID":0,"ActivityName":"CLIMBING","ActivityLevel":0},{"ActivityID":8,"ActivityParentID":0,"ActivityName":"HISTORIC
+        \u0026 CULTURAL SITE","ActivityLevel":0},{"ActivityID":9,"ActivityParentID":0,"ActivityName":"CAMPING","ActivityLevel":0},{"ActivityID":10,"ActivityParentID":0,"ActivityName":"INTERPRETIVE
+        PROGRAMS","ActivityLevel":0},{"ActivityID":11,"ActivityParentID":0,"ActivityName":"FISHING","ActivityLevel":0},{"ActivityID":14,"ActivityParentID":0,"ActivityName":"HIKING","ActivityLevel":0},{"ActivityID":15,"ActivityParentID":0,"ActivityName":"HORSEBACK
+        RIDING","ActivityLevel":0},{"ActivityID":16,"ActivityParentID":0,"ActivityName":"HUNTING","ActivityLevel":0},{"ActivityID":18,"ActivityParentID":0,"ActivityName":"OFF
+        HIGHWAY VEHICLE","ActivityLevel":0},{"ActivityID":20,"ActivityParentID":0,"ActivityName":"PICNICKING","ActivityLevel":0},{"ActivityID":22,"ActivityParentID":0,"ActivityName":"WINTER
+        SPORTS","ActivityLevel":0},{"ActivityID":23,"ActivityParentID":0,"ActivityName":"RECREATIONAL
+        VEHICLES","ActivityLevel":0},{"ActivityID":24,"ActivityParentID":0,"ActivityName":"VISITOR
+        CENTER","ActivityLevel":0},{"ActivityID":25,"ActivityParentID":0,"ActivityName":"WATER
+        SPORTS","ActivityLevel":0},{"ActivityID":26,"ActivityParentID":0,"ActivityName":"WILDLIFE
+        VIEWING","ActivityLevel":0},{"ActivityID":27,"ActivityParentID":0,"ActivityName":"FISH
+        HATCHERY","ActivityLevel":0},{"ActivityID":28,"ActivityParentID":0,"ActivityName":"WILDERNESS","ActivityLevel":0},{"ActivityID":30,"ActivityParentID":0,"ActivityName":"FIRE
+        LOOKOUTS/CABINS OVERNIGHT","ActivityLevel":0},{"ActivityID":31,"ActivityParentID":0,"ActivityName":"FISH
+        VIEWING SITE","ActivityLevel":0},{"ActivityID":32,"ActivityParentID":0,"ActivityName":"DAY
+        USE AREA","ActivityLevel":0},{"ActivityID":33,"ActivityParentID":0,"ActivityName":"DOCUMENTARY
+        SITE","ActivityLevel":0},{"ActivityID":34,"ActivityParentID":0,"ActivityName":"SWIMMING
+        SITE","ActivityLevel":0},{"ActivityID":35,"ActivityParentID":0,"ActivityName":"ORGANIZATION
+        SITE PRIVATELY OWNED","ActivityLevel":0},{"ActivityID":36,"ActivityParentID":0,"ActivityName":"ORGANIZATION
+        SITE FS OWNED","ActivityLevel":0},{"ActivityID":37,"ActivityParentID":0,"ActivityName":"PLAYGROUND
+        PARK SPECIALIZED SPORT SITE","ActivityLevel":0},{"ActivityID":38,"ActivityParentID":0,"ActivityName":"OTHER
+        RECREATION CONCESSION SITE","ActivityLevel":0},{"ActivityID":39,"ActivityParentID":0,"ActivityName":"OBSERVATION
+        SITE","ActivityLevel":0},{"ActivityID":40,"ActivityParentID":0,"ActivityName":"HOTEL/LODGE/RESORT
+        FS OWNED","ActivityLevel":0},{"ActivityID":41,"ActivityParentID":0,"ActivityName":"INFORMATION
+        SITE","ActivityLevel":0},{"ActivityID":42,"ActivityParentID":0,"ActivityName":"RECREATION
+        RESIDENCE","ActivityLevel":0},{"ActivityID":43,"ActivityParentID":0,"ActivityName":"SNOWPARK","ActivityLevel":0},{"ActivityID":44,"ActivityParentID":0,"ActivityName":"HOTEL/LODGE/RESORT
+        PRIVATELY OWNED","ActivityLevel":0},{"ActivityID":103,"ActivityParentID":0,"ActivityName":"ENVIRONMENTAL
+        EDUCATION","ActivityLevel":0},{"ActivityID":104,"ActivityParentID":0,"ActivityName":"PHOTOGRAPHY","ActivityLevel":0},{"ActivityID":105,"ActivityParentID":0,"ActivityName":"PADDLING","ActivityLevel":0},{"ActivityID":106,"ActivityParentID":0,"ActivityName":"SWIMMING","ActivityLevel":0},{"ActivityID":107,"ActivityParentID":0,"ActivityName":"DIVING","ActivityLevel":0},{"ActivityID":108,"ActivityParentID":0,"ActivityName":"SNORKELING","ActivityLevel":0},{"ActivityID":109,"ActivityParentID":0,"ActivityName":"HORSE
+        CAMPING","ActivityLevel":0},{"ActivityID":110,"ActivityParentID":0,"ActivityName":"RECREATIONAL
+        SHOOTING","ActivityLevel":0},{"ActivityID":100000,"ActivityParentID":0,"ActivityName":"MOTOR
+        BOAT","ActivityLevel":0},{"ActivityID":100001,"ActivityParentID":0,"ActivityName":"SNOWMOBILE","ActivityLevel":0},{"ActivityID":100002,"ActivityParentID":0,"ActivityName":"MOUNTAIN
+        BIKING","ActivityLevel":0},{"ActivityID":100003,"ActivityParentID":0,"ActivityName":"OFF
+        ROAD VEHICLE TRAILS","ActivityLevel":0},{"ActivityID":100004,"ActivityParentID":0,"ActivityName":"RANGER
+        STATION","ActivityLevel":0},{"ActivityID":100005,"ActivityParentID":0,"ActivityName":"PADDLE
+        BOATING","ActivityLevel":0},{"ActivityID":100006,"ActivityParentID":0,"ActivityName":"WATER
+        ACTIVITIES","ActivityLevel":0},{"ActivityID":100007,"ActivityParentID":0,"ActivityName":"KAYAKING","ActivityLevel":0},{"ActivityID":100008,"ActivityParentID":0,"ActivityName":"CANOEING","ActivityLevel":0},{"ActivityID":100009,"ActivityParentID":0,"ActivityName":"BERRY
+        PICKING","ActivityLevel":0},{"ActivityID":100010,"ActivityParentID":0,"ActivityName":"BEACH
+        CAMPING","ActivityLevel":0},{"ActivityID":100011,"ActivityParentID":0,"ActivityName":"BEACHCOMBING","ActivityLevel":0},{"ActivityID":100012,"ActivityParentID":0,"ActivityName":"CLAM
+        DIGGING","ActivityLevel":0},{"ActivityID":100013,"ActivityParentID":0,"ActivityName":"CRABBING","ActivityLevel":0},{"ActivityID":100014,"ActivityParentID":0,"ActivityName":"SEA
+        KAYAKING","ActivityLevel":0},{"ActivityID":100015,"ActivityParentID":0,"ActivityName":"STAR
+        GAZING","ActivityLevel":0},{"ActivityID":100016,"ActivityParentID":0,"ActivityName":"SURFING","ActivityLevel":0},{"ActivityID":100017,"ActivityParentID":0,"ActivityName":"BIRDING","ActivityLevel":0},{"ActivityID":100018,"ActivityParentID":0,"ActivityName":"NON-MOTORIZED
+        BOATING","ActivityLevel":0},{"ActivityID":100019,"ActivityParentID":0,"ActivityName":"WATER
+        ACCESS","ActivityLevel":0},{"ActivityID":100020,"ActivityParentID":0,"ActivityName":"CROSS
+        COUNTRY SKIING","ActivityLevel":0},{"ActivityID":100021,"ActivityParentID":0,"ActivityName":"ANTIQUING","ActivityLevel":0},{"ActivityID":100022,"ActivityParentID":0,"ActivityName":"JET
+        SKIING","ActivityLevel":0},{"ActivityID":100023,"ActivityParentID":0,"ActivityName":"WATER
+        SKIING","ActivityLevel":0},{"ActivityID":100024,"ActivityParentID":0,"ActivityName":"DISC
+        GOLF","ActivityLevel":0},{"ActivityID":100025,"ActivityParentID":0,"ActivityName":"CULTURAL
+        ACTIVITIES","ActivityLevel":0},{"ActivityID":100026,"ActivityParentID":0,"ActivityName":"EVENING
+        PROGRAMS","ActivityLevel":0},{"ActivityID":100027,"ActivityParentID":0,"ActivityName":"GUIDED
+        INTERPRETIVE WALKS","ActivityLevel":0},{"ActivityID":100028,"ActivityParentID":0,"ActivityName":"RECREATION
+        PROGRAMS","ActivityLevel":0},{"ActivityID":100029,"ActivityParentID":0,"ActivityName":"SCENIC
+        DRIVE","ActivityLevel":0},{"ActivityID":100030,"ActivityParentID":0,"ActivityName":"WINDSURFING","ActivityLevel":0},{"ActivityID":100031,"ActivityParentID":0,"ActivityName":"GOLD
+        PANNING","ActivityLevel":0},{"ActivityID":100032,"ActivityParentID":0,"ActivityName":"RAFTING","ActivityLevel":0},{"ActivityID":100033,"ActivityParentID":0,"ActivityName":"RIVER
+        TRIPS","ActivityLevel":0},{"ActivityID":100034,"ActivityParentID":0,"ActivityName":"WHITEWATER
+        RAFTING","ActivityLevel":0},{"ActivityID":100035,"ActivityParentID":0,"ActivityName":"ICE
+        CLIMBING","ActivityLevel":0},{"ActivityID":100036,"ActivityParentID":0,"ActivityName":"BACKPACKING","ActivityLevel":0},{"ActivityID":100037,"ActivityParentID":0,"ActivityName":"SAILING","ActivityLevel":0},{"ActivityID":100038,"ActivityParentID":0,"ActivityName":"SCUBA
+        DIVING","ActivityLevel":0},{"ActivityID":100039,"ActivityParentID":0,"ActivityName":"WHALE
+        WATCHING","ActivityLevel":0},{"ActivityID":100040,"ActivityParentID":0,"ActivityName":"MOUNTAIN
+        CLIMBING","ActivityLevel":0},{"ActivityID":100041,"ActivityParentID":0,"ActivityName":"ROCK
+        CLIMBING","ActivityLevel":0},{"ActivityID":100042,"ActivityParentID":0,"ActivityName":"MUSHROOM
+        PICKING","ActivityLevel":0},{"ActivityID":100043,"ActivityParentID":0,"ActivityName":"AMPHITHEATER","ActivityLevel":0},{"ActivityID":100044,"ActivityParentID":0,"ActivityName":"EDUCATIONAL
+        PROGRAMS","ActivityLevel":0},{"ActivityID":100045,"ActivityParentID":0,"ActivityName":"TUBING","ActivityLevel":0},{"ActivityID":100046,"ActivityParentID":0,"ActivityName":"SNOWSHOEING","ActivityLevel":0},{"ActivityID":100047,"ActivityParentID":0,"ActivityName":"ARCHERY","ActivityLevel":0},{"ActivityID":100048,"ActivityParentID":0,"ActivityName":"HISTORIC
+        SITES","ActivityLevel":0},{"ActivityID":100049,"ActivityParentID":0,"ActivityName":"ACCESSIBLE
+        SWIMMING","ActivityLevel":0},{"ActivityID":100050,"ActivityParentID":0,"ActivityName":"SOFTBALL
+        FIELDS","ActivityLevel":0},{"ActivityID":100051,"ActivityParentID":0,"ActivityName":"SNOWMOBILING","ActivityLevel":0},{"ActivityID":100052,"ActivityParentID":0,"ActivityName":"LOOKOUT
+        TOWER","ActivityLevel":0},{"ActivityID":100053,"ActivityParentID":0,"ActivityName":"SLEDDING","ActivityLevel":0},{"ActivityID":100054,"ActivityParentID":0,"ActivityName":"DOWNHILL
+        SKIING","ActivityLevel":0},{"ActivityID":100055,"ActivityParentID":0,"ActivityName":"SKIING","ActivityLevel":0},{"ActivityID":100056,"ActivityParentID":0,"ActivityName":"SNOWMOBILE
+        TRAILS","ActivityLevel":0},{"ActivityID":100057,"ActivityParentID":0,"ActivityName":"SNOWBOARDING","ActivityLevel":0},{"ActivityID":100058,"ActivityParentID":0,"ActivityName":"WOOD
+        CUTTING","ActivityLevel":0},{"ActivityID":100059,"ActivityParentID":0,"ActivityName":"ICE
+        FISHING","ActivityLevel":0},{"ActivityID":100060,"ActivityParentID":0,"ActivityName":"CRAWFISHING","ActivityLevel":0},{"ActivityID":100061,"ActivityParentID":0,"ActivityName":"BIRD
+        WATCHING","ActivityLevel":0},{"ActivityID":100062,"ActivityParentID":0,"ActivityName":"WILD
+        HORSE VIEWING","ActivityLevel":0},{"ActivityID":100063,"ActivityParentID":0,"ActivityName":"OFF
+        HIGHWAY VEHICLE TRAILS","ActivityLevel":0},{"ActivityID":100064,"ActivityParentID":0,"ActivityName":"BADMINTON","ActivityLevel":0},{"ActivityID":100065,"ActivityParentID":0,"ActivityName":"PICNIC
+        TABLES","ActivityLevel":0},{"ActivityID":100066,"ActivityParentID":0,"ActivityName":"HIKING
+        TRAIL","ActivityLevel":0},{"ActivityID":100067,"ActivityParentID":0,"ActivityName":"ICE
+        SKATING","ActivityLevel":0},{"ActivityID":100068,"ActivityParentID":0,"ActivityName":"SNOW
+        TUBING","ActivityLevel":0},{"ActivityID":100069,"ActivityParentID":0,"ActivityName":"MARINA","ActivityLevel":0},{"ActivityID":100070,"ActivityParentID":0,"ActivityName":"SOCCER
+        FIELDS","ActivityLevel":0},{"ActivityID":100071,"ActivityParentID":0,"ActivityName":"EMERGENCY
+        SERVICES","ActivityLevel":0},{"ActivityID":100072,"ActivityParentID":0,"ActivityName":"MUSEUM","ActivityLevel":0},{"ActivityID":100073,"ActivityParentID":0,"ActivityName":"SAILBOARDING","ActivityLevel":0},{"ActivityID":100074,"ActivityParentID":0,"ActivityName":"TRAILS,
+        ALL TERRAIN/OHV","ActivityLevel":0},{"ActivityID":100075,"ActivityParentID":0,"ActivityName":"TRAILS,
+        HORSE","ActivityLevel":0},{"ActivityID":100076,"ActivityParentID":0,"ActivityName":"TRAILS,
+        DIFFICULT HIKING","ActivityLevel":0},{"ActivityID":100077,"ActivityParentID":0,"ActivityName":"BOAT
+        RENTAL","ActivityLevel":0},{"ActivityID":100078,"ActivityParentID":0,"ActivityName":"GONDOLA
+        RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
+        TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
+        BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
+  recorded_at: Thu, 03 Mar 2022 04:42:47 GMT
+- request:
+    method: get
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/243
     body:
       encoding: US-ASCII
       string: ''
@@ -673,27 +837,27 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 03 Mar 2022 00:26:16 GMT
+      - Thu, 03 Mar 2022 04:42:47 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0eb26aeeb03756c16f264365d9fc4d4a"
+      - W/"4aefef7e63d94bc0ad722a8d0633f58e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 440e4a15-2bb8-40e0-a444-4d219930faab
+      - 91f29b9b-2a0a-4dc5-9f50-1b4a8b594e77
       X-Runtime:
-      - '0.274301'
+      - '0.284262'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"207","type":"id","attributes":{"user_name":"Ronald","email":"Ronald@email.com","street_address":"3557
+      string: '{"data":{"id":"243","type":"user","attributes":{"user_name":"0.6238052608646416","email":"0.9458702148409976@0.8505250184270375.com","street_address":"3557
         Alcott St","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"ACCESSIBLE
         SWIMMING SOFTBALL FIELDS","latitude":39.766710700000004,"longitude":-105.01780017511793}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:17 GMT
+  recorded_at: Thu, 03 Mar 2022 04:42:47 GMT
 recorded_with: VCR 6.0.0

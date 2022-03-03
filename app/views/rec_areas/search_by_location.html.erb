@@ -5,12 +5,8 @@
 <h3><%= area.name %></h3>
 <p><%= area.description %></p>
 <p><%= area.directions %></p>
-<<<<<<< HEAD
-<%= link_to "Plan an adventure for #{area.name}", adventures_new_path(area_id: area.id) %>
-=======
 <p><%= link_to "Plan an adventure for #{area.name}", "/adventures/new/#{area.id}" %></p>
 <p><%= link_to "#{area.name} Details", "/rec_areas/#{area.id}"%></p>
->>>>>>> 62932f1cfe5140bb5fbd6b3a82d43215554e44d5
 <br>
 </div>
 </ul>

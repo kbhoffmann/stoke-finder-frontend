@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 00:26:33 GMT
+      - Thu, 03 Mar 2022 04:43:00 GMT
       X-Amz-Apigw-Id:
-      - OYaw3EiAPHcFxGg=
+      - OZAVEGlVvHcF-PA=
       X-Amzn-Trace-Id:
-      - Root=1-62200b38-e0c11f1c7ccaad39d4dd9b73;Sampled=0
+      - Root=1-62204753-c0ce5f1583497bce0d172f6d;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 4624fe37-1fde-4197-abf4-8952db0aa172
+      - 704f2150-03c2-4564-8389-866f3a52df0c
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 599b9600e4966f19b30202be0b0d649e.cloudfront.net (CloudFront)
+      - 1.1 402032e48d13c4b7217c7a59235bf8cc.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - gQZPY8t9taaL1IdV8ctzU0iDVHScIeZ7F0u2RBZ1UkvTNVYSVjgkww==
+      - xeLy7aJ-hKrZvkFDxWtg_TPuIpFN-oXPjcU7WH0PAmeoEpGcEerkTg==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"RecAreaID":"285","OrgRecAreaID":"285","ParentOrgID":"130","RecAreaName":"Cherry
@@ -137,7 +137,7 @@ http_interactions:
         Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
         Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":340,"Width":1440,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_0f866aa1-4aff-4568-9292-25f29db7d712_1440.jpg","Credits":"John
         Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:33 GMT
+  recorded_at: Thu, 03 Mar 2022 04:43:00 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/recareas?activity%5B%5D=Biking&full=true&latitude=39.71854302040816&limit=10&longitude=-104.95596330612246&radius=10
@@ -167,11 +167,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 00:26:35 GMT
+      - Thu, 03 Mar 2022 04:43:02 GMT
       X-Amz-Apigw-Id:
-      - OYaxHEkbvHcF_2g=
+      - OZAVUEQHvHcF44w=
       X-Amzn-Trace-Id:
-      - Root=1-62200b3a-d2b0997c5bc6eb31db3c9e42;Sampled=0
+      - Root=1-62204755-449bd264ff3bb7505ccfbb33;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -207,17 +207,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - afd7eed3-2701-4653-8722-acd7d901ea96
+      - 61b9d016-c658-499f-8328-e7e5fbe51f56
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 5950a1c2bfcf1f3e07bedbb2efad39f2.cloudfront.net (CloudFront)
+      - 1.1 a939790ed0d3868e81621f63b9b3d08c.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - VTDO2TmatVYDLzrWYTfLTTFgC0w6HTxSXxsGoAxUmi7nubjHmqlcmg==
+      - IqWk84j4aNxAO42h7CeUAo2lGOsRiK5_P8GDei5k0gZvZ9Hn3nDxZg==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"RecAreaID":"285","OrgRecAreaID":"285","ParentOrgID":"130","RecAreaName":"Cherry
@@ -275,7 +275,7 @@ http_interactions:
         Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
         Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":340,"Width":1440,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_0f866aa1-4aff-4568-9292-25f29db7d712_1440.jpg","Credits":"John
         Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:35 GMT
+  recorded_at: Thu, 03 Mar 2022 04:43:02 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/recareas?activity%5B%5D=Biking&full=true&latitude=39.71854302040816&limit=10&longitude=-104.95596330612246&radius=10
@@ -305,11 +305,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 00:26:36 GMT
+      - Thu, 03 Mar 2022 04:43:03 GMT
       X-Amz-Apigw-Id:
-      - OYaxWEaUPHcFqaw=
+      - OZAVlF6dPHcFuzg=
       X-Amzn-Trace-Id:
-      - Root=1-62200b3b-00b1495b04cba2a62ae5322a;Sampled=0
+      - Root=1-62204756-bddbe36c1fbe4a990548aef4;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -345,145 +345,7 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 326ff773-9d9e-4cfb-bfc7-7629207490f9
-      Vary:
-      - Accept-Encoding
-      X-Cache:
-      - Miss from cloudfront
-      Via:
-      - 1.1 187855e01bff01816fb7f2e5860898b6.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - DEN52-C1
-      X-Amz-Cf-Id:
-      - b8TISTBOTu6gSkMOaML9WEXJLkvwiOLebGaxQrR-3jJgYn88uN0rrA==
-    body:
-      encoding: ASCII-8BIT
-      string: '{"RECDATA":[{"RecAreaID":"285","OrgRecAreaID":"285","ParentOrgID":"130","RecAreaName":"Cherry
-        Creek Lake","RecAreaDescription":"Cherry Creek Dam, located at the southeast
-        edge of Denver in Aurora, CO, was the first of the three dams to be built
-        to protect the Denver region from catastrophic South Platte River floodwaters
-        that plagued the area for more than 100 years.  Recreational opportunities
-        include camping, fishing, picnicking, an archery/rifle range, a horse stable,
-        nature and bike trails, a marina, and a swimming area.  The park is open year-round.","RecAreaFeeDescription":"","RecAreaDirections":"On
-        the southeast fringe of Denver off I-225/Parker Road.","RecAreaPhone":"","RecAreaEmail":"","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-104.859446,39.649023]},"RecAreaLongitude":-104.859446,"RecAreaLatitude":39.649023,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2021-09-23","ORGANIZATION":[{"OrgID":"130","OrgName":"US
-        Army Corps of Engineers","OrgImageURL":"uasce.gif","OrgURLText":"","OrgURLAddress":"http://www.usace.army.mil","OrgType":"Federal
-        Agency","OrgAbbrevName":"USACE","OrgJurisdictionType":"State","OrgParentID":"162","LastUpdatedDate":"2018-06-26"}],"FACILITY":[{"FacilityID":"247881","FacilityName":"Cherry
-        Creek State Park","ResourceLink":"https://ridb.recreation.gov/api/v1/facilities/247881"}],"RECAREAADDRESS":[{"RecAreaAddressID":"465510","RecAreaID":"285","RecAreaAddressType":"Default","RecAreaStreetAddress1":"9307
-        S. Wadsworth Blvd","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Littleton","PostalCode":"80128-6901","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2015-06-30"}],"ACTIVITY":[{"ActivityID":6,"ActivityParentID":"","RecAreaID":"285","ActivityName":"BOATING","RecAreaActivityDescription":"Boating","RecAreaActivityFeeDescription":""},{"ActivityID":9,"ActivityParentID":"","RecAreaID":"285","ActivityName":"CAMPING","RecAreaActivityDescription":"Camping","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"285","ActivityName":"FISHING","RecAreaActivityDescription":"Fishing","RecAreaActivityFeeDescription":""},{"ActivityID":20,"ActivityParentID":"","RecAreaID":"285","ActivityName":"PICNICKING","RecAreaActivityDescription":"Picnic","RecAreaActivityFeeDescription":""},{"ActivityID":25,"ActivityParentID":"","RecAreaID":"285","ActivityName":"WATER
-        SPORTS","RecAreaActivityDescription":"Water Sports","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"285","ActivityName":"WILDLIFE
-        VIEWING","RecAreaActivityDescription":"Wildlife Viewing","RecAreaActivityFeeDescription":""},{"ActivityID":37,"ActivityParentID":"","RecAreaID":"285","ActivityName":"PLAYGROUND
-        PARK SPECIALIZED SPORT SITE","RecAreaActivityDescription":"Playground","RecAreaActivityFeeDescription":""},{"ActivityID":38,"ActivityParentID":"","RecAreaID":"285","ActivityName":"OTHER
-        RECREATION CONCESSION SITE","RecAreaActivityDescription":"Restaurant/SnackBar","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"11e4bb62a8bb5c60da8bb96ee9a55e75","LinkType":"Map","EntityID":"285","EntityType":"RecArea","Title":"Cherry
-        Creek Lake Map","Description":"","URL":"http://www.parks.state.co.us/SiteCollectionImages/parks/Parks/Chatfield/ChatfieldAreaMap.pdf"},{"EntityLinkID":"0b42117592f947bd694dffcb565c7ec1","LinkType":"Official
-        Web Site","EntityID":"285","EntityType":"RecArea","Title":"Cherry Creek Lake
-        Website","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/projects.cfm?ID=G603070"},{"EntityLinkID":"33d60b9776ce7f39bcf8464feed32f17","LinkType":"Other","EntityID":"285","EntityType":"RecArea","Title":"Cherry
-        Creek Lake Photo Album","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/album.cfm?Option=View\u0026Activity=None\u0026ID=G603070"}],"MEDIA":[{"EntityMediaID":"326051","MediaType":"Image","EntityID":"285","EntityType":"RecArea","Title":"","Subtitle":"","Description":"","EmbedCode":"","Height":295,"Width":480,"URL":"https://cdn.recreation.gov/public/images/2140.jpg","Credits":"","IsPrimary":false,"IsPreview":false,"IsGallery":true}]},{"RecAreaID":"1583","OrgRecAreaID":"","ParentOrgID":"127","RecAreaName":"Rocky
-        Mountain Arsenal National Wildlife Refuge","RecAreaDescription":"Rocky Mountain
-        Arsenal National Wildlife Refuge (NWR), located 10 minutes from downtown Denver,
-        is nearly 17,000 acres, making it one of the largest urban wildlife refuges
-        in the United States. It consists of open lakes, wetlands, prairie grasslands,
-        and woodlands. \n\n\n\n\n\nDue to its proximity to Denver, one of the Refuge''s
-        primary goals is to provide environmental education programs for urban school
-        children. Each year, thousands of visitors come to the Refuge to appreciate
-        its wildlife, view the scenic habitat, and learn about native prairie species.
-        The Arsenal has been called \"a significant habitat island for wildlife\"
-        and \"a place to renew the relationship with nature.\" Popular activities
-        include interpretative programs, environmental education, fishing, wildlife
-        observation, and photography.","RecAreaFeeDescription":"","RecAreaDirections":"Rocky
-        Mountain Arsenal NWR is 10 minutes from downtown Denver and 30 minutes from
-        the Rocky Mountain foothills.  It is located in Commerce City, Colorado, a
-        Denver suburb located in Adams County.  To get to Rocky Mountain Arsenal NWR
-        from downtown Denver, take I-25 north to I-70 east.  Exit at Havana Street
-        and head north.  Enter through the South Gate located at 56th Avenue and Havana
-        Street.  From Denver International Airport, take Pena Boulevard south to 56th
-        Avenue heading west.  Turn north on Havana Street and enter through the South
-        Gate.","RecAreaPhone":"303-289-0232","RecAreaEmail":"rockymountainarsenal@fws.gov","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-104.847,39.8345]},"RecAreaLongitude":-104.847,"RecAreaLatitude":39.8345,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2020-12-09","ORGANIZATION":[{"OrgID":"127","OrgName":"Fish
-        and Wildlife Service","OrgImageURL":"fws.gif","OrgURLText":"","OrgURLAddress":"http://www.fws.gov","OrgType":"Federal
-        Agency","OrgAbbrevName":"FWS","OrgJurisdictionType":"State","OrgParentID":"139","LastUpdatedDate":"2018-06-26"}],"FACILITY":[],"RECAREAADDRESS":[{"RecAreaAddressID":"2156","RecAreaID":"1583","RecAreaAddressType":"Default","RecAreaStreetAddress1":"7200
-        Quebec Street Bldg 121","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Commerce
-        City","PostalCode":"80022","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2007-03-06"}],"ACTIVITY":[{"ActivityID":8,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HISTORIC
-        \u0026 CULTURAL SITE","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":10,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"INTERPRETIVE
-        PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"FISHING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":24,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"VISITOR
-        CENTER","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"WILDLIFE
-        VIEWING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"9611d31747205cc50999c68c5a1bdab8","LinkType":"Official
-        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
-        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
-        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
-        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false},{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
-        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
-        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":340,"Width":1440,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_0f866aa1-4aff-4568-9292-25f29db7d712_1440.jpg","Credits":"John
-        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:36 GMT
-- request:
-    method: get
-    uri: https://ridb.recreation.gov/api/v1/recareas?activity%5B%5D=Biking&full=true&latitude=39.71854302040816&limit=10&longitude=-104.95596330612246&radius=10
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Apikey:
-      - apiKey
-      User-Agent:
-      - Faraday v2.2.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Server:
-      - Server
-      Date:
-      - Thu, 03 Mar 2022 00:26:38 GMT
-      X-Amz-Apigw-Id:
-      - OYaxkF1GvHcFijw=
-      X-Amzn-Trace-Id:
-      - Root=1-62200b3d-9a9f6a64892454891b47331d;Sampled=0
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubdomains; always
-      Access-Control-Allow-Methods:
-      - "*"
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - max_age=600,public,stale-if-error=3600
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Security-Policy:
-      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
-        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
-        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
-        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
-        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
-        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
-        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
-        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
-        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
-        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
-        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
-        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
-        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
-        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
-        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
-        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
-        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
-        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
-        worker-src ''self'' blob: ;'
-      X-Amzn-Requestid:
-      - c80a6faf-9571-4074-abe2-a64f42f52519
+      - 931b596c-99db-492b-8ef7-f949f2e7072f
       Vary:
       - Accept-Encoding
       X-Cache:
@@ -493,7 +355,7 @@ http_interactions:
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - ZocgFA253wZ1g5iIiA3QKweqnQXhDLDKzNX99YZtLiMzlFqTFtAL3g==
+      - v1mwh1k_G8liWRSgd7tKxVljY7issojWHRAOxgMFY0bWVo2nuYSErQ==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"RecAreaID":"285","OrgRecAreaID":"285","ParentOrgID":"130","RecAreaName":"Cherry
@@ -551,5 +413,143 @@ http_interactions:
         Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
         Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":340,"Width":1440,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_0f866aa1-4aff-4568-9292-25f29db7d712_1440.jpg","Credits":"John
         Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:38 GMT
+  recorded_at: Thu, 03 Mar 2022 04:43:03 GMT
+- request:
+    method: get
+    uri: https://ridb.recreation.gov/api/v1/recareas?activity%5B%5D=Biking&full=true&latitude=39.71854302040816&limit=10&longitude=-104.95596330612246&radius=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - apiKey
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Server
+      Date:
+      - Thu, 03 Mar 2022 04:43:05 GMT
+      X-Amz-Apigw-Id:
+      - OZAVzGVnPHcF42Q=
+      X-Amzn-Trace-Id:
+      - Root=1-62204758-6dacbc077e94f4167a7716b3;Sampled=0
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; always
+      Access-Control-Allow-Methods:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max_age=600,public,stale-if-error=3600
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
+        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
+        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
+        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
+        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
+        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
+        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
+        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
+        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
+        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
+        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
+        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
+        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
+        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
+        worker-src ''self'' blob: ;'
+      X-Amzn-Requestid:
+      - 7ce0eea2-8ac2-4a8a-bc96-d3b79bacf28e
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 5539e869b7b6ea60eddee5f69c9a0d9c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-C1
+      X-Amz-Cf-Id:
+      - ZFY5sI64cwAN2VOUmKwmqP6HAaJhpXbdSOkijpsvVDkM1Y-3t0lHVg==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"RECDATA":[{"RecAreaID":"285","OrgRecAreaID":"285","ParentOrgID":"130","RecAreaName":"Cherry
+        Creek Lake","RecAreaDescription":"Cherry Creek Dam, located at the southeast
+        edge of Denver in Aurora, CO, was the first of the three dams to be built
+        to protect the Denver region from catastrophic South Platte River floodwaters
+        that plagued the area for more than 100 years.  Recreational opportunities
+        include camping, fishing, picnicking, an archery/rifle range, a horse stable,
+        nature and bike trails, a marina, and a swimming area.  The park is open year-round.","RecAreaFeeDescription":"","RecAreaDirections":"On
+        the southeast fringe of Denver off I-225/Parker Road.","RecAreaPhone":"","RecAreaEmail":"","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-104.859446,39.649023]},"RecAreaLongitude":-104.859446,"RecAreaLatitude":39.649023,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2021-09-23","ORGANIZATION":[{"OrgID":"130","OrgName":"US
+        Army Corps of Engineers","OrgImageURL":"uasce.gif","OrgURLText":"","OrgURLAddress":"http://www.usace.army.mil","OrgType":"Federal
+        Agency","OrgAbbrevName":"USACE","OrgJurisdictionType":"State","OrgParentID":"162","LastUpdatedDate":"2018-06-26"}],"FACILITY":[{"FacilityID":"247881","FacilityName":"Cherry
+        Creek State Park","ResourceLink":"https://ridb.recreation.gov/api/v1/facilities/247881"}],"RECAREAADDRESS":[{"RecAreaAddressID":"465510","RecAreaID":"285","RecAreaAddressType":"Default","RecAreaStreetAddress1":"9307
+        S. Wadsworth Blvd","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Littleton","PostalCode":"80128-6901","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2015-06-30"}],"ACTIVITY":[{"ActivityID":6,"ActivityParentID":"","RecAreaID":"285","ActivityName":"BOATING","RecAreaActivityDescription":"Boating","RecAreaActivityFeeDescription":""},{"ActivityID":9,"ActivityParentID":"","RecAreaID":"285","ActivityName":"CAMPING","RecAreaActivityDescription":"Camping","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"285","ActivityName":"FISHING","RecAreaActivityDescription":"Fishing","RecAreaActivityFeeDescription":""},{"ActivityID":20,"ActivityParentID":"","RecAreaID":"285","ActivityName":"PICNICKING","RecAreaActivityDescription":"Picnic","RecAreaActivityFeeDescription":""},{"ActivityID":25,"ActivityParentID":"","RecAreaID":"285","ActivityName":"WATER
+        SPORTS","RecAreaActivityDescription":"Water Sports","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"285","ActivityName":"WILDLIFE
+        VIEWING","RecAreaActivityDescription":"Wildlife Viewing","RecAreaActivityFeeDescription":""},{"ActivityID":37,"ActivityParentID":"","RecAreaID":"285","ActivityName":"PLAYGROUND
+        PARK SPECIALIZED SPORT SITE","RecAreaActivityDescription":"Playground","RecAreaActivityFeeDescription":""},{"ActivityID":38,"ActivityParentID":"","RecAreaID":"285","ActivityName":"OTHER
+        RECREATION CONCESSION SITE","RecAreaActivityDescription":"Restaurant/SnackBar","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"11e4bb62a8bb5c60da8bb96ee9a55e75","LinkType":"Map","EntityID":"285","EntityType":"RecArea","Title":"Cherry
+        Creek Lake Map","Description":"","URL":"http://www.parks.state.co.us/SiteCollectionImages/parks/Parks/Chatfield/ChatfieldAreaMap.pdf"},{"EntityLinkID":"0b42117592f947bd694dffcb565c7ec1","LinkType":"Official
+        Web Site","EntityID":"285","EntityType":"RecArea","Title":"Cherry Creek Lake
+        Website","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/projects.cfm?ID=G603070"},{"EntityLinkID":"33d60b9776ce7f39bcf8464feed32f17","LinkType":"Other","EntityID":"285","EntityType":"RecArea","Title":"Cherry
+        Creek Lake Photo Album","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/album.cfm?Option=View\u0026Activity=None\u0026ID=G603070"}],"MEDIA":[{"EntityMediaID":"326051","MediaType":"Image","EntityID":"285","EntityType":"RecArea","Title":"","Subtitle":"","Description":"","EmbedCode":"","Height":295,"Width":480,"URL":"https://cdn.recreation.gov/public/images/2140.jpg","Credits":"","IsPrimary":false,"IsPreview":false,"IsGallery":true}]},{"RecAreaID":"1583","OrgRecAreaID":"","ParentOrgID":"127","RecAreaName":"Rocky
+        Mountain Arsenal National Wildlife Refuge","RecAreaDescription":"Rocky Mountain
+        Arsenal National Wildlife Refuge (NWR), located 10 minutes from downtown Denver,
+        is nearly 17,000 acres, making it one of the largest urban wildlife refuges
+        in the United States. It consists of open lakes, wetlands, prairie grasslands,
+        and woodlands. \n\n\n\n\n\nDue to its proximity to Denver, one of the Refuge''s
+        primary goals is to provide environmental education programs for urban school
+        children. Each year, thousands of visitors come to the Refuge to appreciate
+        its wildlife, view the scenic habitat, and learn about native prairie species.
+        The Arsenal has been called \"a significant habitat island for wildlife\"
+        and \"a place to renew the relationship with nature.\" Popular activities
+        include interpretative programs, environmental education, fishing, wildlife
+        observation, and photography.","RecAreaFeeDescription":"","RecAreaDirections":"Rocky
+        Mountain Arsenal NWR is 10 minutes from downtown Denver and 30 minutes from
+        the Rocky Mountain foothills.  It is located in Commerce City, Colorado, a
+        Denver suburb located in Adams County.  To get to Rocky Mountain Arsenal NWR
+        from downtown Denver, take I-25 north to I-70 east.  Exit at Havana Street
+        and head north.  Enter through the South Gate located at 56th Avenue and Havana
+        Street.  From Denver International Airport, take Pena Boulevard south to 56th
+        Avenue heading west.  Turn north on Havana Street and enter through the South
+        Gate.","RecAreaPhone":"303-289-0232","RecAreaEmail":"rockymountainarsenal@fws.gov","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-104.847,39.8345]},"RecAreaLongitude":-104.847,"RecAreaLatitude":39.8345,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2020-12-09","ORGANIZATION":[{"OrgID":"127","OrgName":"Fish
+        and Wildlife Service","OrgImageURL":"fws.gif","OrgURLText":"","OrgURLAddress":"http://www.fws.gov","OrgType":"Federal
+        Agency","OrgAbbrevName":"FWS","OrgJurisdictionType":"State","OrgParentID":"139","LastUpdatedDate":"2018-06-26"}],"FACILITY":[],"RECAREAADDRESS":[{"RecAreaAddressID":"2156","RecAreaID":"1583","RecAreaAddressType":"Default","RecAreaStreetAddress1":"7200
+        Quebec Street Bldg 121","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Commerce
+        City","PostalCode":"80022","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2007-03-06"}],"ACTIVITY":[{"ActivityID":8,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HISTORIC
+        \u0026 CULTURAL SITE","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":10,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"INTERPRETIVE
+        PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"FISHING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":24,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"VISITOR
+        CENTER","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"WILDLIFE
+        VIEWING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"9611d31747205cc50999c68c5a1bdab8","LinkType":"Official
+        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false},{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":340,"Width":1440,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_0f866aa1-4aff-4568-9292-25f29db7d712_1440.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
+  recorded_at: Thu, 03 Mar 2022 04:43:05 GMT
 recorded_with: VCR 6.0.0
