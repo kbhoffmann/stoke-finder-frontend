@@ -19,6 +19,8 @@ class RecAreasController < ApplicationController
   def show
     @area = RidbFacade.get_rec_area_info_by_id(params["id"])
     @all_activities = RidbFacade.get_activities_for_rec_area_by_id(params["id"])
-    # areas = RidbFacade.search_by_location(params[:search], params["miles"])
+    latitude = @area.latitude
+    longitude = @area.longitude
+    @forecast = WeatherFacade.current_weather(latitude, longitude)
   end
 end

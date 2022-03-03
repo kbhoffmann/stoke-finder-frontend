@@ -18,4 +18,6 @@
 <br>
 <hr>
 <h2>Weather for <%= @area.name %></h2>
-<%= @%>
+<p>Current Temperature: <%= @forecast.temp.round %>&deg;F</p>
+<%= image_tag "http://openweathermap.org/img/wn/#{@forecast.icon_number}.png" %>
+<p>Conditions: <%= @forecast.description.capitalize %></p>

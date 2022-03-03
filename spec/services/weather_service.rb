@@ -4,7 +4,7 @@ RSpec.describe WeatherService do
 
   it 'gets weather data for an area by geocodes', :vcr do
     latitude = 39.71854302040816
-    longitude = -104.95596330612246
+    longitude = 39.71854302040816
 
     expect(WeatherService.get_weather(latitude, longitude)).to be_a(Hash)
     weather_data = WeatherService.get_weather(latitude, longitude)
