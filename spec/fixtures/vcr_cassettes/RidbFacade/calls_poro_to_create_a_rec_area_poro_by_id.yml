@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 00:25:38 GMT
+      - Thu, 03 Mar 2022 16:49:31 GMT
       X-Amz-Apigw-Id:
-      - OYaoXECWvHcFtFw=
+      - OaqwRHnYvHcFuCw=
       X-Amzn-Trace-Id:
-      - Root=1-62200b02-33240952c5060c7b487060c4;Sampled=0
+      - Root=1-6220f19b-07388fa11c64bede204dfbb4;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - d0b83eab-abde-403e-92a9-05a6ee508c77
+      - fcd21ab6-a19b-4634-97ad-4aab881b867f
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 c1923648567bf97d3117cd3896d4cfd8.cloudfront.net (CloudFront)
+      - 1.1 bcab77f1ffe9d73bbe5ff7a973cd0160.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - z82YdhHBm3bxLyoav1ePavJVBF9GaZ7IfQIU1obUCX85hWsP7ufUvQ==
+      - LvCFVLHwTzHUePNFq2gyUDwTXlVplqqNAFshGO99vKm9RM49bbnlmw==
     body:
       encoding: ASCII-8BIT
       string: '{"RecAreaID":"284","OrgRecAreaID":"284","ParentOrgID":"130","RecAreaName":"Chatfield
@@ -91,5 +91,5 @@ http_interactions:
         old Hildebrand Homestead, which is listed on the National Register of Historic
         Places, are open to visitors.","RecAreaFeeDescription":"","RecAreaDirections":"Located
         off C-470 southwest of Denver at the Wadsworth interchange.","RecAreaPhone":"","RecAreaEmail":"","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-105.058974,39.559653]},"RecAreaLongitude":-105.058974,"RecAreaLatitude":39.559653,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2021-09-23"}'
-  recorded_at: Thu, 03 Mar 2022 00:25:38 GMT
+  recorded_at: Thu, 03 Mar 2022 16:49:31 GMT
 recorded_with: VCR 6.0.0

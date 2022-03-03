@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 00:26:33 GMT
+      - Thu, 03 Mar 2022 16:50:20 GMT
       X-Amz-Apigw-Id:
-      - OYaw3EiAPHcFxGg=
+      - Oaq3wF8OPHcFlQw=
       X-Amzn-Trace-Id:
-      - Root=1-62200b38-e0c11f1c7ccaad39d4dd9b73;Sampled=0
+      - Root=1-6220f1cb-4c4de5d1b4d7853464521da2;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 4624fe37-1fde-4197-abf4-8952db0aa172
+      - cc73cd92-2a68-4d8a-88f6-4bcfe06289bf
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 599b9600e4966f19b30202be0b0d649e.cloudfront.net (CloudFront)
+      - 1.1 30ea845097208edbc19305c535a5be98.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - gQZPY8t9taaL1IdV8ctzU0iDVHScIeZ7F0u2RBZ1UkvTNVYSVjgkww==
+      - 2V1nJtaHx77rkUKu16k8fTQ2Qs5MiEj1ouFUH_C1ctqBnVEf5C3O4g==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"RecAreaID":"285","OrgRecAreaID":"285","ParentOrgID":"130","RecAreaName":"Cherry
@@ -130,14 +130,14 @@ http_interactions:
         PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"FISHING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":24,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"VISITOR
         CENTER","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"WILDLIFE
         VIEWING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"9611d31747205cc50999c68c5a1bdab8","LinkType":"Official
-        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
-        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
-        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
-        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false},{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
         Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
         Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":340,"Width":1440,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_0f866aa1-4aff-4568-9292-25f29db7d712_1440.jpg","Credits":"John
-        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:33 GMT
+        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false},{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
+  recorded_at: Thu, 03 Mar 2022 16:50:20 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/recareas?activity%5B%5D=Biking&full=true&latitude=39.71854302040816&limit=10&longitude=-104.95596330612246&radius=10
@@ -167,11 +167,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 00:26:35 GMT
+      - Thu, 03 Mar 2022 16:50:21 GMT
       X-Amz-Apigw-Id:
-      - OYaxHEkbvHcF_2g=
+      - Oaq3_HRFvHcF6-Q=
       X-Amzn-Trace-Id:
-      - Root=1-62200b3a-d2b0997c5bc6eb31db3c9e42;Sampled=0
+      - Root=1-6220f1cc-7737e300f194a472b79602f4;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -207,17 +207,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - afd7eed3-2701-4653-8722-acd7d901ea96
+      - 7005100c-5be9-4164-9f6d-6ff821c72a24
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 5950a1c2bfcf1f3e07bedbb2efad39f2.cloudfront.net (CloudFront)
+      - 1.1 0fdea8d3b1fc76e3ff9d36e8164171e8.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - VTDO2TmatVYDLzrWYTfLTTFgC0w6HTxSXxsGoAxUmi7nubjHmqlcmg==
+      - gOupdYnrNNpBscMZF-_ilrrZumB064p9FUuYnfdjL9DTwUbBovuE2w==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"RecAreaID":"285","OrgRecAreaID":"285","ParentOrgID":"130","RecAreaName":"Cherry
@@ -268,14 +268,14 @@ http_interactions:
         PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"FISHING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":24,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"VISITOR
         CENTER","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"WILDLIFE
         VIEWING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"9611d31747205cc50999c68c5a1bdab8","LinkType":"Official
-        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
-        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
-        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
-        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false},{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
         Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
         Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":340,"Width":1440,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_0f866aa1-4aff-4568-9292-25f29db7d712_1440.jpg","Credits":"John
-        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:35 GMT
+        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false},{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
+  recorded_at: Thu, 03 Mar 2022 16:50:21 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/recareas?activity%5B%5D=Biking&full=true&latitude=39.71854302040816&limit=10&longitude=-104.95596330612246&radius=10
@@ -305,11 +305,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 00:26:36 GMT
+      - Thu, 03 Mar 2022 16:50:23 GMT
       X-Amz-Apigw-Id:
-      - OYaxWEaUPHcFqaw=
+      - Oaq4MEGSvHcFU2Q=
       X-Amzn-Trace-Id:
-      - Root=1-62200b3b-00b1495b04cba2a62ae5322a;Sampled=0
+      - Root=1-6220f1cd-281545643a4c28f4d0919538;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -345,17 +345,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 326ff773-9d9e-4cfb-bfc7-7629207490f9
+      - 5136895d-0183-4dd1-a505-d4011fdf089c
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 187855e01bff01816fb7f2e5860898b6.cloudfront.net (CloudFront)
+      - 1.1 be1936c1908faca6448a305dec94dc72.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - b8TISTBOTu6gSkMOaML9WEXJLkvwiOLebGaxQrR-3jJgYn88uN0rrA==
+      - p8EpOeBg0CzQDbsRey04KRe0JADUMHfJyWz2oj9J9rDo3iJF0Ie-GA==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"RecAreaID":"285","OrgRecAreaID":"285","ParentOrgID":"130","RecAreaName":"Cherry
@@ -406,14 +406,14 @@ http_interactions:
         PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"FISHING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":24,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"VISITOR
         CENTER","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"WILDLIFE
         VIEWING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"9611d31747205cc50999c68c5a1bdab8","LinkType":"Official
-        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
-        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
-        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
-        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false},{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
         Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
         Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":340,"Width":1440,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_0f866aa1-4aff-4568-9292-25f29db7d712_1440.jpg","Credits":"John
-        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:36 GMT
+        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false},{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
+  recorded_at: Thu, 03 Mar 2022 16:50:23 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/recareas?activity%5B%5D=Biking&full=true&latitude=39.71854302040816&limit=10&longitude=-104.95596330612246&radius=10
@@ -443,11 +443,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 00:26:38 GMT
+      - Thu, 03 Mar 2022 16:50:24 GMT
       X-Amz-Apigw-Id:
-      - OYaxkF1GvHcFijw=
+      - Oaq4aGktvHcFx-g=
       X-Amzn-Trace-Id:
-      - Root=1-62200b3d-9a9f6a64892454891b47331d;Sampled=0
+      - Root=1-6220f1cf-ae3f78e57b2b4a34118937db;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -483,17 +483,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - c80a6faf-9571-4074-abe2-a64f42f52519
+      - 4b7b3cad-ca98-446a-ab6d-33a732d8e3cc
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 95ab38d462185df6df78ba1102868640.cloudfront.net (CloudFront)
+      - 1.1 cf1928ef9a9a7bb589a35ead31bcb4ea.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - ZocgFA253wZ1g5iIiA3QKweqnQXhDLDKzNX99YZtLiMzlFqTFtAL3g==
+      - LTQRrMtoLwiEupu01_jQ5ulb3qA81Rrv2_NSfD4nhSOkR1bYeq1qBQ==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"RecAreaID":"285","OrgRecAreaID":"285","ParentOrgID":"130","RecAreaName":"Cherry
@@ -544,12 +544,12 @@ http_interactions:
         PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"FISHING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":24,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"VISITOR
         CENTER","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"WILDLIFE
         VIEWING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"9611d31747205cc50999c68c5a1bdab8","LinkType":"Official
-        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
-        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
-        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
-        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false},{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
         Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
         Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":340,"Width":1440,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_0f866aa1-4aff-4568-9292-25f29db7d712_1440.jpg","Credits":"John
-        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 00:26:38 GMT
+        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false},{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
+  recorded_at: Thu, 03 Mar 2022 16:50:24 GMT
 recorded_with: VCR 6.0.0

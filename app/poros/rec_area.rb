@@ -8,7 +8,7 @@ class RecArea
               :longitude,
               :reservable,
               :activities
-              
+
   def initialize(data)
     @id = data[:RecAreaID]
     @name = data[:RecAreaName]

@@ -1,0 +1,42 @@
+<%= form_with url: "/adventures/create", method: :post do |form| %>
+
+
+<h3>Enter details for your adventure!</h3>
+<%= form.label :guest_email_addresses, "Enter guest email addresses:"%>
+<br>
+<%= form.text_field :guest_email_addresses, placeholder: "friend@gmailcom, otherfriend@yahoo.net" %>
+<br>
+<p>Enter date and time:</p>
+<%= form.datetime_select :datetime %>
+<br>
+<%= form.label :comments, "Enter comments:"%>
+<%= form.text_field :comments, placeholder: "I'm stoked!" %>
+<br>
+<%= form.hidden_field :favorite, value: false %>
+<br>
+<%= form.hidden_field :rec_area_id, value: 1 %>
+<br>
+<%= form.hidden_field :user_id, value: @user_id %>
+<br>
+
+<div class="row">
+  <div class="bg-image d-flex justify-content-center">
+    <br>
+      The follow activities are available for your adventure.
+      <br><br>
+    </div>
+  </div>
+<div class="dropdown" data-control="checkbox-dropdown">
+  <div class="dropdown-list">
+    <% @activities.each do |activity| %>
+      <label class="dropdown-option" id="activity-<%= activity %>">
+        <p><%= check_box_tag "activity_preferences[]", activity %><%= label_tag(:activity, "#{activity}") %></p>
+    </label>
+    <% end %>
+  </div>
+</div>
+<div class="bg-image d-flex justify-content-center">
+<%= form.submit "🤙 Create adventure! 🤙" %>
+<div class="bg-image d-flex justify-content-center">
+
+<% end %>
