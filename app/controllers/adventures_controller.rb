@@ -1,6 +1,7 @@
 class AdventuresController < ApplicationController
 
   def new
+    @activities = params["area_activities"].map { |activity| activity[:ActivityName] }
     @user_id = session[:user_id]
     # @area = some facade call
   end
@@ -8,6 +9,7 @@ class AdventuresController < ApplicationController
   def create
     date = datetime_helper(params)
     binding.pry
+    #set adventure ID as session or param in here
   end
 
   def datetime_helper(params)

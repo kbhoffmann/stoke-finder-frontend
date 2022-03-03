@@ -88,7 +88,7 @@ RSpec.describe 'Search Page', :vcr do
     end
   end
 
-  xit "functioning link for create an adventure" do
+  it "functioning link for create an adventure" do
     VCR.eject_cassette
 
     VCR.turn_off!
