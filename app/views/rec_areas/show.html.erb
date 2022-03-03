@@ -28,7 +28,7 @@
       <div style= "float:left; margin:50px">
       <h3>Activities for <%= @area.name %>: </h3>
         <% @all_activities.each do |activity| %>
-          <h3><%= activity.name %></h2>
+          <h3><%= activity.name %></h3>
           <p>Description: <%= activity.description %></p>
           <p>Fee: <%= activity.fee %></p>
         <% end %>
@@ -37,7 +37,7 @@
 
     <div class= "container">
       <div style= "float:right; margin:50px">
-      <h3>Weather for <%= @area.name %></h2>
+      <h3>Weather for <%= @area.name %></h3>
         <p>Current Temperature: <%= @forecast.temp.round %>&deg;F</p>
         <p>Feels Like: <%=@forecast.feels_like_temp%>&deg;F</p>
         <p>Conditions: <%= @forecast.description.capitalize %></p>
