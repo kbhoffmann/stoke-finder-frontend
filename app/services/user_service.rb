@@ -25,18 +25,13 @@ class UserService
   end
 
   def self.login_user(user_data)
-    response = conn.get("/api/vi/sessions", user_data.to_json, "CONTENT_TYPE" => "application/json")
-    JSON.parse(response.body, sybolize_names: true)
+    response = conn.post("/api/v1/sessions", user_data.to_json, "CONTENT_TYPE" => "application/json")
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.oauth_find(user_data)
-    #really unsure of this route...I think if we create a special, non-restful
-    #action on the users controller, we can route to that, then keep the successful
-    #creation route to this endpoint.
-    #Ideas for non-restful endpoint: auth (similar to the endpoint on the FE side)
-    #then have the auth action find_or_create_by(user_name:)
-    response = conn.post("/api/vi/users", user_data.to_json, "CONTENT_TYPE" => "application/json")
-    JSON.parse(response.body, sybolize_names: true)
+    response = conn.post("/api/v1/sessions/auth", user_data.to_json, "CONTENT_TYPE" => "application/json")
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   # def self.user_adventures(user_id)

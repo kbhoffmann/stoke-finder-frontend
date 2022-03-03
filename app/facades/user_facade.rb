@@ -28,6 +28,10 @@ class UserFacade
     UserService.login_user(user_data)
   end
 
+  def self.oauth_find(user_data)
+    UserService.oauth_find(user_data)
+  end 
+
   # def self.user_adventures(user_id)
   #   json = UserService.user_adventures(user_id)
   #   json[:data].map do |adventure|
