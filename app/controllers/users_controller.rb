@@ -8,21 +8,11 @@ class UsersController < ApplicationController
 
   def new
     @activities = RidbFacade.all_activities
-  end
-
-  def auth
-    auth_hash = request.env['omniauth.auth']
-    email = auth_hash['info']['email']
-    user = User.find_by(email: email)
-    if user.nil?
-      redirect_to '/register'
-    else
-      redirect_to '/dashboard'
-    end
+    @user = params[:data]
   end
 
   def create
-    new_user = UserFacade.user_create(user_params)
+    new_user = UserFacade.user_create(create_user_params)
 
     if new_user[:data][:id]
       user = User.new(new_user[:data])
@@ -86,6 +76,14 @@ class UsersController < ApplicationController
   end
 
 private
+  def create_user_params
+    params["access"] = params["access"].to_i
+    if params["activity_preferences"].class == Array
+      params["activity_preferences"] = params["activity_preferences"].join(" ")
+    end
+    params.permit(:user_name, :email, :password, :password_confirmation, :access, :street_address, :city, :state, :zipcode, :activity_preferences)
+  end
+
   def user_params
     params["id"] = session[:user_id]
     params["access"] = params["access"].to_i

@@ -39,7 +39,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
 gem 'bootstrap', '~> 5.1.3'
 gem 'figaro'
+gem 'omniauth'
 gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection'
 gem 'json', '>= 2.0.0'
 gem 'geocoder'
 
