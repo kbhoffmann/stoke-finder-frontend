@@ -1,6 +1,4 @@
 require 'rails_helper'
-# VCR.turn_off!
-# WebMock.enable_net_connect!
 
 RSpec.describe 'Rec Area Show Page', type: :view do
   it 'links to the show page from the search page', :vcr do
