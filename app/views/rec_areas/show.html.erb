@@ -34,7 +34,7 @@
     <div class= "container text-wrap" style="width: 50rem; float:right; margin:75px">
       <h3>Weather for <%= @area.name %></h3>
         <p>Current Temperature: <%= @forecast.temp.round %>&deg;F</p>
-        <p>Feels Like: <%=@forecast.feels_like_temp%>&deg;F</p>
+        <p>Feels Like: <%=@forecast.feels_like_temp.round %>&deg;F</p>
         <p>Conditions: <%= @forecast.description.capitalize %></p>
         <p><%= image_tag "http://openweathermap.org/img/wn/#{@forecast.icon_number}.png", size: "150" %></p>
         <p>Humidity: <%=@forecast.humidity%> % </p>
