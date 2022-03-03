@@ -128,7 +128,9 @@ RSpec.describe 'Search Page', :vcr do
     
     fill_in :guest_email_addresses, with: "bob@gmail.com"
     fill_in :comments, with: "woop"
-    
+    # within "#activity-biking" do 
+    #   check
+    # end
     click_button "🤙 Create adventure! 🤙"
   end
 end
