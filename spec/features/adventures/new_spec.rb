@@ -20,7 +20,6 @@ RSpec.describe 'Create New Adventure Page', :vcr do
 
     click_button 'Submit'
     # no login yet so requiring register to set session for things that require session.
-
     click_button "Start An Adventure"
 
     fill_in "Search all activites by Location(City, State)", with: "Denver, CO"
@@ -29,12 +28,11 @@ RSpec.describe 'Create New Adventure Page', :vcr do
     expect(current_path).to eq("/rec_areas/search_by_location")
     expect(page).to have_content("Chatfield Lake")
     click_link("Plan an adventure for Chatfield Lake")
+    expect(current_path).to eq('/adventures/new')
     fill_in :guest_email_addresses, with: "bob@gmail.com"
     fill_in :comments, with: "woop"
+    save_and_open_page
     click_button "🤙 Create adventure! 🤙"
-    expect(current_path).to eq('/adventures/new')
-  # visit '/adventures/new'
-save_and_open_page
-  # expect(page).to have_content("I'm stoked!")
+    expect(current_path).to eq('/adventures/create')
   end
 end
