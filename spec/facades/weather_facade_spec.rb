@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe WeatherFacade do
 
-  xit 'calls the weather poro for current weather of area', :vcr do
+  it 'calls the weather poro for current weather of area', :vcr do
     latitude = 39.71854302040816
     longitude = -104.95596330612246
 

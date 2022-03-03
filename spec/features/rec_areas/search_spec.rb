@@ -70,7 +70,7 @@ RSpec.describe 'Search Page', :vcr do
       expect(page).to have_link("Plan an adventure for Apostle Islands National Lakeshore")
     end
 
-    xit "links to the rec area show page", :vcr do
+    it "links to the rec area show page", :vcr do
       visit "/rec_areas/search"
 
       id = "284"
@@ -88,10 +88,10 @@ RSpec.describe 'Search Page', :vcr do
     end
   end
 
-  it "functioning link for create an adventure" do
+  xit "functioning link for create an adventure" do
     VCR.eject_cassette
 
-    VCR.turn_off!
+    # VCR.turn_off!
 
     WebMock.enable_net_connect!
     visit "/register"

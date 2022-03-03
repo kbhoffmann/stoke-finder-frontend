@@ -3,8 +3,7 @@ require 'rails_helper'
 RSpec.describe UserService do
   describe 'Methods' do
     it "#user_info" do
-      VCR.turn_off!
-      WebMock.enable_net_connect!
+
       response = UserService.user_info(1)
 
       expect(response).to be_a(Hash)
@@ -42,9 +41,8 @@ RSpec.describe UserService do
       expect(user_data[:attributes][:longitude]).to be_an(Float)
     end
 
-    xit "#all_users" do
+    it "#all_users", :vcr do
       #this will need VCR
-      WebMock.enable_net_connect!
       response = UserService.all_users
 
       expect(response).to be_a(Hash)
