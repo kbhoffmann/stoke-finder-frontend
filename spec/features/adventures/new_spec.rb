@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Create New Adventure Page', :vcr do
-  it 'can' do
+  it 'shows a form to create a new adventure' do
 
     visit "/register"
      fill_in :user_name, with: "#{rand.to_s}"
