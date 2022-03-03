@@ -22,8 +22,7 @@
     </div>
 
 
-
-    <div class="container">
+    <div class="container text-wrap" style="width: 50rem; float:left; margin:75px">
       <div style= "float:left; margin:50px">
       <h3>Activities for <%= @area.name %>: </h3>
         <% @all_activities.each do |activity| %>
@@ -34,7 +33,7 @@
       </div>
     </div>
 
-    <div class= "container">
+    <div class= "container text-wrap" style="width: 50rem; float:right; margin:75px">
       <div style= "float:right; margin:50px">
       <h3>Weather for <%= @area.name %></h3>
         <p>Current Temperature: <%= @forecast.temp.round %>&deg;F</p>
