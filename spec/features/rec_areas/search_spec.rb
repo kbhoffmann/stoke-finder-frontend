@@ -53,9 +53,7 @@ RSpec.describe 'Search Page', :vcr do
 
       click_button 'Submit'
 
-
       # no login yet so requiring register to set session for things that require session.
-
       click_button "Start An Adventure"
 
       within '#activity-16' do
@@ -89,36 +87,51 @@ RSpec.describe 'Search Page', :vcr do
   end
 
   it "functioning link for create an adventure" do
-    VCR.use_cassette('this-thing-on?') do
-      visit "/register"
-       fill_in :user_name, with: "#{rand.to_s}"
-       fill_in :email, with: "#{rand.to_s}@mail.com"
-       fill_in :password, with: 'password12345'
-       fill_in :password_confirmation, with: 'password12345'
-       fill_in :street_address, with: '1234 Main St'
-       fill_in :city, with: 'Denver'
-       fill_in :state, with: 'CO'
-       fill_in :zipcode, with: '80220'
+    VCR.eject_cassette
+
+    VCR.turn_off!
+
+    WebMock.enable_net_connect!
+    visit "/register"
+     fill_in :user_name, with: "#{rand.to_s}"
+     fill_in :email, with: "#{rand.to_s}@mail.com"
+     fill_in :password, with: 'password12345'
+     fill_in :password_confirmation, with: 'password12345'
+     fill_in :street_address, with: '1234 Main St'
+     fill_in :city, with: 'Denver'
+     fill_in :state, with: 'CO'
+     fill_in :zipcode, with: '80220'
+
+     within '#activity-100049' do #ACCESSIBLE SWIMMING
+       check
+     end
+
+    click_button 'Submit'
+    # no login yet so requiring register to set session for things that require session.
+
+    click_button "Start An Adventure"
+     
+    expect(current_path).to eq("/rec_areas/search")
+
+    fill_in "Search all activites by Location(City, State)", with: "Denver, CO"
 
 
-       within '#activity-100049' do #ACCESSIBLE SWIMMING
-         check
-       end
+    click_button "Search by Location"
 
-      click_button 'Submit'
-      # no login yet so requiring register to set session for things that require session.
+    expect(current_path).to eq("/rec_areas/search_by_location")
+    expect(page).to have_content("Chatfield Lake")
 
-      click_button "Start An Adventure"
+    click_link("Plan an adventure for Chatfield Lake")
 
-      fill_in "Search all activites by Location(City, State)", with: "Denver, CO"
+    expect(current_path).to eq("/adventures/new")
+    
+    fill_in :guest_email_addresses, with: "bob@gmail.com"
+    fill_in :comments, with: "woop"
 
-      click_button "Search by Location"
-      expect(current_path).to eq("/rec_areas/search_by_location")
-      expect(page).to have_content("Chatfield Lake")
-      click_link("Plan an adventure for Chatfield Lake")
-      fill_in :guest_email_addresses, with: "bob@gmail.com"
-      fill_in :comments, with: "woop"
-      click_button "Create adventure!"
+    within "#activity-BIKING" do 
+      check
     end
+
+    click_button "🤙 Create adventure! 🤙"
   end
 end

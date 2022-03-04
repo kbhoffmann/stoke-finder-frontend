@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get '/areas', to: 'areas#index'
   get '/areas/:id', to: 'areas#show'
 
+  get '/adventures/:id', to: 'adventures#show'
   get '/adventures/new', to: 'adventures#new'
-  post '/adventures/create', to:'adventures#create'
+  post '/adventures/create', to: 'adventures#create'
 end
