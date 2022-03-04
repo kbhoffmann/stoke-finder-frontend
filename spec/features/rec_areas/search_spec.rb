@@ -52,10 +52,8 @@ RSpec.describe 'Search Page', :vcr do
        end
 
       click_button 'Submit'
-      save_and_open_page
 
       # no login yet so requiring register to set session for things that require session.
-
       click_button "Start An Adventure"
 
       within '#activity-16' do
@@ -88,7 +86,7 @@ RSpec.describe 'Search Page', :vcr do
     end
   end
 
-  it "functioning link for create an adventure", :vcr do
+  it "functioning link for create an adventure" do
     VCR.eject_cassette
 
     VCR.turn_off!
@@ -132,7 +130,7 @@ RSpec.describe 'Search Page', :vcr do
     within "#activity-BIKING" do 
       check
     end
-    
+
     click_button "🤙 Create adventure! 🤙"
   end
 end

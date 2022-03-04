@@ -16,7 +16,7 @@ class AdventuresController < ApplicationController
 
   private 
   def adventure_params
-    params[:date] = datetime_helper(params)
+    params[:date] = datetime_helper(params).to_s
     params[:comment] = params["comments"]
     params[:user_id] = session[:user_id]
     if params["activity_preferences"].class == Array
