@@ -6,10 +6,14 @@ class AdventuresController < ApplicationController
     @area = RidbFacade.get_rec_area_info_by_id(params["area_activities"].first["RecAreaID"])
   end
 
+  def show 
+    require 'pry'; binding.pry
+    # adventure = AdventuresFacade.adventure_find()
+  end
+
   def create
-    adventure = AdventuresFacade.adventure_create(adventure_params)
-    # require 'pry'; binding.pry
-    # if a
+    @adventure = AdventuresFacade.adventure_create(adventure_params)
+    redirect_to "/adventures/#{@adventure.id}"
   end
 
   def datetime_helper(params)
