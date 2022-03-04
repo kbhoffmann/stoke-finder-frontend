@@ -6,8 +6,8 @@ class AdventuresController < ApplicationController
     @area = RidbFacade.get_rec_area_info_by_id(params["area_activities"].first["RecAreaID"])
   end
 
-  def show 
-    require 'pry'; binding.pry
+  def show
+    # require 'pry'; binding.pry
     # adventure = AdventuresFacade.adventure_find()
   end
 
@@ -22,7 +22,7 @@ class AdventuresController < ApplicationController
   end
 
 
-  private 
+  private
   def adventure_params
     params[:date] = datetime_helper(params).to_s
     params[:comment] = params["comments"]
