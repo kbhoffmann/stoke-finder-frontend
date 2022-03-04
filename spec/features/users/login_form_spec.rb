@@ -36,7 +36,7 @@ RSpec.describe 'Login Form Page' do
 
         click_button 'Sign In'
         expect(current_path).to eq(dashboard_path)
-        expect(page).to have_content("Welcome back, #{user.user_name}")
+        expect(page).to have_content("Welcome back")
       end
     end
 
@@ -75,14 +75,15 @@ RSpec.describe 'Login Form Page' do
 
           click_button 'Sign In'
           expect(current_path).to eq('/login')
-          expect(page).to have_content('Username or Email is invalid')
+          expect(page).to have_content('Invalid username or password')
           #invalid user_name
           fill_in(:user_name, with: "Garth Brooks")
           fill_in(:password, with: 'password12345')
           click_button 'Sign In'
           expect(current_path).to eq('/login')
-          expect(page).to have_content('Username or Email is invalid') 
+          expect(page).to have_content('Invalid username or password')
         end
       end
+    end
   end
 end

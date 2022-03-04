@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
     UserFacade.user_info(session[:user_id]) if session[:user_id]
   end
 
-  private 
+  private
   def truffle_shuffle
     "a3c7y10lj48v"
   end
