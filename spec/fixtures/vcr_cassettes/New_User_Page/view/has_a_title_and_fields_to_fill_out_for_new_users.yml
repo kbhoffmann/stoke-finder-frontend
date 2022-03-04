@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 16:50:03 GMT
+      - Fri, 04 Mar 2022 00:38:24 GMT
       X-Amz-Apigw-Id:
-      - Oaq1WGVKPHcFVZg=
+      - ObvcDE3nvHcFsFw=
       X-Amzn-Trace-Id:
-      - Root=1-6220f1bb-8696e5c4f89cd3c9c5f2cd37;Sampled=0
+      - Root=1-62215f80-50851d2a9d0f1965222ada3c;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 9daf840c-a90b-4644-bcf1-cc708b2c3415
+      - 27ade1d0-4124-4c65-bed8-113ba3c66ff2
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 f9a3ca802cab4ac43bafc4dd8667ef98.cloudfront.net (CloudFront)
+      - 1.1 5babf08f08448687a0208408106aaed8.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - agmfpIDJW3IPPPS4VfRQVZTCwFWid78PVJLwjHya25CV3iXEiSKq4A==
+      - NITBa7dKyef7iIQTpX7MUDazN7iHfPoY_KVgLhw-69AnpCvHFlGLoA==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":4,"ActivityParentID":0,"ActivityName":"AUTO
@@ -167,13 +167,13 @@ http_interactions:
         RIDES","ActivityLevel":0},{"ActivityID":100079,"ActivityParentID":0,"ActivityName":"GOLF","ActivityLevel":0},{"ActivityID":100080,"ActivityParentID":0,"ActivityName":"CAVING","ActivityLevel":0},{"ActivityID":100081,"ActivityParentID":0,"ActivityName":"WINERY
         TOURS","ActivityLevel":0},{"ActivityID":100082,"ActivityParentID":0,"ActivityName":"SHUFFLE
         BOARD","ActivityLevel":0},{"ActivityID":100083,"ActivityParentID":0,"ActivityName":"STARGAZING","ActivityLevel":0},{"ActivityID":100084,"ActivityParentID":0,"ActivityName":"MOTEL","ActivityLevel":0}],"METADATA":{"RESULTS":{"CURRENT_COUNT":128,"TOTAL_COUNT":128},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":128,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 16:50:03 GMT
+  recorded_at: Fri, 04 Mar 2022 00:38:24 GMT
 - request:
     method: post
     uri: https://arcane-sands-07034.herokuapp.com/api/v1/users
     body:
       encoding: UTF-8
-      string: '{"id":null,"user_name":"0.9856454297504311","email":"0.7958667571017164@gmail.com","password":"password12345","password_confirmation":"password12345","access":0,"street_address":"3557
+      string: '{"user_name":"0.2953614135088628","email":"0.33042926092502356@gmail.com","password":"password12345","password_confirmation":"password12345","access":0,"street_address":"3557
         Alcott St","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"ANTIQUING"}'
     headers:
       User-Agent:
@@ -192,31 +192,31 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 03 Mar 2022 16:50:04 GMT
+      - Fri, 04 Mar 2022 00:38:24 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"5e16d38a02190c232cf250bad31a694f"
+      - W/"d20efd488903aa5c727436ac035eeb93"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1ffd8b03-7ed3-4763-8fc0-64fd33d89232
+      - e7bb2ae8-9711-48c4-a03d-730bdc04af99
       X-Runtime:
-      - '0.559950'
+      - '0.608862'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"263","type":"user","attributes":{"user_name":"0.9856454297504311","email":"0.7958667571017164@gmail.com","street_address":"3557
-        Alcott St","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"ANTIQUING","latitude":39.766710700000004,"longitude":-105.01780017511793}}}'
-  recorded_at: Thu, 03 Mar 2022 16:50:04 GMT
+      string: '{"data":{"id":"19","type":"user","attributes":{"user_name":"0.2953614135088628","email":"0.33042926092502356@gmail.com","street_address":"3557
+        Alcott St","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"ANTIQUING","latitude":39.766710700000004,"longitude":-105.01780017511793,"oauth":false}}}'
+  recorded_at: Fri, 04 Mar 2022 00:38:25 GMT
 - request:
     method: get
-    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/263
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/19
     body:
       encoding: US-ASCII
       string: ''
@@ -235,31 +235,31 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 03 Mar 2022 16:50:05 GMT
+      - Fri, 04 Mar 2022 00:38:25 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"5e16d38a02190c232cf250bad31a694f"
+      - W/"a3573230946e6d3851d1407691a0b3a1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9ffe78cb-4b8c-4c7c-9f31-74efb8317b27
+      - d2113b0f-f9b9-4cb9-8671-9fd4f2e9d5e9
       X-Runtime:
-      - '0.277180'
+      - '0.272584'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"263","type":"user","attributes":{"user_name":"0.9856454297504311","email":"0.7958667571017164@gmail.com","street_address":"3557
-        Alcott St","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"ANTIQUING","latitude":39.766710700000004,"longitude":-105.01780017511793}}}'
-  recorded_at: Thu, 03 Mar 2022 16:50:05 GMT
+      string: '{"data":{"id":"19","type":"user","attributes":{"user_name":"0.2953614135088628","email":"0.33042926092502356@gmail.com","street_address":"3557
+        Alcott St","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"ANTIQUING","latitude":39.766710700000004,"longitude":-105.01780017511793,"oauth":null}}}'
+  recorded_at: Fri, 04 Mar 2022 00:38:25 GMT
 - request:
     method: get
-    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/263
+    uri: https://arcane-sands-07034.herokuapp.com/api/v1/users/19
     body:
       encoding: US-ASCII
       string: ''
@@ -278,26 +278,26 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 03 Mar 2022 16:50:06 GMT
+      - Fri, 04 Mar 2022 00:38:25 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"5e16d38a02190c232cf250bad31a694f"
+      - W/"a3573230946e6d3851d1407691a0b3a1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0e0e48d3-c07b-4c5f-97df-f9aa00d5d741
+      - c623a057-20b0-4615-867f-846670a1c015
       X-Runtime:
-      - '0.282896'
+      - '0.282007'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"263","type":"user","attributes":{"user_name":"0.9856454297504311","email":"0.7958667571017164@gmail.com","street_address":"3557
-        Alcott St","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"ANTIQUING","latitude":39.766710700000004,"longitude":-105.01780017511793}}}'
-  recorded_at: Thu, 03 Mar 2022 16:50:07 GMT
+      string: '{"data":{"id":"19","type":"user","attributes":{"user_name":"0.2953614135088628","email":"0.33042926092502356@gmail.com","street_address":"3557
+        Alcott St","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"ANTIQUING","latitude":39.766710700000004,"longitude":-105.01780017511793,"oauth":null}}}'
+  recorded_at: Fri, 04 Mar 2022 00:38:26 GMT
 recorded_with: VCR 6.0.0

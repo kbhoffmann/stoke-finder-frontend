@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 16:49:31 GMT
+      - Fri, 04 Mar 2022 00:37:36 GMT
       X-Amz-Apigw-Id:
-      - OaqwVFnxPHcFTYA=
+      - ObvUjGbhvHcFrBg=
       X-Amzn-Trace-Id:
-      - Root=1-6220f19b-7e4f875ff0dd6ea5093ae8a2;Sampled=0
+      - Root=1-62215f50-a4a93dfef18ac6ca65f2d8f7;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 54677e2d-1d6f-481f-8f10-cd39cd24201c
+      - b0f039ab-f412-4503-b71a-71476a1a4b37
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 d50ea39d66fbd0459a5507b1cf70c2dc.cloudfront.net (CloudFront)
+      - 1.1 2a5aa00d9606133e22ac28da41f4c020.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - 8psUyD-tLtj83mvzfupulRyIEdVW1oVeq7ZycY-M65zoUaTCPgLVJQ==
+      - u7k1noE_jCslvwzBNO8Zts2B9v7sTvvjVxXMAckaix1dXA8uqmaOkw==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":5,"ActivityParentID":"","RecAreaID":"284","ActivityName":"BIKING","RecAreaActivityDescription":"Biking","RecAreaActivityFeeDescription":""},{"ActivityID":6,"ActivityParentID":"","RecAreaID":"284","ActivityName":"BOATING","RecAreaActivityDescription":"Boating","RecAreaActivityFeeDescription":""},{"ActivityID":9,"ActivityParentID":"","RecAreaID":"284","ActivityName":"CAMPING","RecAreaActivityDescription":"Camping","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"284","ActivityName":"FISHING","RecAreaActivityDescription":"Fishing","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"284","ActivityName":"HIKING","RecAreaActivityDescription":"Hiking","RecAreaActivityFeeDescription":""},{"ActivityID":15,"ActivityParentID":"","RecAreaID":"284","ActivityName":"HORSEBACK
@@ -88,7 +88,7 @@ http_interactions:
         VIEWING","RecAreaActivityDescription":"Wildlife Viewing","RecAreaActivityFeeDescription":""},{"ActivityID":37,"ActivityParentID":"","RecAreaID":"284","ActivityName":"PLAYGROUND
         PARK SPECIALIZED SPORT SITE","RecAreaActivityDescription":"Playground","RecAreaActivityFeeDescription":""},{"ActivityID":38,"ActivityParentID":"","RecAreaID":"284","ActivityName":"OTHER
         RECREATION CONCESSION SITE","RecAreaActivityDescription":"Restaurant/SnackBar","RecAreaActivityFeeDescription":""}],"METADATA":{"RESULTS":{"CURRENT_COUNT":11,"TOTAL_COUNT":11},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":0,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 16:49:31 GMT
+  recorded_at: Fri, 04 Mar 2022 00:37:36 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/recareas/284/activities
@@ -118,11 +118,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 16:49:32 GMT
+      - Fri, 04 Mar 2022 00:37:36 GMT
       X-Amz-Apigw-Id:
-      - OaqwZGApvHcFTAA=
+      - ObvUmEh6PHcFqaw=
       X-Amzn-Trace-Id:
-      - Root=1-6220f19b-85c2a6705752b0781deb292c;Sampled=0
+      - Root=1-62215f50-1c143020ca8d648ca160c693;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -158,17 +158,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 2121c1f6-7b42-4084-8a03-a8f558ee0192
+      - b9034f1d-07a1-4a97-9071-2578432edabb
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 c1923648567bf97d3117cd3896d4cfd8.cloudfront.net (CloudFront)
+      - 1.1 30ea845097208edbc19305c535a5be98.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - aqRDOgh8OgDrcXUT7vHDQ_GYWhffqBf8wgqC3gyc7ID_VRUe8Sl03Q==
+      - rcvNfZGcDBaqyOw8-A1AyKtY164zd2FwzLiUvIWnCg_sQsPrzi6xKQ==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"ActivityID":5,"ActivityParentID":"","RecAreaID":"284","ActivityName":"BIKING","RecAreaActivityDescription":"Biking","RecAreaActivityFeeDescription":""},{"ActivityID":6,"ActivityParentID":"","RecAreaID":"284","ActivityName":"BOATING","RecAreaActivityDescription":"Boating","RecAreaActivityFeeDescription":""},{"ActivityID":9,"ActivityParentID":"","RecAreaID":"284","ActivityName":"CAMPING","RecAreaActivityDescription":"Camping","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"284","ActivityName":"FISHING","RecAreaActivityDescription":"Fishing","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"284","ActivityName":"HIKING","RecAreaActivityDescription":"Hiking","RecAreaActivityFeeDescription":""},{"ActivityID":15,"ActivityParentID":"","RecAreaID":"284","ActivityName":"HORSEBACK
@@ -177,5 +177,5 @@ http_interactions:
         VIEWING","RecAreaActivityDescription":"Wildlife Viewing","RecAreaActivityFeeDescription":""},{"ActivityID":37,"ActivityParentID":"","RecAreaID":"284","ActivityName":"PLAYGROUND
         PARK SPECIALIZED SPORT SITE","RecAreaActivityDescription":"Playground","RecAreaActivityFeeDescription":""},{"ActivityID":38,"ActivityParentID":"","RecAreaID":"284","ActivityName":"OTHER
         RECREATION CONCESSION SITE","RecAreaActivityDescription":"Restaurant/SnackBar","RecAreaActivityFeeDescription":""}],"METADATA":{"RESULTS":{"CURRENT_COUNT":11,"TOTAL_COUNT":11},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":0,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 16:49:32 GMT
+  recorded_at: Fri, 04 Mar 2022 00:37:36 GMT
 recorded_with: VCR 6.0.0

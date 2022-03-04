@@ -115,15 +115,20 @@ input[type=submit]:hover {
     </div>
   </div>
 
+<% if @user.nil? %>
   <div class="row">
     <div class="col-25">
-      <%= form.label :email %>
+        <%= form.label :email %>
     </div>
     <div class="col-75">
       <p><%= form.text_field :email, value: "Your email..." %></p>
     </div>
   </div>
+  <% else %>
+  <%=form.hidden_field :email, :value => "#{@user}" %>
+<% end %>
 
+<% if @user.nil? %>
   <div class="row">
     <div class="col-25">
       <%= form.label :password %>
@@ -132,7 +137,11 @@ input[type=submit]:hover {
       <p><%= form.text_field :password, value: "Your password..." %></p>
     </div>
   </div>
+  <% else %>
+  <%=form.hidden_field :password, :value => "#{truffle_shuffle}" %>
+<% end %>
 
+<% if @user.nil? %>
   <div class="row">
     <div class="col-25">
       <%= form.label :password_confirmation %>
@@ -141,6 +150,9 @@ input[type=submit]:hover {
       <p><%= form.text_field :password_confirmation, value: "Confirm your password..." %></p>
     </div>
   </div>
+  <% else %>
+  <%=form.hidden_field :password, :value => "#{truffle_shuffle}" %>
+<% end %>
 
   <div class="row">
     <div class="col-25">

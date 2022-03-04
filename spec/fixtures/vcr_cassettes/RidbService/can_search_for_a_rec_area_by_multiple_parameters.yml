@@ -29,11 +29,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 16:50:20 GMT
+      - Fri, 04 Mar 2022 00:38:37 GMT
       X-Amz-Apigw-Id:
-      - Oaq3wF8OPHcFlQw=
+      - Obvd-G9zvHcF2Bw=
       X-Amzn-Trace-Id:
-      - Root=1-6220f1cb-4c4de5d1b4d7853464521da2;Sampled=0
+      - Root=1-62215f8c-45e9cc2370c93c78539405ab;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -69,17 +69,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - cc73cd92-2a68-4d8a-88f6-4bcfe06289bf
+      - 12ab5565-0b4c-4b03-91de-0a4be8b0a4d6
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 30ea845097208edbc19305c535a5be98.cloudfront.net (CloudFront)
+      - 1.1 5950a1c2bfcf1f3e07bedbb2efad39f2.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - 2V1nJtaHx77rkUKu16k8fTQ2Qs5MiEj1ouFUH_C1ctqBnVEf5C3O4g==
+      - 6LerfClsUNHbNyiEeExK42Jk8Vb0gFqPk_VgMypnzWeXVGkSYSFixQ==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"RecAreaID":"285","OrgRecAreaID":"285","ParentOrgID":"130","RecAreaName":"Cherry
@@ -137,7 +137,7 @@ http_interactions:
         Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
         Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
         Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 16:50:20 GMT
+  recorded_at: Fri, 04 Mar 2022 00:38:37 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/recareas?activity%5B%5D=Biking&full=true&latitude=39.71854302040816&limit=10&longitude=-104.95596330612246&radius=10
@@ -167,11 +167,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 16:50:21 GMT
+      - Fri, 04 Mar 2022 00:38:39 GMT
       X-Amz-Apigw-Id:
-      - Oaq3_HRFvHcF6-Q=
+      - ObveMEmHPHcFpTA=
       X-Amzn-Trace-Id:
-      - Root=1-6220f1cc-7737e300f194a472b79602f4;Sampled=0
+      - Root=1-62215f8d-9220a77a36db74693eac1f3b;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -207,17 +207,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 7005100c-5be9-4164-9f6d-6ff821c72a24
+      - d6bc3584-5602-4df9-b118-e5732bc9fa6d
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 0fdea8d3b1fc76e3ff9d36e8164171e8.cloudfront.net (CloudFront)
+      - 1.1 592e119b061227362dc16266517f02c2.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - gOupdYnrNNpBscMZF-_ilrrZumB064p9FUuYnfdjL9DTwUbBovuE2w==
+      - 7fqk5_yLAGKzHco37CCyH2iYPz1DX5Ul5idpCIi7roBYO3pNw-y8zg==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"RecAreaID":"285","OrgRecAreaID":"285","ParentOrgID":"130","RecAreaName":"Cherry
@@ -275,7 +275,7 @@ http_interactions:
         Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
         Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
         Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 16:50:21 GMT
+  recorded_at: Fri, 04 Mar 2022 00:38:39 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/recareas?activity%5B%5D=Biking&full=true&latitude=39.71854302040816&limit=10&longitude=-104.95596330612246&radius=10
@@ -305,11 +305,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 16:50:23 GMT
+      - Fri, 04 Mar 2022 00:38:40 GMT
       X-Amz-Apigw-Id:
-      - Oaq4MEGSvHcFU2Q=
+      - ObvebEKEvHcF_zA=
       X-Amzn-Trace-Id:
-      - Root=1-6220f1cd-281545643a4c28f4d0919538;Sampled=0
+      - Root=1-62215f8f-f2d991970bcca7274f3c155a;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -345,17 +345,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 5136895d-0183-4dd1-a505-d4011fdf089c
+      - 29462032-ceb0-48b1-b48e-f8cf2cbca4d5
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 be1936c1908faca6448a305dec94dc72.cloudfront.net (CloudFront)
+      - 1.1 be7f6ce4397843276657a8babac08b6e.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - p8EpOeBg0CzQDbsRey04KRe0JADUMHfJyWz2oj9J9rDo3iJF0Ie-GA==
+      - 2NCddQjd9HyFLf3rj3NMuW9yaGB6poa8qJ2hZ7WKNhU2YrOqw3753w==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"RecAreaID":"285","OrgRecAreaID":"285","ParentOrgID":"130","RecAreaName":"Cherry
@@ -413,7 +413,7 @@ http_interactions:
         Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
         Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
         Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 16:50:23 GMT
+  recorded_at: Fri, 04 Mar 2022 00:38:40 GMT
 - request:
     method: get
     uri: https://ridb.recreation.gov/api/v1/recareas?activity%5B%5D=Biking&full=true&latitude=39.71854302040816&limit=10&longitude=-104.95596330612246&radius=10
@@ -443,11 +443,11 @@ http_interactions:
       Server:
       - Server
       Date:
-      - Thu, 03 Mar 2022 16:50:24 GMT
+      - Fri, 04 Mar 2022 00:38:41 GMT
       X-Amz-Apigw-Id:
-      - Oaq4aGktvHcFx-g=
+      - ObvepHKgPHcFdWw=
       X-Amzn-Trace-Id:
-      - Root=1-6220f1cf-ae3f78e57b2b4a34118937db;Sampled=0
+      - Root=1-62215f90-0a24a2110c1a0162b02a10dc;Sampled=0
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; always
       Access-Control-Allow-Methods:
@@ -483,17 +483,17 @@ http_interactions:
         https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
         worker-src ''self'' blob: ;'
       X-Amzn-Requestid:
-      - 4b7b3cad-ca98-446a-ab6d-33a732d8e3cc
+      - 76594605-11e8-4bf7-89af-01cdf20c9710
       Vary:
       - Accept-Encoding
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 cf1928ef9a9a7bb589a35ead31bcb4ea.cloudfront.net (CloudFront)
+      - 1.1 bcab77f1ffe9d73bbe5ff7a973cd0160.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - DEN52-C1
       X-Amz-Cf-Id:
-      - LTQRrMtoLwiEupu01_jQ5ulb3qA81Rrv2_NSfD4nhSOkR1bYeq1qBQ==
+      - 1aWRdymH93dI3Oxv3xZFxJ3b1InSd3xMmwdNkUZVkWBdTN0K776iOA==
     body:
       encoding: ASCII-8BIT
       string: '{"RECDATA":[{"RecAreaID":"285","OrgRecAreaID":"285","ParentOrgID":"130","RecAreaName":"Cherry
@@ -551,5 +551,5 @@ http_interactions:
         Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
         Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
         Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":2,"TOTAL_COUNT":2},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
-  recorded_at: Thu, 03 Mar 2022 16:50:24 GMT
+  recorded_at: Fri, 04 Mar 2022 00:38:41 GMT
 recorded_with: VCR 6.0.0

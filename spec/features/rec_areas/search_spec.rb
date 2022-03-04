@@ -31,7 +31,7 @@ RSpec.describe 'Search Page', :vcr do
       expect(page).to have_content("Plan an adventure for Chatfield Lake")
     end
 
-    xit "finds stoke preferences are entered based on user's saved addy", :vcr do
+    it "finds stoke preferences are entered based on user's saved addy", :vcr do
       visit "/register"
       fill_in :user_name, with: "#{rand.to_s}"
       fill_in :email, with: "#{rand.to_s}@#{Faker::Artist.name}.com"
@@ -114,6 +114,7 @@ RSpec.describe 'Search Page', :vcr do
     expect(current_path).to eq("/rec_areas/search")
 
     fill_in "Search all activites by Location(City, State)", with: "Denver, CO"
+
 
     click_button "Search by Location"
 

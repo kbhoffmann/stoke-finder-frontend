@@ -21,19 +21,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 03 Mar 2022 16:50:18 GMT
+      - Fri, 04 Mar 2022 00:38:35 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"41746a0223e4cb08de220b8de857f76f"
+      - W/"e1ef1bd5efbb0b1544f5d626c96c315d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c242c39c-53b3-4ce7-ada8-47a4857172ea
+      - d8fc5884-8e45-455d-97d6-ac482dad8554
       X-Runtime:
-      - '1.600085'
+      - '1.651073'
       Transfer-Encoding:
       - chunked
       Via:
@@ -41,6 +41,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"user_name":"Borton Preekers","email":"borton@gmail.com","street_address":"123
-        Lane","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"Biking","latitude":39.71854302040816,"longitude":-104.95596330612246}}}'
-  recorded_at: Thu, 03 Mar 2022 16:50:18 GMT
+        Lane","city":"Denver","state":"CO","zipcode":"80211","activity_preferences":"Biking","latitude":39.71854302040816,"longitude":-104.95596330612246,"oauth":null}}}'
+  recorded_at: Fri, 04 Mar 2022 00:38:35 GMT
 recorded_with: VCR 6.0.0

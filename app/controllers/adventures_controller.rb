@@ -12,6 +12,7 @@ class AdventuresController < ApplicationController
   end
 
   def create
+
     @adventure = AdventuresFacade.adventure_create(adventure_params)
     redirect_to "/adventures/#{@adventure.id}"
   end
@@ -19,6 +20,7 @@ class AdventuresController < ApplicationController
   def datetime_helper(params)
     (params["datetime(3i)"] + "/" + params["datetime(2i)"] + "/" + params["datetime(1i)"] + "/" +  params["datetime(4i)"] + ":" + params["datetime(5i)"]).to_datetime
   end
+
 
   private 
   def adventure_params
@@ -31,3 +33,4 @@ class AdventuresController < ApplicationController
     params.permit(:guest_email_addresses, :date, :comment, :activities, :favorite, :rec_area_id, :user_id)
   end
 end
+

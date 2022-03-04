@@ -20,6 +20,16 @@ class UserService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.login_user(user_data)
+    response = conn.post("/api/v1/sessions", user_data.to_json, "CONTENT_TYPE" => "application/json")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.oauth_find(user_data)
+    response = conn.post("/api/v1/sessions/auth", user_data.to_json, "CONTENT_TYPE" => "application/json")
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
   # def self.user_adventures(user_id)
   #   response = conn.get("/api/v1/users/#{user_id}/adventures")
   #   JSON.parse(response.body, symbolize_names: true)

@@ -1,10 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+body {background-color: lightblue;}
+body {margin: 70px;}
+
+                      .guest_email_addresses {
+
+                      }
+
+                      .dropdown {
+                      position: relative;
+                      font-size: 14px;
+                      color: #333;
+
+                      .dropdown-list {
+                        padding: 12px;
+                        background: #fff;
+                        position: absolute;
+                        top: 30px;
+                        left: 2px;
+                        right: 2px;
+                        box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
+                        transform-origin: 50% 0;
+                        transform: scale(1, 0);
+                        transition: transform .15s ease-in-out .15s;
+                        max-height: 66vh;
+                        overflow-y: scroll;
+                      }
+
+                      .dropdown-option {
+                        display: block;
+                        padding: 8px 12px;
+                        opacity: 0;
+                        transition: opacity .15s ease-in-out;
+                      }
+
+                      .dropdown-label {
+                        display: block;
+                        height: 30px;
+                        background: #fff;
+                        border: 1px solid #ccc;
+                        padding: 6px 12px;
+                        line-height: 1;
+                        cursor: pointer;
+                      }
+
+                      &.on {
+                       .dropdown-list {
+                          transform: scale(1, 1);
+                          transition-delay: 0s;
+                        }
+                      }
+                    }
+
+
+input[type=text], select, textarea {
+  width: 25%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 0px 0px 0px 4px;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+</style>
+
+<body>
+<hr>
+<h1 class="text-center">Enter details for your adventure!</h1>
+<hr>
+<br>
+
 <%= form_with url: "/adventures/create", method: :post do |form| %>
 
+<div class="guest_email_addresses">
+  <%= form.label :guest_email_addresses, "Enter guest email addresses:"%>
+  <br>
+  <%= form.text_field :guest_email_addresses,  placeholder: "friend@gmailcom, otherfriend@yahoo.net" %>
+</div>
 
-<h3>Enter details for your adventure!</h3>
-<%= form.label :guest_email_addresses, "Enter guest email addresses:"%>
-<br>
-<%= form.text_field :guest_email_addresses, placeholder: "friend@gmailcom, otherfriend@yahoo.net" %>
 <br>
 
 <div class="datetime">
@@ -16,8 +127,12 @@
 </div>
 
 <br>
-<%= form.label :comments, "Enter comments:"%>
-<%= form.text_field :comments, placeholder: "I'm stoked!" %>
+
+<div class="comments">
+  <p><%= form.label :comments, "Enter comments:"%></p>
+  <%= form.text_field :comments, placeholder: "I'm stoked!" %>
+</div>
+
 <br>
 <%= form.hidden_field :favorite, value: false %>
 <br>
@@ -26,24 +141,21 @@
 <%= form.hidden_field :user_id, value: @user_id %>
 <br>
 
-<div class="row">
-  <div class="bg-image d-flex justify-content-center">
-    <br>
-      The follow activities are available for your adventure.
-      <br><br>
+<h3>The following activities are available for your adventure.</h3>
+
+<div class"container">
+  <div class="dropdown" data-control="checkbox-dropdown">
+    <div class="dropdown-list">
+      <% @activities.each do |activity| %>
+        <label class="dropdown-option" id="activity-<%= activity %>">
+          <p><%= check_box_tag "activity_preferences[]", activity %><%= label_tag(:activity, "#{activity}") %></p>
+      </label>
+      <% end %>
     </div>
   </div>
-<div class="dropdown" data-control="checkbox-dropdown">
-  <div class="dropdown-list">
-    <% @activities.each do |activity| %>
-      <label class="dropdown-option" id="activity-<%= activity %>">
-        <p><%= check_box_tag "activity_preferences[]", activity %><%= label_tag(:activity, "#{activity}") %></p>
-    </label>
-    <% end %>
-  </div>
 </div>
-<div class="bg-image d-flex justify-content-center">
-<%= form.submit "🤙 Create adventure! 🤙" %>
-<div class="bg-image d-flex justify-content-center">
 
-<% end %>
+<div class="bg-image d-flex justify-content-center">
+  <%= form.submit "🤙   Create adventure!   🤙" %>
+  <% end %>
+</div>

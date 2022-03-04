@@ -17,7 +17,9 @@ RSpec.describe 'Rec Area Show Page', type: :view do
     click_link("Chatfield Lake Details")
     expect(current_path).to eq("/rec_areas/#{id}")
     expect(page).to have_content("Chatfield Lake")
-    #nned to beef up the test when time!
-    save_and_open_page
+    expect(page).to have_content("Fees")
+    expect(page).to have_content("Phone number")
+    expect(page).to have_content("Activities for Chatfield Lake:")
+    expect(page).to have_content("Weather for Chatfield Lake")
   end
 end
