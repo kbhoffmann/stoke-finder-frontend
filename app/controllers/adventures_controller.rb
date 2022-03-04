@@ -8,6 +8,8 @@ class AdventuresController < ApplicationController
 
   def create
     adventure = AdventuresFacade.adventure_create(adventure_params)
+    # require 'pry'; binding.pry
+    # if a
   end
 
   def datetime_helper(params)
